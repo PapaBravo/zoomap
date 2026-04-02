@@ -76,6 +76,9 @@ header h1 {
   cursor: pointer;
   border-bottom: 1px solid #f0f0f0;
   transition: background 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 #animal-list li:hover {
@@ -101,6 +104,14 @@ header h1 {
   color: #666;
   font-style: italic;
   margin-top: 2px;
+}
+
+.animal-thumb {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
 }
 
 /* ── Map ─────────────────────────────────────────────────────── */
@@ -133,6 +144,27 @@ header h1 {
   margin-top: 6px;
   font-size: 0.88em;
   line-height: 1.4;
+}
+
+.popup-image {
+  display: block;
+  width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.popup-wiki-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.82em;
+  color: #2d6a2d;
+  text-decoration: none;
+}
+
+.popup-wiki-link:hover {
+  text-decoration: underline;
 }
 
 /* ── Responsive (mobile) ─────────────────────────────────────── */

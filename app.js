@@ -35,7 +35,13 @@ function escapeHtml(str) {
 }
 
 function buildPopupHtml(props) {
-  return `<strong>${escapeHtml(props.name)}</strong><em>${escapeHtml(props.species)}</em><p>${escapeHtml(props.description)}</p>`;
+  const img = props.image
+    ? `<img src="${escapeHtml(props.image)}" alt="${escapeHtml(props.name)}" class="popup-image" />`
+    : '';
+  const wikiLink = props.wikipedia
+    ? `<a href="${escapeHtml(props.wikipedia)}" target="_blank" rel="noopener noreferrer" class="popup-wiki-link">Wikipedia ↗</a>`
+    : '';
+  return `${img}<strong>${escapeHtml(props.name)}</strong><em>${escapeHtml(props.species)}</em><p>${escapeHtml(props.description)}</p>${wikiLink}`;
 }
 
 function defaultStyle() {
@@ -136,9 +142,15 @@ fetch(DATA_URL)
           listItem.dataset.id = id;
           listItem.dataset.search = `${props.name} ${props.species} ${props.description}`.toLowerCase();
 
+          const thumb = props.image
+            ? `<img src="${escapeHtml(props.image)}" alt="${escapeHtml(props.name)}" class="animal-thumb" />`
+            : '';
           listItem.innerHTML = `
-            <div class="animal-name">${escapeHtml(props.name)}</div>
-            <div class="animal-species">${escapeHtml(props.species)}</div>
+            ${thumb}
+            <div class="animal-info">
+              <div class="animal-name">${escapeHtml(props.name)}</div>
+              <div class="animal-species">${escapeHtml(props.species)}</div>
+            </div>
           `;
 
           listItem.addEventListener('click', () => selectFeature(id));
