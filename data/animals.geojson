@@ -1,0 +1,225 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.5237, 52.5084]
+      },
+      "properties": {
+        "id": "elephant",
+        "name": "African Elephant",
+        "species": "Loxodonta africana",
+        "description": "The African elephant is the largest land animal on Earth. Tierpark Berlin houses a small herd in a spacious outdoor enclosure.",
+        "enclosure": "Elephant House"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [13.5230, 52.5080],
+            [13.5244, 52.5080],
+            [13.5244, 52.5088],
+            [13.5230, 52.5088],
+            [13.5230, 52.5080]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "elephant-enclosure",
+        "name": "African Elephant",
+        "species": "Loxodonta africana",
+        "description": "Outdoor enclosure for the African elephant herd.",
+        "enclosure": "Elephant House"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.5261, 52.5092]
+      },
+      "properties": {
+        "id": "lion",
+        "name": "African Lion",
+        "species": "Panthera leo",
+        "description": "The king of the savannah. Tierpark Berlin's lions can be observed in their large outdoor pride area.",
+        "enclosure": "Alfred-Brehm-Haus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [13.5255, 52.5088],
+            [13.5267, 52.5088],
+            [13.5267, 52.5096],
+            [13.5255, 52.5096],
+            [13.5255, 52.5088]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "lion-enclosure",
+        "name": "African Lion",
+        "species": "Panthera leo",
+        "description": "Outdoor pride area for the lions inside the Alfred-Brehm-Haus complex.",
+        "enclosure": "Alfred-Brehm-Haus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.5248, 52.5100]
+      },
+      "properties": {
+        "id": "giraffe",
+        "name": "Giraffe",
+        "species": "Giraffa camelopardalis",
+        "description": "Giraffes are the tallest living terrestrial animals. Tierpark Berlin's giraffes live in a modern facility with outdoor access.",
+        "enclosure": "Giraffe House"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.5272, 52.5078]
+      },
+      "properties": {
+        "id": "gorilla",
+        "name": "Western Lowland Gorilla",
+        "species": "Gorilla gorilla gorilla",
+        "description": "The western lowland gorilla is critically endangered. Tierpark Berlin participates in the European breeding programme.",
+        "enclosure": "Gorilla House"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.5220, 52.5095]
+      },
+      "properties": {
+        "id": "hippo",
+        "name": "Hippopotamus",
+        "species": "Hippopotamus amphibius",
+        "description": "Hippos spend most of their time in water to keep their skin moist. The hippo house at Tierpark Berlin offers underwater viewing.",
+        "enclosure": "Hippo House"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.5285, 52.5105]
+      },
+      "properties": {
+        "id": "tiger",
+        "name": "Amur Tiger",
+        "species": "Panthera tigris altaica",
+        "description": "The Amur tiger is the largest subspecies of tiger, adapted to cold climates. Tierpark Berlin supports conservation efforts for this endangered cat.",
+        "enclosure": "Tiger Enclosure"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.5210, 52.5110]
+      },
+      "properties": {
+        "id": "penguin",
+        "name": "Humboldt Penguin",
+        "species": "Spheniscus humboldti",
+        "description": "Humboldt penguins are native to the coasts of South America. The Tierpark colony can be watched swimming in their rocky outdoor pool.",
+        "enclosure": "Penguin Facility"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.5298, 52.5087]
+      },
+      "properties": {
+        "id": "polar-bear",
+        "name": "Polar Bear",
+        "species": "Ursus maritimus",
+        "description": "Polar bears are the world's largest land predators. Visitors can watch Tierpark Berlin's polar bears playing in their large pool.",
+        "enclosure": "Polar Bear Enclosure"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.5265, 52.5115]
+      },
+      "properties": {
+        "id": "zebra",
+        "name": "Plains Zebra",
+        "species": "Equus quagga",
+        "description": "Plains zebras are known for their distinctive black-and-white stripes. They roam a large grassy paddock at Tierpark Berlin.",
+        "enclosure": "African Savannah"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [13.5258, 52.5110],
+            [13.5272, 52.5110],
+            [13.5272, 52.5120],
+            [13.5258, 52.5120],
+            [13.5258, 52.5110]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "savannah-enclosure",
+        "name": "Plains Zebra",
+        "species": "Equus quagga",
+        "description": "The African Savannah exhibit shared with other grazing animals.",
+        "enclosure": "African Savannah"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.5240, 52.5073]
+      },
+      "properties": {
+        "id": "flamingo",
+        "name": "Chilean Flamingo",
+        "species": "Phoenicopterus chilensis",
+        "description": "Chilean flamingos are recognisable by their pink plumage. Tierpark Berlin's flock lives in a large open lagoon.",
+        "enclosure": "Flamingo Lagoon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.5308, 52.5098]
+      },
+      "properties": {
+        "id": "red-panda",
+        "name": "Red Panda",
+        "species": "Ailurus fulgens",
+        "description": "Red pandas are shy, tree-dwelling mammals from the eastern Himalayas. Their forested enclosure at Tierpark Berlin replicates their mountain home.",
+        "enclosure": "Red Panda Forest"
+      }
+    }
+  ]
+}
