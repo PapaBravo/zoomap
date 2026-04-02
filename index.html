@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tierpark Berlin – Zoo Map</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🦁 Tierpark Berlin</h1>
+  </header>
+
+  <div id="app">
+    <aside id="sidebar">
+      <div id="search-container">
+        <input
+          id="search"
+          type="search"
+          placeholder="Search animals…"
+          aria-label="Search animals"
+          autocomplete="off"
+        />
+      </div>
+      <ul id="animal-list" aria-label="Animal list"></ul>
+    </aside>
+
+    <main id="map-container">
+      <div id="map"></div>
+    </main>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  overflow: hidden;
+  background: #f5f5f0;
+  color: #222;
+}
+
+/* ── Header ─────────────────────────────────────────────────── */
+header {
+  background: #2d6a2d;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  flex-shrink: 0;
+}
+
+header h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* ── App layout ──────────────────────────────────────────────── */
+#app {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────────── */
+#sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  overflow: hidden;
+}
+
+#search-container {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+#search {
+  width: 100%;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+#search:focus {
+  outline: none;
+  border-color: #2d6a2d;
+  box-shadow: 0 0 0 2px rgba(45, 106, 45, 0.25);
+}
+
+#animal-list {
+  list-style: none;
+  overflow-y: auto;
+  flex: 1;
+}
+
+#animal-list li {
+  padding: 0.65rem 0.75rem;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.15s;
+}
+
+#animal-list li:hover {
+  background: #f0f7f0;
+}
+
+#animal-list li.selected {
+  background: #d4edda;
+  border-left: 3px solid #2d6a2d;
+}
+
+#animal-list li.hidden {
+  display: none;
+}
+
+.animal-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.animal-species {
+  font-size: 0.78rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+/* ── Map ─────────────────────────────────────────────────────── */
+#map-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Leaflet overrides ───────────────────────────────────────── */
+.leaflet-popup-content-wrapper {
+  border-radius: 6px;
+}
+
+.leaflet-popup-content strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.leaflet-popup-content em {
+  color: #555;
+  font-size: 0.85em;
+}
+
+.leaflet-popup-content p {
+  margin-top: 6px;
+  font-size: 0.88em;
+  line-height: 1.4;
+}
+
+/* ── Responsive (mobile) ─────────────────────────────────────── */
+@media (max-width: 600px) {
+  #app {
+    flex-direction: column;
+  }
+
+  #sidebar {
+    width: 100%;
+    max-height: 40dvh;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+}
