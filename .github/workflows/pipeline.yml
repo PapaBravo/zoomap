@@ -1,0 +1,145 @@
+name: Data Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      bbox:
+        description: "Bounding box (min_lat,min_lon,max_lat,max_lon)"
+        required: false
+        default: "52.490,13.495,52.525,13.545"
+      area_name:
+        description: "Human-readable area name"
+        required: false
+        default: "Tierpark Berlin"
+      osm_tags:
+        description: "Comma-separated OSM tag filters"
+        required: false
+        default: "zoo,tourism=zoo,animal,species"
+  schedule:
+    # Run every Sunday at 03:00 UTC
+    - cron: "0 3 * * 0"
+  push:
+    branches:
+      - main
+    paths:
+      - "pipeline/**"
+      - ".github/workflows/pipeline.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    env:
+      BBOX: ${{ github.event.inputs.bbox || '52.490,13.495,52.525,13.545' }}
+      AREA_NAME: ${{ github.event.inputs.area_name || 'Tierpark Berlin' }}
+      OSM_TAGS: ${{ github.event.inputs.osm_tags || 'zoo,tourism=zoo,animal,species' }}
+      OVERPASS_URL: "https://overpass-api.de/api/interpreter"
+      DB_PATH: "pipeline/zoo.duckdb"
+      CACHE_DIR: "pipeline/cache"
+      OUTPUT_PATH: "data/animals.geojson"
+      WIKIDATA_LANG: "en"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ------------------------------------------------------------------
+      # Caching
+      # ------------------------------------------------------------------
+
+      - name: Compute OSM cache key
+        id: osm-key
+        run: |
+          KEY=$(echo -n "${BBOX}|${OSM_TAGS}" | sha256sum | cut -c1-16)
+          echo "key=osm-${KEY}" >> "$GITHUB_OUTPUT"
+
+      - name: Restore OSM cache
+        id: osm-cache
+        uses: actions/cache@v4
+        with:
+          path: pipeline/cache/osm_*.json
+          key: ${{ steps.osm-key.outputs.key }}
+
+      - name: Compute Wiki cache key (weekly)
+        id: wiki-key
+        run: |
+          WEEK=$(date -u +"%Y-W%V")
+          echo "key=wiki-${WEEK}" >> "$GITHUB_OUTPUT"
+
+      - name: Restore Wiki cache
+        id: wiki-cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            pipeline/cache/wikidata_*.json
+            pipeline/cache/wikipedia_*.json
+          key: ${{ steps.wiki-key.outputs.key }}
+          restore-keys: |
+            wiki-
+
+      # ------------------------------------------------------------------
+      # Python setup
+      # ------------------------------------------------------------------
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+
+      - name: Install Python dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      # ------------------------------------------------------------------
+      # Pipeline execution
+      # ------------------------------------------------------------------
+
+      - name: Step 1 – Download OSM POIs (Bronze source)
+        run: python pipeline/scripts/download_osm.py
+
+      - name: Step 2 – Run dbt Bronze + Silver models
+        run: |
+          dbt run \
+            --project-dir pipeline/dbt \
+            --profiles-dir pipeline/dbt \
+            --select bronze silver \
+            --target dev
+
+      - name: Step 3 – Enrich with Wikipedia / Wikidata
+        run: python pipeline/scripts/enrich_wiki.py
+
+      - name: Step 4 – Run dbt Gold model
+        run: |
+          dbt run \
+            --project-dir pipeline/dbt \
+            --profiles-dir pipeline/dbt \
+            --select gold \
+            --vars "wikipedia_lang: ${WIKIDATA_LANG}" \
+            --target dev
+
+      - name: Step 5 – Export GeoJSON
+        run: python pipeline/scripts/export_geojson.py
+
+      # ------------------------------------------------------------------
+      # Persist results
+      # ------------------------------------------------------------------
+
+      - name: Commit updated GeoJSON
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/animals.geojson
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(data): update animals.geojson from OSM pipeline [skip ci]"
+            git push
+          fi

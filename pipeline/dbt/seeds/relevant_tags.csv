@@ -1,0 +1,9 @@
+tag_key,tag_value,description
+zoo,enclosure,Animal enclosure or paddock
+zoo,aviary,Bird aviary
+zoo,aquarium,Aquarium tank or pool
+zoo,vivarium,Reptile or amphibian vivarium
+zoo,paddock,Paddock for large animals
+zoo,petting_zoo,Petting zoo area
+animal,,Any element with an animal tag
+species,,Any element with a species (taxon) tag
