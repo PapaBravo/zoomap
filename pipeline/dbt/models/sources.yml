@@ -1,0 +1,47 @@
+version: 2
+
+sources:
+  - name: osm
+    schema: main
+    description: Raw OSM data loaded by download_osm.py
+    tables:
+      - name: raw_osm_elements
+        description: |
+          Raw Overpass API response elements (nodes, ways, relations) within
+          the configured bounding box.
+        columns:
+          - name: osm_id
+            description: OSM element ID
+          - name: osm_type
+            description: Element type (node, way, relation)
+          - name: centroid_lat
+            description: Latitude of the element centroid
+          - name: centroid_lon
+            description: Longitude of the element centroid
+          - name: tags
+            description: JSON-serialised OSM tags
+          - name: geom_type
+            description: GeoJSON geometry type (Point, Polygon, LineString)
+          - name: geom_coords
+            description: JSON-serialised GeoJSON coordinates
+
+  - name: wiki
+    schema: main
+    description: Wikipedia/Wikidata enrichment loaded by enrich_wiki.py
+    tables:
+      - name: wiki_enrichment
+        description: |
+          Per-POI enrichment data fetched from Wikidata and Wikipedia.
+        columns:
+          - name: osm_id
+            description: Foreign key to raw_osm_elements
+          - name: wikidata_id
+            description: Wikidata entity QID (e.g. Q7377)
+          - name: scientific_name
+            description: Scientific (taxon) name from Wikidata P225
+          - name: wikipedia_title
+            description: English Wikipedia article title
+          - name: description
+            description: Wikipedia extract (truncated)
+          - name: image_url
+            description: Image URL (Wikimedia Commons or Wikipedia thumbnail)

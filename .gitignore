@@ -1,0 +1,18 @@
+# Pipeline artifacts
+pipeline/zoo.duckdb
+pipeline/cache/osm_*.json
+pipeline/cache/wikidata_*.json
+pipeline/cache/wikipedia_*.json
+pipeline/dbt/target/
+pipeline/dbt/dbt_packages/
+pipeline/dbt/logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Environment
+.env
