@@ -29,7 +29,7 @@ import requests
 # ---------------------------------------------------------------------------
 
 BBOX = os.environ.get("BBOX", "52.490,13.495,52.525,13.545")
-OSM_TAGS_RAW = os.environ.get("OSM_TAGS", "zoo,tourism=zoo,animal,species")
+OSM_TAGS_RAW = os.environ.get("OSM_TAGS", "attraction=animal")
 OVERPASS_URL = os.environ.get("OVERPASS_URL", "https://overpass-api.de/api/interpreter")
 DB_PATH = os.environ.get("DB_PATH", "pipeline/zoo.duckdb")
 CACHE_DIR = Path(os.environ.get("CACHE_DIR", "pipeline/cache"))
