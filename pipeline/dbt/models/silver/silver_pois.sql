@@ -1,8 +1,9 @@
 -- Silver model: filter, normalise, and structure bronze POIs.
 --
 -- Filtering rules:
---   1. Must have at least one of: zoo, animal, species, wikidata, wikipedia tags.
---   2. Exclude the outer zoo boundary (tourism=zoo without any animal-specific tag).
+--   1. Must carry at least one animal-identifying tag (zoo=animal, animal=*, species=*,
+--      wikidata=*, or wikipedia=*). Generic zoo tags (zoo=enclosure etc.) are not enough.
+--   2. Exclude the outer zoo boundary (tourism=zoo).
 --
 -- All tag values are extracted from the JSON tags column into typed columns.
 
@@ -40,19 +41,14 @@ with extracted as (
 select *
 from extracted
 where
-    -- Must carry at least one animal-identifying tag
+    -- Must carry at least one animal-identifying tag;
+    -- generic zoo tags like zoo=enclosure are intentionally excluded
     (
-        zoo_tag        is not null
+        zoo_tag        = 'animal'
         or animal_tag  is not null
         or species     is not null
         or wikidata_id is not null
         or (wikipedia_tag is not null and wikipedia_tag <> '')
     )
-    -- Exclude the outer zoo boundary polygon (tourism=zoo with no animal tags)
-    and not (
-        tourism_tag = 'zoo'
-        and zoo_tag        is null
-        and animal_tag     is null
-        and species        is null
-        and wikidata_id    is null
-    )
+    -- Exclude the outer zoo boundary (tourism=zoo)
+    and (tourism_tag is null or tourism_tag <> 'zoo')
