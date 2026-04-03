@@ -9,13 +9,14 @@ loads the parsed elements into the DuckDB table ``raw_osm_elements``.
 Environment variables (see pipeline/.env.example for defaults):
   BBOX          "min_lat,min_lon,max_lat,max_lon"  (south,west,north,east)
   OSM_TAGS      Comma-separated tag filters
-  OVERPASS_URL  Overpass API endpoint
+  OVERPASS_URL  Overpass API endpoint (used as first mirror; overrides default list)
   DB_PATH       Path to DuckDB database file
   CACHE_DIR     Directory for caching downloaded JSON
 """
 
 import hashlib
 import json
+import logging
 import os
 import sys
 import time
@@ -23,6 +24,15 @@ from pathlib import Path
 
 import duckdb
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)s %(name)s: %(message)s",
+    stream=sys.stderr,
+)
+logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -30,10 +40,22 @@ import requests
 
 BBOX = os.environ.get("BBOX", "52.490,13.495,52.525,13.545")
 OSM_TAGS_RAW = os.environ.get("OSM_TAGS", "attraction=animal")
-OVERPASS_URL = os.environ.get("OVERPASS_URL", "https://overpass-api.de/api/interpreter")
 DB_PATH = os.environ.get("DB_PATH", "pipeline/zoo.duckdb")
 CACHE_DIR = Path(os.environ.get("CACHE_DIR", "pipeline/cache"))
-OVERPASS_TIMEOUT = int(os.environ.get("OVERPASS_TIMEOUT", "120"))
+OVERPASS_TIMEOUT = int(os.environ.get("OVERPASS_TIMEOUT", "300"))
+
+# Ordered list of Overpass endpoints to try; the env var (if set) is tried first.
+_DEFAULT_OVERPASS_ENDPOINTS = [
+    "https://overpass-api.de/api/interpreter",
+    "https://lz4.overpass-api.de/api/interpreter",
+    "https://overpass.kumi.systems/api/interpreter",
+    "https://overpass.openstreetmap.ru/api/interpreter",
+]
+_env_url = os.environ.get("OVERPASS_URL")
+if _env_url and _env_url not in _DEFAULT_OVERPASS_ENDPOINTS:
+    OVERPASS_ENDPOINTS = [_env_url] + _DEFAULT_OVERPASS_ENDPOINTS
+else:
+    OVERPASS_ENDPOINTS = _DEFAULT_OVERPASS_ENDPOINTS
 
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -78,17 +100,65 @@ def query_hash(query: str) -> str:
     return hashlib.sha256(query.encode()).hexdigest()[:16]
 
 
-def fetch_overpass(query: str) -> dict:
-    """Fetch from Overpass API, returning parsed JSON."""
-    print(f"Fetching from Overpass: {OVERPASS_URL}", flush=True)
-    resp = requests.post(
-        OVERPASS_URL,
-        data={"data": query},
-        timeout=OVERPASS_TIMEOUT + 30,
-        headers={"User-Agent": "zoomap-pipeline/1.0 (https://github.com/PapaBravo/zoomap)"},
+def make_session(
+    retries: int = 5,
+    backoff_factor: float = 1.0,
+    status_forcelist: tuple = (429, 500, 502, 503, 504),
+) -> requests.Session:
+    """Build a requests Session with automatic retry and backoff."""
+    session = requests.Session()
+    retry = Retry(
+        total=retries,
+        backoff_factor=backoff_factor,
+        status_forcelist=status_forcelist,
+        allowed_methods=frozenset(["GET", "POST"]),
+        raise_on_status=False,
     )
-    resp.raise_for_status()
-    return resp.json()
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+    return session
+
+
+def fetch_overpass(query: str, cache_path: str | None = None, timeout: int = OVERPASS_TIMEOUT + 30) -> dict:
+    """Fetch from Overpass API with mirror rotation and retries, returning parsed JSON.
+
+    The *timeout* is the HTTP request timeout in seconds (defaults to OVERPASS_TIMEOUT + 30
+    to give the server time to complete before the client disconnects).
+
+    If *cache_path* is provided and the file exists the cached result is returned
+    immediately without contacting Overpass.
+    """
+    if cache_path:
+        p = Path(cache_path)
+        if p.exists():
+            logger.info("Using cached OSM file at %s", cache_path)
+            return json.loads(p.read_text())
+
+    session = make_session(retries=5, backoff_factor=1.0)
+    last_exc: Exception | None = None
+
+    for endpoint in OVERPASS_ENDPOINTS:
+        try:
+            logger.info("Posting Overpass query to %s", endpoint)
+            resp = session.post(
+                endpoint,
+                data={"data": query},
+                timeout=timeout,
+                headers={"User-Agent": "zoomap-pipeline/1.0 (https://github.com/PapaBravo/zoomap)"},
+            )
+            resp.raise_for_status()
+            try:
+                return resp.json()
+            except ValueError:
+                raise RuntimeError("Overpass returned a non-JSON response")
+        except requests.exceptions.RequestException as exc:
+            last_exc = exc
+            logger.warning("Overpass mirror %s failed: %s", endpoint, exc)
+            time.sleep(2)
+
+    logger.error("All Overpass mirrors failed. Last exception: %s", last_exc)
+    raise RuntimeError(f"Overpass queries failed after trying all mirrors; last error: {last_exc}")
 
 
 def load_or_fetch(query: str) -> dict:
@@ -97,15 +167,15 @@ def load_or_fetch(query: str) -> dict:
     cache_file = CACHE_DIR / f"osm_{h}.json"
 
     if cache_file.exists():
-        print(f"Cache hit: {cache_file}", flush=True)
+        logger.info("Cache hit: %s", cache_file)
         with cache_file.open() as f:
             return json.load(f)
 
-    print(f"Cache miss, fetching from Overpass …", flush=True)
-    data = fetch_overpass(query)
+    logger.info("Cache miss, fetching from Overpass …")
+    data = fetch_overpass(query, cache_path=None)
     with cache_file.open("w") as f:
         json.dump(data, f)
-    print(f"Cached response to {cache_file}", flush=True)
+    logger.info("Cached response to %s", cache_file)
     return data
 
 
@@ -226,7 +296,7 @@ def load_into_duckdb(rows: list[dict]) -> None:
             )
 
         count = con.execute("SELECT COUNT(*) FROM raw_osm_elements").fetchone()[0]
-        print(f"Loaded {count} elements into raw_osm_elements", flush=True)
+        logger.info("Loaded %d elements into raw_osm_elements", count)
     finally:
         con.close()
 
@@ -237,14 +307,14 @@ def load_into_duckdb(rows: list[dict]) -> None:
 
 def main() -> None:
     query = build_overpass_query(BBOX, OSM_TAGS_RAW, timeout=OVERPASS_TIMEOUT)
-    print(f"Overpass query:\n{query}\n", flush=True)
+    logger.info("Overpass query:\n%s\n", query)
 
     data = load_or_fetch(query)
     elements = data.get("elements", [])
-    print(f"Fetched {len(elements)} raw elements from Overpass", flush=True)
+    logger.info("Fetched %d raw elements from Overpass", len(elements))
 
     rows = parse_elements(elements)
-    print(f"Parsed {len(rows)} valid elements", flush=True)
+    logger.info("Parsed %d valid elements", len(rows))
 
     load_into_duckdb(rows)
 
