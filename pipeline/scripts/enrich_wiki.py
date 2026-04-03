@@ -63,7 +63,7 @@ def fetch_wikidata_entity(qid: str) -> dict | None:
                 "action": "wbgetentities",
                 "ids": qid,
                 "format": "json",
-                "props": "claims|sitelinks",
+                "props": "claims|sitelinks|labels",
                 "sitefilter": f"{LANG}wiki",
                 "languages": LANG,
             },
@@ -83,8 +83,19 @@ def fetch_wikidata_entity(qid: str) -> dict | None:
 
 
 def extract_wikidata_info(entity: dict, qid: str) -> dict:
-    """Extract scientific name, image filename, and Wikipedia sitelink from entity."""
-    result = {"wikidata_id": qid, "scientific_name": None, "image_filename": None, "wikipedia_title": None}
+    """Extract common name, scientific name, image filename, and Wikipedia sitelink from entity."""
+    result = {
+        "wikidata_id": qid,
+        "common_name": None,
+        "scientific_name": None,
+        "image_filename": None,
+        "wikipedia_title": None,
+    }
+
+    # English label: common name of the species
+    labels = entity.get("labels", {})
+    if LANG in labels:
+        result["common_name"] = labels[LANG].get("value")
 
     claims = entity.get("claims", {})
 
@@ -201,27 +212,30 @@ def enrich() -> list[dict]:
     con = duckdb.connect(DB_PATH)
     try:
         rows = con.execute(
-            "SELECT osm_id, wikidata_id, wikipedia_tag FROM silver_pois"
+            "SELECT osm_id, species_wikidata_id, wikidata_id, wikipedia_tag FROM silver_pois"
         ).fetchall()
     finally:
         con.close()
 
     enrichments = []
-    for osm_id, wikidata_id, wikipedia_tag in rows:
+    for osm_id, species_wikidata_id, wikidata_id, wikipedia_tag in rows:
         record = {
             "osm_id": osm_id,
-            "wikidata_id": wikidata_id,
+            "wikidata_id": species_wikidata_id or wikidata_id,
+            "common_name": None,
             "scientific_name": None,
             "wikipedia_title": None,
             "description": None,
             "image_url": None,
         }
 
-        # --- Wikidata ---
-        if wikidata_id:
-            entity = fetch_wikidata_entity(wikidata_id)
+        # --- Wikidata: prefer species:wikidata, fall back to wikidata ---
+        effective_qid = species_wikidata_id or wikidata_id
+        if effective_qid:
+            entity = fetch_wikidata_entity(effective_qid)
             if entity:
-                wd_info = extract_wikidata_info(entity, wikidata_id)
+                wd_info = extract_wikidata_info(entity, effective_qid)
+                record["common_name"] = wd_info["common_name"]
                 record["scientific_name"] = wd_info["scientific_name"]
                 if wd_info["wikipedia_title"]:
                     record["wikipedia_title"] = wd_info["wikipedia_title"]
@@ -253,6 +267,7 @@ def save_enrichments(enrichments: list[dict]) -> None:
             CREATE OR REPLACE TABLE wiki_enrichment (
                 osm_id          BIGINT,
                 wikidata_id     VARCHAR,
+                common_name     VARCHAR,
                 scientific_name VARCHAR,
                 wikipedia_title VARCHAR,
                 description     VARCHAR,
@@ -261,11 +276,12 @@ def save_enrichments(enrichments: list[dict]) -> None:
         """)
         if enrichments:
             con.executemany(
-                "INSERT INTO wiki_enrichment VALUES (?, ?, ?, ?, ?, ?)",
+                "INSERT INTO wiki_enrichment VALUES (?, ?, ?, ?, ?, ?, ?)",
                 [
                     (
                         r["osm_id"],
                         r["wikidata_id"],
+                        r["common_name"],
                         r["scientific_name"],
                         r["wikipedia_title"],
                         r["description"],

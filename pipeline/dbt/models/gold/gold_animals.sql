@@ -3,7 +3,7 @@
 --
 -- Output columns:
 --   feature_id   Slugified identifier (used as GeoJSON properties.id)
---   name         Display name (English preferred)
+--   name         Display name (Wikidata common name, falling back to OSM name tag)
 --   species      Scientific name
 --   description  Wikipedia extract (≤500 chars)
 --   enclosure    Enclosure / exhibit name
@@ -30,12 +30,12 @@ joined as (
         s.osm_type,
         s.geom_type,
         s.geom_coords,
-        coalesce(s.name_en, s.name)                             as name,
+        coalesce(w.common_name, s.name)                         as name,
         coalesce(w.scientific_name, s.species)                  as species,
         w.description                                           as description,
         -- Use element name as the enclosure name for enclosure ways;
         -- for animal nodes the enclosure is usually their own name
-        coalesce(s.name_en, s.name)                             as enclosure,
+        coalesce(w.common_name, s.name)                         as enclosure,
         -- Build Wikipedia URL from enrichment title or OSM tag
         case
             when w.wikipedia_title is not null
@@ -53,7 +53,7 @@ joined as (
         s.wikidata_id
     from silver s
     left join wiki w on s.osm_id = w.osm_id
-    where coalesce(s.name_en, s.name) is not null
+    where coalesce(w.common_name, s.name) is not null
 ),
 
 slugified as (

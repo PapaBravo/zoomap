@@ -14,7 +14,7 @@ on:
       osm_tags:
         description: "Comma-separated OSM tag filters"
         required: false
-        default: "zoo,tourism=zoo,animal,species"
+        default: "attraction=animal"
   schedule:
     # Run every Sunday at 03:00 UTC
     - cron: "0 3 * * 0"
@@ -39,7 +39,7 @@ jobs:
     env:
       BBOX: ${{ github.event.inputs.bbox || '52.490,13.495,52.525,13.545' }}
       AREA_NAME: ${{ github.event.inputs.area_name || 'Tierpark Berlin' }}
-      OSM_TAGS: ${{ github.event.inputs.osm_tags || 'zoo,tourism=zoo,animal,species' }}
+      OSM_TAGS: ${{ github.event.inputs.osm_tags || 'attraction=animal' }}
       OVERPASS_URL: "https://overpass-api.de/api/interpreter"
       DB_PATH: "pipeline/zoo.duckdb"
       CACHE_DIR: "pipeline/cache"
