@@ -4,17 +4,113 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "Point",
-        "coordinates": [13.5237, 52.5084]
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5331087,
+              52.5046626
+            ],
+            [
+              13.5330438,
+              52.504698
+            ],
+            [
+              13.5330593,
+              52.5047576
+            ],
+            [
+              13.5330896,
+              52.5048726
+            ],
+            [
+              13.5331746,
+              52.5048632
+            ],
+            [
+              13.5332248,
+              52.504992
+            ],
+            [
+              13.5331412,
+              52.5050411
+            ],
+            [
+              13.5330476,
+              52.5050902
+            ],
+            [
+              13.532892,
+              52.5051551
+            ],
+            [
+              13.5327048,
+              52.5051945
+            ],
+            [
+              13.5325962,
+              52.5051798
+            ],
+            [
+              13.5325545,
+              52.505096
+            ],
+            [
+              13.5324822,
+              52.5047357
+            ],
+            [
+              13.5324467,
+              52.5045675
+            ],
+            [
+              13.5322655,
+              52.5044165
+            ],
+            [
+              13.5322655,
+              52.5043206
+            ],
+            [
+              13.5323561,
+              52.5042918
+            ],
+            [
+              13.53249,
+              52.5042822
+            ],
+            [
+              13.5327606,
+              52.5043286
+            ],
+            [
+              13.5329301,
+              52.5043869
+            ],
+            [
+              13.5330915,
+              52.5044781
+            ],
+            [
+              13.5331736,
+              52.5045635
+            ],
+            [
+              13.5331594,
+              52.5046106
+            ],
+            [
+              13.5331087,
+              52.5046626
+            ]
+          ]
+        ]
       },
       "properties": {
-        "id": "elephant",
-        "name": "African Elephant",
-        "species": "Loxodonta africana",
-        "description": "The African elephant is the largest land animal on Earth. Tierpark Berlin houses a small herd in a spacious outdoor enclosure.",
-        "enclosure": "Elephant House",
-        "wikipedia": "https://en.wikipedia.org/wiki/African_bush_elephant",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/African_Bush_Elephant.jpg/320px-African_Bush_Elephant.jpg"
+        "id": "addax-antilope, mhorrgazelle",
+        "name": "Addax-Antilope, Mhorrgazelle",
+        "species": "Addax nasomaculatus; Nanger dama mhorr",
+        "enclosure": "Addax-Antilope, Mhorrgazelle"
       }
     },
     {
@@ -23,38 +119,102 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [13.5230, 52.5080],
-            [13.5244, 52.5080],
-            [13.5244, 52.5088],
-            [13.5230, 52.5088],
-            [13.5230, 52.5080]
+            [
+              13.5350075,
+              52.4981123
+            ],
+            [
+              13.5350512,
+              52.4981258
+            ],
+            [
+              13.5351062,
+              52.4981307
+            ],
+            [
+              13.5351667,
+              52.4981222
+            ],
+            [
+              13.5352034,
+              52.4981084
+            ],
+            [
+              13.5352345,
+              52.4980875
+            ],
+            [
+              13.5352599,
+              52.4980478
+            ],
+            [
+              13.5352598,
+              52.4980178
+            ],
+            [
+              13.5352428,
+              52.4979869
+            ],
+            [
+              13.535226,
+              52.4979715
+            ],
+            [
+              13.5351994,
+              52.4979557
+            ],
+            [
+              13.5351657,
+              52.4979435
+            ],
+            [
+              13.5351379,
+              52.4979353
+            ],
+            [
+              13.5350688,
+              52.4979373
+            ],
+            [
+              13.5350245,
+              52.4979473
+            ],
+            [
+              13.5349735,
+              52.4979739
+            ],
+            [
+              13.5349479,
+              52.4980043
+            ],
+            [
+              13.5349415,
+              52.4980238
+            ],
+            [
+              13.5349422,
+              52.4980458
+            ],
+            [
+              13.5349608,
+              52.4980802
+            ],
+            [
+              13.5349835,
+              52.4980993
+            ],
+            [
+              13.5350075,
+              52.4981123
+            ]
           ]
         ]
       },
       "properties": {
-        "id": "elephant-enclosure",
-        "name": "African Elephant",
-        "species": "Loxodonta africana",
-        "description": "Outdoor enclosure for the African elephant herd.",
-        "enclosure": "Elephant House",
-        "wikipedia": "https://en.wikipedia.org/wiki/African_bush_elephant",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/African_Bush_Elephant.jpg/320px-African_Bush_Elephant.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [13.5261, 52.5092]
-      },
-      "properties": {
-        "id": "lion",
-        "name": "African Lion",
-        "species": "Panthera leo",
-        "description": "The king of the savannah. Tierpark Berlin's lions can be observed in their large outdoor pride area.",
-        "enclosure": "Alfred-Brehm-Haus",
-        "wikipedia": "https://en.wikipedia.org/wiki/Lion",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/320px-Lion_waiting_in_Namibia.jpg"
+        "id": "africa",
+        "name": "Africa",
+        "species": "Ardea goliath",
+        "enclosure": "Africa"
       }
     },
     {
@@ -63,134 +223,98 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [13.5255, 52.5088],
-            [13.5267, 52.5088],
-            [13.5267, 52.5096],
-            [13.5255, 52.5096],
-            [13.5255, 52.5088]
+            [
+              13.5360178,
+              52.4992024
+            ],
+            [
+              13.5361258,
+              52.4992495
+            ],
+            [
+              13.5362896,
+              52.4993543
+            ],
+            [
+              13.5363704,
+              52.4993975
+            ],
+            [
+              13.5364067,
+              52.4994159
+            ],
+            [
+              13.5364935,
+              52.499498
+            ],
+            [
+              13.5366008,
+              52.499609
+            ],
+            [
+              13.5365686,
+              52.4996482
+            ],
+            [
+              13.5364927,
+              52.4997058
+            ],
+            [
+              13.5363849,
+              52.4996941
+            ],
+            [
+              13.5363417,
+              52.4996848
+            ],
+            [
+              13.5362912,
+              52.499674
+            ],
+            [
+              13.5362053,
+              52.4995829
+            ],
+            [
+              13.536169,
+              52.4995285
+            ],
+            [
+              13.5361343,
+              52.4994987
+            ],
+            [
+              13.5360799,
+              52.499453
+            ],
+            [
+              13.5359997,
+              52.4994021
+            ],
+            [
+              13.5358742,
+              52.4993781
+            ],
+            [
+              13.535836,
+              52.4993082
+            ],
+            [
+              13.5359063,
+              52.49921
+            ],
+            [
+              13.5360178,
+              52.4992024
+            ]
           ]
         ]
       },
       "properties": {
-        "id": "lion-enclosure",
-        "name": "African Lion",
-        "species": "Panthera leo",
-        "description": "Outdoor pride area for the lions inside the Alfred-Brehm-Haus complex.",
-        "enclosure": "Alfred-Brehm-Haus",
-        "wikipedia": "https://en.wikipedia.org/wiki/Lion",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/320px-Lion_waiting_in_Namibia.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [13.5248, 52.5100]
-      },
-      "properties": {
-        "id": "giraffe",
-        "name": "Giraffe",
-        "species": "Giraffa camelopardalis",
-        "description": "Giraffes are the tallest living terrestrial animals. Tierpark Berlin's giraffes live in a modern facility with outdoor access.",
-        "enclosure": "Giraffe House",
-        "wikipedia": "https://en.wikipedia.org/wiki/Giraffe",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Giraffe_Mikumi_National_Park.jpg/320px-Giraffe_Mikumi_National_Park.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [13.5272, 52.5078]
-      },
-      "properties": {
-        "id": "gorilla",
-        "name": "Western Lowland Gorilla",
-        "species": "Gorilla gorilla gorilla",
-        "description": "The western lowland gorilla is critically endangered. Tierpark Berlin participates in the European breeding programme.",
-        "enclosure": "Gorilla House",
-        "wikipedia": "https://en.wikipedia.org/wiki/Western_lowland_gorilla",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Western_gorilla_%28Gorilla_gorilla%29_male_2_edit.jpg/320px-Western_gorilla_%28Gorilla_gorilla%29_male_2_edit.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [13.5220, 52.5095]
-      },
-      "properties": {
-        "id": "hippo",
-        "name": "Hippopotamus",
-        "species": "Hippopotamus amphibius",
-        "description": "Hippos spend most of their time in water to keep their skin moist. The hippo house at Tierpark Berlin offers underwater viewing.",
-        "enclosure": "Hippo House",
-        "wikipedia": "https://en.wikipedia.org/wiki/Hippopotamus",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Hippo_Hippopotamus_amphibius.jpg/320px-Hippo_Hippopotamus_amphibius.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [13.5285, 52.5105]
-      },
-      "properties": {
-        "id": "tiger",
-        "name": "Amur Tiger",
-        "species": "Panthera tigris altaica",
-        "description": "The Amur tiger is the largest subspecies of tiger, adapted to cold climates. Tierpark Berlin supports conservation efforts for this endangered cat.",
-        "enclosure": "Tiger Enclosure",
-        "wikipedia": "https://en.wikipedia.org/wiki/Amur_tiger",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Siberian_Tiger_sf.jpg/320px-Siberian_Tiger_sf.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [13.5210, 52.5110]
-      },
-      "properties": {
-        "id": "penguin",
-        "name": "Humboldt Penguin",
-        "species": "Spheniscus humboldti",
-        "description": "Humboldt penguins are native to the coasts of South America. The Tierpark colony can be watched swimming in their rocky outdoor pool.",
-        "enclosure": "Penguin Facility",
-        "wikipedia": "https://en.wikipedia.org/wiki/Humboldt_penguin",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Spheniscus_humboldti_20070116.jpg/320px-Spheniscus_humboldti_20070116.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [13.5298, 52.5087]
-      },
-      "properties": {
-        "id": "polar-bear",
-        "name": "Polar Bear",
-        "species": "Ursus maritimus",
-        "description": "Polar bears are the world's largest land predators. Visitors can watch Tierpark Berlin's polar bears playing in their large pool.",
-        "enclosure": "Polar Bear Enclosure",
-        "wikipedia": "https://en.wikipedia.org/wiki/Polar_bear",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg/320px-Polar_Bear_-_Alaska_%28cropped%29.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [13.5265, 52.5115]
-      },
-      "properties": {
-        "id": "zebra",
-        "name": "Plains Zebra",
-        "species": "Equus quagga",
-        "description": "Plains zebras are known for their distinctive black-and-white stripes. They roam a large grassy paddock at Tierpark Berlin.",
-        "enclosure": "African Savannah",
-        "wikipedia": "https://en.wikipedia.org/wiki/Plains_zebra",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Plains_Zebra_Equus_quagga.jpg/320px-Plains_Zebra_Equus_quagga.jpg"
+        "id": "african-penguin",
+        "name": "African penguin",
+        "species": "Spheniscus demersus",
+        "enclosure": "African penguin"
       }
     },
     {
@@ -199,54 +323,7089 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [13.5258, 52.5110],
-            [13.5272, 52.5110],
-            [13.5272, 52.5120],
-            [13.5258, 52.5120],
-            [13.5258, 52.5110]
+            [
+              13.5312459,
+              52.5024102
+            ],
+            [
+              13.5310149,
+              52.5023244
+            ],
+            [
+              13.5308704,
+              52.5022987
+            ],
+            [
+              13.5305463,
+              52.5025967
+            ],
+            [
+              13.5306253,
+              52.5026481
+            ],
+            [
+              13.5313443,
+              52.5026607
+            ],
+            [
+              13.5312459,
+              52.5024102
+            ]
           ]
         ]
       },
       "properties": {
-        "id": "savannah-enclosure",
-        "name": "Plains Zebra",
-        "species": "Equus quagga",
-        "description": "The African Savannah exhibit shared with other grazing animals.",
-        "enclosure": "African Savannah",
-        "wikipedia": "https://en.wikipedia.org/wiki/Plains_zebra",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Plains_Zebra_Equus_quagga.jpg/320px-Plains_Zebra_Equus_quagga.jpg"
+        "id": "afrikanischer-wildhund",
+        "name": "Afrikanischer Wildhund",
+        "species": "Lycaon pictus",
+        "enclosure": "Afrikanischer Wildhund"
       }
     },
     {
       "type": "Feature",
       "geometry": {
-        "type": "Point",
-        "coordinates": [13.5240, 52.5073]
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5316298,
+              52.5026605
+            ],
+            [
+              13.5316475,
+              52.5026248
+            ],
+            [
+              13.5316844,
+              52.5026054
+            ],
+            [
+              13.5317465,
+              52.5026136
+            ],
+            [
+              13.5317683,
+              52.5026156
+            ],
+            [
+              13.5318002,
+              52.5026034
+            ],
+            [
+              13.5317717,
+              52.5025809
+            ],
+            [
+              13.5317683,
+              52.5025493
+            ],
+            [
+              13.5317951,
+              52.5025289
+            ],
+            [
+              13.5318237,
+              52.5025095
+            ],
+            [
+              13.5317985,
+              52.5024778
+            ],
+            [
+              13.5317717,
+              52.5024359
+            ],
+            [
+              13.5317968,
+              52.5023982
+            ],
+            [
+              13.5317705,
+              52.5023813
+            ],
+            [
+              13.5312459,
+              52.5024102
+            ],
+            [
+              13.5313443,
+              52.5026607
+            ],
+            [
+              13.5316298,
+              52.5026605
+            ]
+          ]
+        ]
       },
       "properties": {
-        "id": "flamingo",
-        "name": "Chilean Flamingo",
-        "species": "Phoenicopterus chilensis",
-        "description": "Chilean flamingos are recognisable by their pink plumage. Tierpark Berlin's flock lives in a large open lagoon.",
-        "enclosure": "Flamingo Lagoon",
-        "wikipedia": "https://en.wikipedia.org/wiki/Chilean_flamingo",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Phoenicopterus_chilensis_Pak_Chong.jpg/320px-Phoenicopterus_chilensis_Pak_Chong.jpg"
+        "id": "afrikanischer-wildhund",
+        "name": "Afrikanischer Wildhund",
+        "species": "Lycaon pictus",
+        "enclosure": "Afrikanischer Wildhund"
       }
     },
     {
       "type": "Feature",
       "geometry": {
-        "type": "Point",
-        "coordinates": [13.5308, 52.5098]
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5258701,
+              52.5008812
+            ],
+            [
+              13.5262595,
+              52.5009607
+            ],
+            [
+              13.52598,
+              52.5014701
+            ],
+            [
+              13.5255906,
+              52.5013905
+            ],
+            [
+              13.5258701,
+              52.5008812
+            ]
+          ]
+        ]
       },
       "properties": {
-        "id": "red-panda",
-        "name": "Red Panda",
+        "id": "altai-marale",
+        "name": "Altai Marale",
+        "species": "Cervus canadensis sibiricus",
+        "enclosure": "Altai Marale"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5262647,
+              52.4993339
+            ],
+            [
+              13.5258614,
+              52.4992521
+            ],
+            [
+              13.525336,
+              52.5002523
+            ],
+            [
+              13.5257274,
+              52.5003284
+            ],
+            [
+              13.5262647,
+              52.4993339
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "atlashirsch",
+        "name": "Atlashirsch",
+        "species": "Cervus elaphus barbarus",
+        "enclosure": "Atlashirsch"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5252876,
+              52.5019675
+            ],
+            [
+              13.5255569,
+              52.5014624
+            ],
+            [
+              13.5259488,
+              52.5015402
+            ],
+            [
+              13.5256795,
+              52.5020453
+            ],
+            [
+              13.5252876,
+              52.5019675
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "bactrian-deer",
+        "name": "Bactrian deer",
+        "species": "Cervus elaphus bactrianus",
+        "enclosure": "Bactrian deer"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5319637,
+              52.5053634
+            ],
+            [
+              13.5319899,
+              52.5053837
+            ],
+            [
+              13.5320285,
+              52.5053942
+            ],
+            [
+              13.5320707,
+              52.5053926
+            ],
+            [
+              13.5321068,
+              52.5053791
+            ],
+            [
+              13.5321286,
+              52.505357
+            ],
+            [
+              13.532131,
+              52.5053312
+            ],
+            [
+              13.5321135,
+              52.5053077
+            ],
+            [
+              13.5320801,
+              52.5052919
+            ],
+            [
+              13.5320385,
+              52.5052873
+            ],
+            [
+              13.5319981,
+              52.5052951
+            ],
+            [
+              13.5319683,
+              52.5053134
+            ],
+            [
+              13.5319559,
+              52.5053381
+            ],
+            [
+              13.5319637,
+              52.5053634
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "bald-eagle",
+        "name": "Bald eagle",
+        "species": "Haliaeetus leucocephalus",
+        "enclosure": "Bald eagle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.533636,
+              52.5050194
+            ],
+            [
+              13.5336023,
+              52.5050195
+            ],
+            [
+              13.5333875,
+              52.5050177
+            ],
+            [
+              13.5333579,
+              52.5050041
+            ],
+            [
+              13.5333463,
+              52.5049525
+            ],
+            [
+              13.5333731,
+              52.5049525
+            ],
+            [
+              13.533459,
+              52.5049525
+            ],
+            [
+              13.5334724,
+              52.5048904
+            ],
+            [
+              13.5334482,
+              52.50483
+            ],
+            [
+              13.5334616,
+              52.5048235
+            ],
+            [
+              13.5333973,
+              52.5047582
+            ],
+            [
+              13.5333785,
+              52.5046782
+            ],
+            [
+              13.5333865,
+              52.5046553
+            ],
+            [
+              13.5335582,
+              52.50459
+            ],
+            [
+              13.5335743,
+              52.5045884
+            ],
+            [
+              13.5336065,
+              52.5046211
+            ],
+            [
+              13.5336387,
+              52.5046439
+            ],
+            [
+              13.5336413,
+              52.504688
+            ],
+            [
+              13.5336145,
+              52.5047386
+            ],
+            [
+              13.5336145,
+              52.5047631
+            ],
+            [
+              13.5336628,
+              52.5048088
+            ],
+            [
+              13.5336903,
+              52.5048233
+            ],
+            [
+              13.5337218,
+              52.5048398
+            ],
+            [
+              13.5337433,
+              52.5048904
+            ],
+            [
+              13.5336923,
+              52.5049851
+            ],
+            [
+              13.533636,
+              52.5050194
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "barbary-macaques",
+        "name": "Barbary macaques",
+        "species": "Macaca sylvanus",
+        "enclosure": "Barbary macaques"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5338113,
+              52.5076964
+            ],
+            [
+              13.5337842,
+              52.5076552
+            ],
+            [
+              13.5337386,
+              52.5075714
+            ],
+            [
+              13.5337726,
+              52.5075353
+            ],
+            [
+              13.5338513,
+              52.507527
+            ],
+            [
+              13.5339406,
+              52.5075481
+            ],
+            [
+              13.5340472,
+              52.5076472
+            ],
+            [
+              13.5341509,
+              52.507734
+            ],
+            [
+              13.534125,
+              52.5077848
+            ],
+            [
+              13.5340472,
+              52.5077804
+            ],
+            [
+              13.533976,
+              52.5077776
+            ],
+            [
+              13.5338841,
+              52.5077423
+            ],
+            [
+              13.5338113,
+              52.5076964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "bartgeier",
+        "name": "Bartgeier",
+        "species": "Gypaetus barbatus",
+        "enclosure": "Bartgeier"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5313349,
+              52.5012628
+            ],
+            [
+              13.531288,
+              52.5012794
+            ],
+            [
+              13.5312108,
+              52.5014056
+            ],
+            [
+              13.5312275,
+              52.501412
+            ],
+            [
+              13.5312229,
+              52.5014332
+            ],
+            [
+              13.5311942,
+              52.5014489
+            ],
+            [
+              13.5312955,
+              52.5015382
+            ],
+            [
+              13.5313364,
+              52.501529
+            ],
+            [
+              13.5313545,
+              52.5014139
+            ],
+            [
+              13.5313334,
+              52.5013973
+            ],
+            [
+              13.5313349,
+              52.5012628
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "bat-eared fox",
+        "name": "Bat-eared fox",
+        "species": "Otocyon megalotis",
+        "enclosure": "Bat-eared fox"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5295386,
+              52.5042374
+            ],
+            [
+              13.5300347,
+              52.5038668
+            ],
+            [
+              13.5304027,
+              52.5038841
+            ],
+            [
+              13.5306131,
+              52.5038866
+            ],
+            [
+              13.5307368,
+              52.5037724
+            ],
+            [
+              13.5307845,
+              52.5037267
+            ],
+            [
+              13.5307277,
+              52.5036689
+            ],
+            [
+              13.5304338,
+              52.5036643
+            ],
+            [
+              13.5301493,
+              52.5036521
+            ],
+            [
+              13.530121,
+              52.503717
+            ],
+            [
+              13.530057,
+              52.5037269
+            ],
+            [
+              13.5299922,
+              52.5037407
+            ],
+            [
+              13.5299219,
+              52.5037659
+            ],
+            [
+              13.5298446,
+              52.5038138
+            ],
+            [
+              13.5297474,
+              52.5038927
+            ],
+            [
+              13.5296649,
+              52.5038736
+            ],
+            [
+              13.5294902,
+              52.5040307
+            ],
+            [
+              13.5292688,
+              52.5041943
+            ],
+            [
+              13.5292908,
+              52.5042199
+            ],
+            [
+              13.5293864,
+              52.5042443
+            ],
+            [
+              13.5295386,
+              52.5042374
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "bergk-nguru, gelbfuß-felsenkängugu",
+        "name": "Bergkänguru, Gelbfuß-Felsenkängugu",
+        "species": "Osphranter robustus;Petrogale xanthopus",
+        "enclosure": "Bergkänguru, Gelbfuß-Felsenkängugu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5325327,
+              52.503758
+            ],
+            [
+              13.5322176,
+              52.5037495
+            ],
+            [
+              13.5321149,
+              52.5039348
+            ],
+            [
+              13.5323665,
+              52.5040131
+            ],
+            [
+              13.5325327,
+              52.503758
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "black-crowned crane",
+        "name": "Black crowned crane",
+        "species": "Balearica pavonina",
+        "enclosure": "Black crowned crane"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5264958,
+              52.4987401
+            ],
+            [
+              13.5264248,
+              52.4987643
+            ],
+            [
+              13.5264539,
+              52.4987959
+            ],
+            [
+              13.5265249,
+              52.4987717
+            ],
+            [
+              13.5264958,
+              52.4987401
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "blue-winged kookabura",
+        "name": "Blue-winged Kookabura",
+        "species": "Daceli leachii",
+        "enclosure": "Blue-winged Kookabura"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5285231,
+              52.5025683
+            ],
+            [
+              13.5284921,
+              52.5025732
+            ],
+            [
+              13.5284541,
+              52.5025845
+            ],
+            [
+              13.5284378,
+              52.5025637
+            ],
+            [
+              13.5284769,
+              52.502554
+            ],
+            [
+              13.5285052,
+              52.5025493
+            ],
+            [
+              13.5285375,
+              52.5025463
+            ],
+            [
+              13.5285572,
+              52.5025457
+            ],
+            [
+              13.5285566,
+              52.5025667
+            ],
+            [
+              13.5285231,
+              52.5025683
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "chacoan-mara",
+        "name": "Chacoan mara",
+        "species": "Dolichotis salinicola",
+        "enclosure": "Chacoan mara"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5272642,
+              52.5049731
+            ],
+            [
+              13.5273192,
+              52.5049753
+            ],
+            [
+              13.5273252,
+              52.5049191
+            ],
+            [
+              13.5272702,
+              52.5049169
+            ],
+            [
+              13.5272642,
+              52.5049731
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "chinasittich",
+        "name": "Chinasittich",
+        "species": "Psittacula derbiana",
+        "enclosure": "Chinasittich"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5249392,
+              52.5061882
+            ],
+            [
+              13.5244988,
+              52.5060098
+            ],
+            [
+              13.5242863,
+              52.5061987
+            ],
+            [
+              13.5248141,
+              52.5063383
+            ],
+            [
+              13.5247305,
+              52.5064886
+            ],
+            [
+              13.5246932,
+              52.5065557
+            ],
+            [
+              13.5245893,
+              52.5067479
+            ],
+            [
+              13.5249015,
+              52.5068135
+            ],
+            [
+              13.5256807,
+              52.5069802
+            ],
+            [
+              13.5257539,
+              52.5068738
+            ],
+            [
+              13.5258534,
+              52.5067855
+            ],
+            [
+              13.5258014,
+              52.5066486
+            ],
+            [
+              13.5258516,
+              52.506584
+            ],
+            [
+              13.5260522,
+              52.5063031
+            ],
+            [
+              13.5259982,
+              52.5062625
+            ],
+            [
+              13.5259764,
+              52.5062444
+            ],
+            [
+              13.5259653,
+              52.5062504
+            ],
+            [
+              13.5256651,
+              52.5063933
+            ],
+            [
+              13.5254716,
+              52.5064147
+            ],
+            [
+              13.5252496,
+              52.5063724
+            ],
+            [
+              13.5249392,
+              52.5061882
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "common-pheasants",
+        "name": "Common pheasants",
+        "species": "Phasianus colchicus",
+        "enclosure": "Common pheasants"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5310141,
+              52.5014995
+            ],
+            [
+              13.5310429,
+              52.5014526
+            ],
+            [
+              13.5311579,
+              52.5014691
+            ],
+            [
+              13.5312537,
+              52.501555
+            ],
+            [
+              13.531259,
+              52.5016317
+            ],
+            [
+              13.5312668,
+              52.5017583
+            ],
+            [
+              13.5313137,
+              52.501937
+            ],
+            [
+              13.5312517,
+              52.5019775
+            ],
+            [
+              13.531229,
+              52.5019711
+            ],
+            [
+              13.5312259,
+              52.5019379
+            ],
+            [
+              13.5311972,
+              52.5019167
+            ],
+            [
+              13.5311458,
+              52.5019066
+            ],
+            [
+              13.531058,
+              52.5019324
+            ],
+            [
+              13.5310247,
+              52.501926
+            ],
+            [
+              13.5310141,
+              52.5019361
+            ],
+            [
+              13.5309733,
+              52.5019545
+            ],
+            [
+              13.5309445,
+              52.5019425
+            ],
+            [
+              13.5309249,
+              52.5019296
+            ],
+            [
+              13.5308507,
+              52.5019342
+            ],
+            [
+              13.5307316,
+              52.5019268
+            ],
+            [
+              13.5307236,
+              52.5018569
+            ],
+            [
+              13.5307131,
+              52.5018412
+            ],
+            [
+              13.5306858,
+              52.5017786
+            ],
+            [
+              13.5306828,
+              52.5017335
+            ],
+            [
+              13.5306873,
+              52.5016865
+            ],
+            [
+              13.5307131,
+              52.5016524
+            ],
+            [
+              13.5307373,
+              52.5016386
+            ],
+            [
+              13.5307463,
+              52.5016266
+            ],
+            [
+              13.5307887,
+              52.5016082
+            ],
+            [
+              13.5308507,
+              52.5016027
+            ],
+            [
+              13.5308628,
+              52.5015972
+            ],
+            [
+              13.5308644,
+              52.5015751
+            ],
+            [
+              13.5309067,
+              52.5015686
+            ],
+            [
+              13.5309143,
+              52.5015511
+            ],
+            [
+              13.5308976,
+              52.5015391
+            ],
+            [
+              13.5309203,
+              52.5015207
+            ],
+            [
+              13.5309173,
+              52.5015005
+            ],
+            [
+              13.5309506,
+              52.5014968
+            ],
+            [
+              13.5309521,
+              52.5015087
+            ],
+            [
+              13.5309733,
+              52.5015143
+            ],
+            [
+              13.530993,
+              52.5015078
+            ],
+            [
+              13.5310141,
+              52.5014995
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "dholes",
+        "name": "Dholes",
+        "species": "Cuon alpinus",
+        "enclosure": "Dholes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5295376,
+              52.4989842
+            ],
+            [
+              13.5294796,
+              52.4989983
+            ],
+            [
+              13.5294758,
+              52.4989503
+            ],
+            [
+              13.5293204,
+              52.4989549
+            ],
+            [
+              13.5293036,
+              52.4989146
+            ],
+            [
+              13.5293226,
+              52.4988798
+            ],
+            [
+              13.5294642,
+              52.4988365
+            ],
+            [
+              13.5294973,
+              52.4988206
+            ],
+            [
+              13.5296417,
+              52.4988538
+            ],
+            [
+              13.5296663,
+              52.4989503
+            ],
+            [
+              13.5295376,
+              52.4989842
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "dingo",
+        "name": "Dingo",
+        "species": "Canis lupus dingo",
+        "enclosure": "Dingo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5249266,
+              52.5018882
+            ],
+            [
+              13.5251752,
+              52.5014195
+            ],
+            [
+              13.5247178,
+              52.5013291
+            ],
+            [
+              13.5244692,
+              52.5017979
+            ],
+            [
+              13.5249266,
+              52.5018882
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "elks",
+        "name": "Elks",
+        "species": "Cervus canadensis",
+        "enclosure": "Elks"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5308471,
+              52.4981625
+            ],
+            [
+              13.5308497,
+              52.4981515
+            ],
+            [
+              13.5308569,
+              52.4981412
+            ],
+            [
+              13.5308682,
+              52.4981325
+            ],
+            [
+              13.5308828,
+              52.4981259
+            ],
+            [
+              13.5308998,
+              52.4981217
+            ],
+            [
+              13.530918,
+              52.4981204
+            ],
+            [
+              13.530936,
+              52.498122
+            ],
+            [
+              13.5309528,
+              52.4981264
+            ],
+            [
+              13.5309672,
+              52.4981333
+            ],
+            [
+              13.5309781,
+              52.4981422
+            ],
+            [
+              13.5309848,
+              52.4981526
+            ],
+            [
+              13.530987,
+              52.4981636
+            ],
+            [
+              13.5309844,
+              52.4981746
+            ],
+            [
+              13.5309771,
+              52.4981848
+            ],
+            [
+              13.5309658,
+              52.4981936
+            ],
+            [
+              13.5309512,
+              52.4982002
+            ],
+            [
+              13.5309342,
+              52.4982043
+            ],
+            [
+              13.5309161,
+              52.4982056
+            ],
+            [
+              13.530898,
+              52.498204
+            ],
+            [
+              13.5308812,
+              52.4981996
+            ],
+            [
+              13.5308669,
+              52.4981927
+            ],
+            [
+              13.530856,
+              52.4981838
+            ],
+            [
+              13.5308492,
+              52.4981735
+            ],
+            [
+              13.5308471,
+              52.4981625
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "eurasian-eagle-owls",
+        "name": "Eurasian Eagle-Owls",
+        "species": "Bubo virginianus",
+        "enclosure": "Eurasian Eagle-Owls"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5312254,
+              52.5059418
+            ],
+            [
+              13.5312136,
+              52.5059237
+            ],
+            [
+              13.5312263,
+              52.5059059
+            ],
+            [
+              13.5312559,
+              52.5058987
+            ],
+            [
+              13.5312852,
+              52.5059064
+            ],
+            [
+              13.531297,
+              52.5059244
+            ],
+            [
+              13.5312844,
+              52.5059423
+            ],
+            [
+              13.5312547,
+              52.5059494
+            ],
+            [
+              13.5312254,
+              52.5059418
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "falkland-karakara",
+        "name": "Falkland-Karakara",
+        "species": "Phalcoboenus australis",
+        "enclosure": "Falkland-Karakara"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5315099,
+              52.5054215
+            ],
+            [
+              13.5315361,
+              52.5054417
+            ],
+            [
+              13.5315747,
+              52.5054523
+            ],
+            [
+              13.5316169,
+              52.5054506
+            ],
+            [
+              13.5316531,
+              52.5054372
+            ],
+            [
+              13.5316748,
+              52.505415
+            ],
+            [
+              13.5316772,
+              52.5053893
+            ],
+            [
+              13.5316597,
+              52.5053658
+            ],
+            [
+              13.5316263,
+              52.5053499
+            ],
+            [
+              13.5315847,
+              52.5053454
+            ],
+            [
+              13.5315443,
+              52.5053531
+            ],
+            [
+              13.5315145,
+              52.5053714
+            ],
+            [
+              13.5315021,
+              52.5053961
+            ],
+            [
+              13.5315099,
+              52.5054215
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "ferruginous-hawk",
+        "name": "Ferruginous hawk",
+        "species": "Buteo regalis",
+        "enclosure": "Ferruginous hawk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5303552,
+              52.500054
+            ],
+            [
+              13.5303173,
+              52.5000447
+            ],
+            [
+              13.5302961,
+              52.5000262
+            ],
+            [
+              13.53029,
+              52.5000097
+            ],
+            [
+              13.5302916,
+              52.4999876
+            ],
+            [
+              13.5303309,
+              52.4999397
+            ],
+            [
+              13.5303627,
+              52.499924
+            ],
+            [
+              13.5303445,
+              52.499901
+            ],
+            [
+              13.5304186,
+              52.4998347
+            ],
+            [
+              13.530559,
+              52.4998971
+            ],
+            [
+              13.5305407,
+              52.4999167
+            ],
+            [
+              13.5304811,
+              52.4999723
+            ],
+            [
+              13.530458,
+              52.4999968
+            ],
+            [
+              13.5304519,
+              52.5000299
+            ],
+            [
+              13.5304111,
+              52.5000502
+            ],
+            [
+              13.5303763,
+              52.5000557
+            ],
+            [
+              13.5303552,
+              52.500054
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "firefox",
+        "name": "Firefox",
         "species": "Ailurus fulgens",
-        "description": "Red pandas are shy, tree-dwelling mammals from the eastern Himalayas. Their forested enclosure at Tierpark Berlin replicates their mountain home.",
-        "enclosure": "Red Panda Forest",
-        "wikipedia": "https://en.wikipedia.org/wiki/Red_panda",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Red_Panda_%28Ailurus_fulgens%29_-_Wilhelma.jpg/320px-Red_Panda_%28Ailurus_fulgens%29_-_Wilhelma.jpg"
+        "enclosure": "Firefox"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.53371,
+              52.5082976
+            ],
+            [
+              13.5337317,
+              52.5083728
+            ],
+            [
+              13.5337952,
+              52.5084063
+            ],
+            [
+              13.5338548,
+              52.508416
+            ],
+            [
+              13.533905,
+              52.5083974
+            ],
+            [
+              13.5339013,
+              52.5083571
+            ],
+            [
+              13.533896,
+              52.5082947
+            ],
+            [
+              13.5339063,
+              52.508255
+            ],
+            [
+              13.5339841,
+              52.5081884
+            ],
+            [
+              13.5339972,
+              52.5081375
+            ],
+            [
+              13.5339444,
+              52.508112
+            ],
+            [
+              13.5338827,
+              52.5081016
+            ],
+            [
+              13.5338188,
+              52.5081098
+            ],
+            [
+              13.533786,
+              52.5081202
+            ],
+            [
+              13.5337555,
+              52.5081575
+            ],
+            [
+              13.5337273,
+              52.5082169
+            ],
+            [
+              13.53371,
+              52.5082976
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "fran-ois-langur",
+        "name": "François-Langur",
+        "species": "Trachypithecus francoisi",
+        "enclosure": "François-Langur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5312883,
+              52.5053164
+            ],
+            [
+              13.5313564,
+              52.5052366
+            ],
+            [
+              13.5314971,
+              52.5052864
+            ],
+            [
+              13.531446,
+              52.5053362
+            ],
+            [
+              13.5314177,
+              52.5053903
+            ],
+            [
+              13.5313124,
+              52.5054139
+            ],
+            [
+              13.5312584,
+              52.5054305
+            ],
+            [
+              13.5312006,
+              52.5054816
+            ],
+            [
+              13.5310901,
+              52.5054362
+            ],
+            [
+              13.5310202,
+              52.5054171
+            ],
+            [
+              13.5309307,
+              52.5054044
+            ],
+            [
+              13.5308316,
+              52.5053951
+            ],
+            [
+              13.530711,
+              52.5053899
+            ],
+            [
+              13.5305245,
+              52.5053866
+            ],
+            [
+              13.5304409,
+              52.505353
+            ],
+            [
+              13.5303898,
+              52.5053082
+            ],
+            [
+              13.5303229,
+              52.5052146
+            ],
+            [
+              13.5303311,
+              52.5051708
+            ],
+            [
+              13.530349,
+              52.5051294
+            ],
+            [
+              13.5304168,
+              52.5051009
+            ],
+            [
+              13.5305026,
+              52.505106
+            ],
+            [
+              13.5306331,
+              52.5051608
+            ],
+            [
+              13.5311356,
+              52.5052696
+            ],
+            [
+              13.5311516,
+              52.5052731
+            ],
+            [
+              13.5312883,
+              52.5053164
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "gayal",
+        "name": "Gayal",
+        "species": "Bos frontalis",
+        "enclosure": "Gayal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.530766,
+              52.5077652
+            ],
+            [
+              13.5307526,
+              52.5078226
+            ],
+            [
+              13.5307633,
+              52.507852
+            ],
+            [
+              13.5307928,
+              52.5078601
+            ],
+            [
+              13.5309779,
+              52.5078585
+            ],
+            [
+              13.5310637,
+              52.5078356
+            ],
+            [
+              13.5311093,
+              52.5077965
+            ],
+            [
+              13.5311523,
+              52.5077573
+            ],
+            [
+              13.5311737,
+              52.5076773
+            ],
+            [
+              13.5311737,
+              52.5076446
+            ],
+            [
+              13.5311523,
+              52.5076332
+            ],
+            [
+              13.5311067,
+              52.5076316
+            ],
+            [
+              13.5308921,
+              52.5076348
+            ],
+            [
+              13.5307472,
+              52.5076201
+            ],
+            [
+              13.5307446,
+              52.5076512
+            ],
+            [
+              13.5307687,
+              52.5077001
+            ],
+            [
+              13.530766,
+              52.5077652
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "gelada-baboon",
+        "name": "Gelada Baboon",
+        "species": "Theropithecus gelada",
+        "enclosure": "Gelada Baboon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5260249,
+              52.5046281
+            ],
+            [
+              13.526096,
+              52.5046457
+            ],
+            [
+              13.5261676,
+              52.5046526
+            ],
+            [
+              13.5262462,
+              52.5046637
+            ],
+            [
+              13.5262744,
+              52.5046704
+            ],
+            [
+              13.5263351,
+              52.5046696
+            ],
+            [
+              13.526363,
+              52.5046857
+            ],
+            [
+              13.5263165,
+              52.5047291
+            ],
+            [
+              13.5263258,
+              52.5047631
+            ],
+            [
+              13.5263165,
+              52.5047933
+            ],
+            [
+              13.5262839,
+              52.5047876
+            ],
+            [
+              13.5262762,
+              52.5047716
+            ],
+            [
+              13.5262381,
+              52.5047486
+            ],
+            [
+              13.5261711,
+              52.5047176
+            ],
+            [
+              13.5260258,
+              52.5046847
+            ],
+            [
+              13.5259489,
+              52.5046583
+            ],
+            [
+              13.5259008,
+              52.5046347
+            ],
+            [
+              13.5258931,
+              52.5046045
+            ],
+            [
+              13.5259055,
+              52.5045821
+            ],
+            [
+              13.5259458,
+              52.504569
+            ],
+            [
+              13.5259833,
+              52.5045739
+            ],
+            [
+              13.5260001,
+              52.5046092
+            ],
+            [
+              13.5260249,
+              52.5046281
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "gibbons",
+        "name": "Gibbons",
+        "species": "Hylobates lar",
+        "enclosure": "Gibbons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5337946,
+              52.5037915
+            ],
+            [
+              13.5338001,
+              52.5037632
+            ],
+            [
+              13.533842,
+              52.5035491
+            ],
+            [
+              13.5339726,
+              52.5035586
+            ],
+            [
+              13.5341901,
+              52.5035744
+            ],
+            [
+              13.5343294,
+              52.5035845
+            ],
+            [
+              13.534282,
+              52.503827
+            ],
+            [
+              13.5341472,
+              52.5038172
+            ],
+            [
+              13.5337946,
+              52.5037915
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "giraffenhaus",
+        "name": "Giraffenhaus",
+        "species": "Giraffa camelopardalis rothschildi",
+        "enclosure": "Giraffenhaus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5337233,
+              52.5034504
+            ],
+            [
+              13.5336945,
+              52.5031436
+            ],
+            [
+              13.5336811,
+              52.502982
+            ],
+            [
+              13.5337132,
+              52.5028481
+            ],
+            [
+              13.533791,
+              52.502676
+            ],
+            [
+              13.5337897,
+              52.5026107
+            ],
+            [
+              13.5340189,
+              52.5026031
+            ],
+            [
+              13.5340279,
+              52.5026976
+            ],
+            [
+              13.5340832,
+              52.5027491
+            ],
+            [
+              13.5342497,
+              52.5027714
+            ],
+            [
+              13.5345207,
+              52.5026367
+            ],
+            [
+              13.5345493,
+              52.5026374
+            ],
+            [
+              13.5346403,
+              52.5026985
+            ],
+            [
+              13.5348166,
+              52.5028314
+            ],
+            [
+              13.534989,
+              52.5029356
+            ],
+            [
+              13.5349543,
+              52.5029829
+            ],
+            [
+              13.5345179,
+              52.503542
+            ],
+            [
+              13.5344994,
+              52.5035481
+            ],
+            [
+              13.5342009,
+              52.5035262
+            ],
+            [
+              13.5341901,
+              52.5035744
+            ],
+            [
+              13.5339726,
+              52.5035586
+            ],
+            [
+              13.533842,
+              52.5035491
+            ],
+            [
+              13.5338455,
+              52.5034907
+            ],
+            [
+              13.5338183,
+              52.5034814
+            ],
+            [
+              13.5337233,
+              52.5034504
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "giraffes",
+        "name": "Giraffes",
+        "species": "Giraffa camelopardalis rothschildi",
+        "enclosure": "Giraffes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5264921,
+          52.5057214
+        ]
+      },
+      "properties": {
+        "id": "golden-pheasant",
+        "name": "Golden Pheasant",
+        "species": "Chrysolophus pictus",
+        "enclosure": "Golden Pheasant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5309693,
+              52.5056042
+            ],
+            [
+              13.530958,
+              52.5055889
+            ],
+            [
+              13.5309676,
+              52.5055732
+            ],
+            [
+              13.5309927,
+              52.5055663
+            ],
+            [
+              13.5310185,
+              52.5055722
+            ],
+            [
+              13.5310298,
+              52.5055875
+            ],
+            [
+              13.5310201,
+              52.5056031
+            ],
+            [
+              13.5309951,
+              52.5056101
+            ],
+            [
+              13.5309693,
+              52.5056042
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "great-green macaw",
+        "name": "Great green macaw",
+        "species": "Ara ambiguus",
+        "enclosure": "Great green macaw"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5281265,
+              52.5031209
+            ],
+            [
+              13.5281559,
+              52.5031486
+            ],
+            [
+              13.5281825,
+              52.5031726
+            ],
+            [
+              13.5282637,
+              52.5032234
+            ],
+            [
+              13.5283278,
+              52.50324
+            ],
+            [
+              13.5283771,
+              52.5032444
+            ],
+            [
+              13.5285492,
+              52.5032623
+            ],
+            [
+              13.5286195,
+              52.5032649
+            ],
+            [
+              13.5286752,
+              52.5032751
+            ],
+            [
+              13.5287445,
+              52.5033039
+            ],
+            [
+              13.5288137,
+              52.5033365
+            ],
+            [
+              13.5289092,
+              52.5033761
+            ],
+            [
+              13.5289638,
+              52.5033914
+            ],
+            [
+              13.5291803,
+              52.5033424
+            ],
+            [
+              13.5292581,
+              52.5033026
+            ],
+            [
+              13.5293048,
+              52.503278
+            ],
+            [
+              13.529423,
+              52.5032634
+            ],
+            [
+              13.5296113,
+              52.5032766
+            ],
+            [
+              13.5296797,
+              52.5033077
+            ],
+            [
+              13.5297174,
+              52.5032882
+            ],
+            [
+              13.5297668,
+              52.5032706
+            ],
+            [
+              13.529793,
+              52.5032393
+            ],
+            [
+              13.5298103,
+              52.5032242
+            ],
+            [
+              13.5298119,
+              52.5032055
+            ],
+            [
+              13.5298014,
+              52.5031735
+            ],
+            [
+              13.5297615,
+              52.5031492
+            ],
+            [
+              13.5297112,
+              52.5031352
+            ],
+            [
+              13.5296093,
+              52.5031314
+            ],
+            [
+              13.5295493,
+              52.5031235
+            ],
+            [
+              13.529497,
+              52.5031154
+            ],
+            [
+              13.5293879,
+              52.5030866
+            ],
+            [
+              13.5293312,
+              52.5030534
+            ],
+            [
+              13.5292945,
+              52.5030151
+            ],
+            [
+              13.5292766,
+              52.5029806
+            ],
+            [
+              13.5292735,
+              52.5029448
+            ],
+            [
+              13.529285,
+              52.5029045
+            ],
+            [
+              13.5293102,
+              52.5028662
+            ],
+            [
+              13.5293427,
+              52.5028298
+            ],
+            [
+              13.5293763,
+              52.5028004
+            ],
+            [
+              13.5294215,
+              52.5027672
+            ],
+            [
+              13.5294183,
+              52.5027531
+            ],
+            [
+              13.5292635,
+              52.5026907
+            ],
+            [
+              13.5292241,
+              52.5026758
+            ],
+            [
+              13.5291368,
+              52.5026791
+            ],
+            [
+              13.529052,
+              52.5026803
+            ],
+            [
+              13.5290331,
+              52.5027014
+            ],
+            [
+              13.5289943,
+              52.5027531
+            ],
+            [
+              13.528946,
+              52.5027851
+            ],
+            [
+              13.5288809,
+              52.5028215
+            ],
+            [
+              13.5287885,
+              52.5028547
+            ],
+            [
+              13.5287518,
+              52.5028764
+            ],
+            [
+              13.5286951,
+              52.5028969
+            ],
+            [
+              13.5286122,
+              52.5029128
+            ],
+            [
+              13.5285356,
+              52.5029135
+            ],
+            [
+              13.5284883,
+              52.5029077
+            ],
+            [
+              13.5284275,
+              52.502895
+            ],
+            [
+              13.5283582,
+              52.502893
+            ],
+            [
+              13.5283048,
+              52.5029077
+            ],
+            [
+              13.5282756,
+              52.5029223
+            ],
+            [
+              13.5282556,
+              52.5029538
+            ],
+            [
+              13.5282503,
+              52.5029902
+            ],
+            [
+              13.5282384,
+              52.5030047
+            ],
+            [
+              13.5282105,
+              52.5030241
+            ],
+            [
+              13.5281706,
+              52.5030379
+            ],
+            [
+              13.5281228,
+              52.5030484
+            ],
+            [
+              13.5280843,
+              52.5030451
+            ],
+            [
+              13.528079,
+              52.5030613
+            ],
+            [
+              13.5280936,
+              52.5030936
+            ],
+            [
+              13.5281265,
+              52.5031209
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "guanacos-patagonian mara",
+        "name": "Guanacos, Patagonian Mara",
+        "species": "Lama guanicoe;Dolichotis patagonum",
+        "enclosure": "Guanacos, Patagonian Mara"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5308339,
+              52.5060106
+            ],
+            [
+              13.5308184,
+              52.5059968
+            ],
+            [
+              13.5308236,
+              52.5059803
+            ],
+            [
+              13.5308464,
+              52.5059709
+            ],
+            [
+              13.5308734,
+              52.5059741
+            ],
+            [
+              13.5308889,
+              52.5059879
+            ],
+            [
+              13.5308837,
+              52.5060044
+            ],
+            [
+              13.5308609,
+              52.5060138
+            ],
+            [
+              13.5308339,
+              52.5060106
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "habichtskauz",
+        "name": "Habichtskauz",
+        "species": "Strix uralensis",
+        "enclosure": "Habichtskauz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5325416,
+              52.507772
+            ],
+            [
+              13.5326221,
+              52.507785
+            ],
+            [
+              13.5326784,
+              52.5078111
+            ],
+            [
+              13.5326865,
+              52.5078454
+            ],
+            [
+              13.5326543,
+              52.5079009
+            ],
+            [
+              13.532598,
+              52.5079385
+            ],
+            [
+              13.5324987,
+              52.5079613
+            ],
+            [
+              13.5323888,
+              52.5079679
+            ],
+            [
+              13.5321961,
+              52.5079735
+            ],
+            [
+              13.5321966,
+              52.5078086
+            ],
+            [
+              13.5323512,
+              52.5077818
+            ],
+            [
+              13.5325416,
+              52.507772
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "halsbandmaki-strahlenschildkröte",
+        "name": "Halsbandmaki, Strahlenschildkröte",
+        "species": "Eulemur collaris;Astrochelys radiata",
+        "enclosure": "Halsbandmaki, Strahlenschildkröte"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5356736,
+              52.5072459
+            ],
+            [
+              13.535683,
+              52.5072622
+            ],
+            [
+              13.535697,
+              52.5072733
+            ],
+            [
+              13.5357202,
+              52.507283
+            ],
+            [
+              13.5357386,
+              52.5072865
+            ],
+            [
+              13.535773,
+              52.507286
+            ],
+            [
+              13.5358066,
+              52.5072755
+            ],
+            [
+              13.5358245,
+              52.5072623
+            ],
+            [
+              13.5358347,
+              52.5072423
+            ],
+            [
+              13.5358323,
+              52.5072252
+            ],
+            [
+              13.5358239,
+              52.5072129
+            ],
+            [
+              13.5358056,
+              52.5071998
+            ],
+            [
+              13.5357913,
+              52.5071941
+            ],
+            [
+              13.5357512,
+              52.5071885
+            ],
+            [
+              13.5357203,
+              52.5071929
+            ],
+            [
+              13.5356895,
+              52.5072077
+            ],
+            [
+              13.5356764,
+              52.5072229
+            ],
+            [
+              13.5356736,
+              52.5072459
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "himalaja-glanzfasan",
+        "name": "Himalaja-Glanzfasan",
+        "species": "Lophophorus impejanus",
+        "enclosure": "Himalaja-Glanzfasan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5352923,
+              52.49913
+            ],
+            [
+              13.5351989,
+              52.4991332
+            ],
+            [
+              13.5351944,
+              52.4990838
+            ],
+            [
+              13.5352878,
+              52.4990807
+            ],
+            [
+              13.5352923,
+              52.49913
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "honigdachs",
+        "name": "Honigdachs",
+        "species": "Mellivora capensis",
+        "enclosure": "Honigdachs"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5310888,
+              52.5056268
+            ],
+            [
+              13.531077,
+              52.5056117
+            ],
+            [
+              13.5310863,
+              52.5055959
+            ],
+            [
+              13.5311112,
+              52.5055887
+            ],
+            [
+              13.5311371,
+              52.5055944
+            ],
+            [
+              13.5311489,
+              52.5056095
+            ],
+            [
+              13.5311396,
+              52.5056253
+            ],
+            [
+              13.5311147,
+              52.5056325
+            ],
+            [
+              13.5310888,
+              52.5056268
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "hyacinth-macaw",
+        "name": "Hyacinth macaw",
+        "species": "Anodorhynchus hyacinthinus",
+        "enclosure": "Hyacinth macaw"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5263049,
+              52.5058144
+            ],
+            [
+              13.5263419,
+              52.5057833
+            ],
+            [
+              13.5264858,
+              52.5058159
+            ],
+            [
+              13.5264126,
+              52.5058841
+            ],
+            [
+              13.5263049,
+              52.5058144
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "jandaya-conure",
+        "name": "Jandaya Conure",
+        "species": "Aratinga jandaya",
+        "enclosure": "Jandaya Conure"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5321149,
+              52.5039348
+            ],
+            [
+              13.5320066,
+              52.5041325
+            ],
+            [
+              13.5322423,
+              52.504211
+            ],
+            [
+              13.5323665,
+              52.5040131
+            ],
+            [
+              13.5321149,
+              52.5039348
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "jungfernkranich",
+        "name": "Jungfernkranich",
+        "species": "Balearica regulorum",
+        "enclosure": "Jungfernkranich"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5315736,
+              52.5056013
+            ],
+            [
+              13.5315998,
+              52.5056215
+            ],
+            [
+              13.5316384,
+              52.505632
+            ],
+            [
+              13.5316806,
+              52.5056304
+            ],
+            [
+              13.5317168,
+              52.5056169
+            ],
+            [
+              13.5317385,
+              52.5055948
+            ],
+            [
+              13.5317409,
+              52.505569
+            ],
+            [
+              13.5317234,
+              52.5055455
+            ],
+            [
+              13.53169,
+              52.5055297
+            ],
+            [
+              13.5316484,
+              52.5055251
+            ],
+            [
+              13.531608,
+              52.5055329
+            ],
+            [
+              13.5315782,
+              52.5055512
+            ],
+            [
+              13.5315658,
+              52.5055759
+            ],
+            [
+              13.5315736,
+              52.5056013
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "kaiseradler",
+        "name": "Kaiseradler",
+        "species": "Aquila heliaca",
+        "enclosure": "Kaiseradler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5309659,
+              52.5060283
+            ],
+            [
+              13.5309514,
+              52.506014
+            ],
+            [
+              13.5309577,
+              52.5059977
+            ],
+            [
+              13.5309811,
+              52.5059889
+            ],
+            [
+              13.5310079,
+              52.5059927
+            ],
+            [
+              13.5310224,
+              52.5060069
+            ],
+            [
+              13.5310161,
+              52.5060233
+            ],
+            [
+              13.5309927,
+              52.5060321
+            ],
+            [
+              13.5309659,
+              52.5060283
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "kenia-uhu",
+        "name": "Kenia-Uhu",
+        "species": "Bubo capensis mackinderi",
+        "enclosure": "Kenia-Uhu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.534799,
+              52.5061532
+            ],
+            [
+              13.5350563,
+              52.5060828
+            ],
+            [
+              13.5351614,
+              52.5060576
+            ],
+            [
+              13.5353328,
+              52.5058717
+            ],
+            [
+              13.5354725,
+              52.5058139
+            ],
+            [
+              13.5356871,
+              52.5057762
+            ],
+            [
+              13.5356972,
+              52.5057604
+            ],
+            [
+              13.53569,
+              52.5057323
+            ],
+            [
+              13.5356684,
+              52.5057122
+            ],
+            [
+              13.5355359,
+              52.5056131
+            ],
+            [
+              13.5353933,
+              52.5054781
+            ],
+            [
+              13.5352766,
+              52.5053851
+            ],
+            [
+              13.5352608,
+              52.5053466
+            ],
+            [
+              13.5352291,
+              52.5052527
+            ],
+            [
+              13.5351887,
+              52.5052282
+            ],
+            [
+              13.535098,
+              52.5051905
+            ],
+            [
+              13.53499,
+              52.5051265
+            ],
+            [
+              13.5349295,
+              52.5051089
+            ],
+            [
+              13.5348819,
+              52.5051116
+            ],
+            [
+              13.5347355,
+              52.5051708
+            ],
+            [
+              13.5346375,
+              52.5052304
+            ],
+            [
+              13.5345748,
+              52.5053198
+            ],
+            [
+              13.5344862,
+              52.5054439
+            ],
+            [
+              13.5343816,
+              52.5056006
+            ],
+            [
+              13.534371,
+              52.5056436
+            ],
+            [
+              13.5344665,
+              52.5057873
+            ],
+            [
+              13.5345473,
+              52.5059014
+            ],
+            [
+              13.5345533,
+              52.5060072
+            ],
+            [
+              13.5345316,
+              52.5060386
+            ],
+            [
+              13.5346916,
+              52.5060896
+            ],
+            [
+              13.5346265,
+              52.5061653
+            ],
+            [
+              13.5346794,
+              52.5061704
+            ],
+            [
+              13.534799,
+              52.5061532
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "kiang",
+        "name": "Kiang",
+        "species": "Equus kiang holdereri",
+        "enclosure": "Kiang"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5352878,
+              52.4990807
+            ],
+            [
+              13.5353813,
+              52.4990775
+            ],
+            [
+              13.5353858,
+              52.4991268
+            ],
+            [
+              13.5352923,
+              52.49913
+            ],
+            [
+              13.5352878,
+              52.4990807
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "langschwanzkatze",
+        "name": "Langschwanzkatze",
+        "species": "Leopardus wiedii",
+        "enclosure": "Langschwanzkatze"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5317454,
+              52.5035749
+            ],
+            [
+              13.5317545,
+              52.5036342
+            ],
+            [
+              13.5322006,
+              52.5034385
+            ],
+            [
+              13.5322672,
+              52.5030812
+            ],
+            [
+              13.5317884,
+              52.5030657
+            ],
+            [
+              13.5317219,
+              52.5030803
+            ],
+            [
+              13.5317551,
+              52.5031232
+            ],
+            [
+              13.5316886,
+              52.503143
+            ],
+            [
+              13.5317454,
+              52.5035749
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "lemurs",
+        "name": "Lemurs",
+        "species": "Varecia rubra;Varecia variegata",
+        "enclosure": "Lemurs"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.526403,
+          52.4987897
+        ]
+      },
+      "properties": {
+        "id": "little-corella",
+        "name": "Little Corella",
+        "species": "Cactua sanguinea",
+        "enclosure": "Little Corella"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5335777,
+              52.4997895
+            ],
+            [
+              13.5337066,
+              52.4998509
+            ],
+            [
+              13.5336052,
+              52.4999102
+            ],
+            [
+              13.5335972,
+              52.4999044
+            ],
+            [
+              13.533559,
+              52.4999236
+            ],
+            [
+              13.5335459,
+              52.499913
+            ],
+            [
+              13.5334819,
+              52.4999166
+            ],
+            [
+              13.5334883,
+              52.4999587
+            ],
+            [
+              13.5335037,
+              52.4999666
+            ],
+            [
+              13.5334917,
+              52.499973
+            ],
+            [
+              13.5336254,
+              52.500062
+            ],
+            [
+              13.5333699,
+              52.5001226
+            ],
+            [
+              13.533331,
+              52.5000616
+            ],
+            [
+              13.5333028,
+              52.5000172
+            ],
+            [
+              13.5331982,
+              52.4999274
+            ],
+            [
+              13.5333895,
+              52.4998316
+            ],
+            [
+              13.5334477,
+              52.4998025
+            ],
+            [
+              13.5335777,
+              52.4997895
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "malaienb-r",
+        "name": "Malaienbär",
+        "species": "Helarctos malayanus",
+        "enclosure": "Malaienbär"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5311062,
+              52.5060237
+            ],
+            [
+              13.531098,
+              52.5060078
+            ],
+            [
+              13.5311108,
+              52.5059929
+            ],
+            [
+              13.5311371,
+              52.5059879
+            ],
+            [
+              13.5311614,
+              52.5059957
+            ],
+            [
+              13.5311696,
+              52.5060117
+            ],
+            [
+              13.5311568,
+              52.5060266
+            ],
+            [
+              13.5311306,
+              52.5060315
+            ],
+            [
+              13.5311062,
+              52.5060237
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "milchuhu",
+        "name": "Milchuhu",
+        "species": "Bubo lacteus",
+        "enclosure": "Milchuhu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5300854,
+              52.507439
+            ],
+            [
+              13.5301984,
+              52.5071512
+            ],
+            [
+              13.5303378,
+              52.5066222
+            ],
+            [
+              13.5304559,
+              52.5064851
+            ],
+            [
+              13.5304965,
+              52.5064389
+            ],
+            [
+              13.5306296,
+              52.5064157
+            ],
+            [
+              13.530634,
+              52.5063923
+            ],
+            [
+              13.5308317,
+              52.506406
+            ],
+            [
+              13.5308235,
+              52.50645
+            ],
+            [
+              13.5309387,
+              52.5064459
+            ],
+            [
+              13.5308778,
+              52.5065396
+            ],
+            [
+              13.5307836,
+              52.5065448
+            ],
+            [
+              13.5307092,
+              52.5065693
+            ],
+            [
+              13.5307061,
+              52.5066137
+            ],
+            [
+              13.5307297,
+              52.5066773
+            ],
+            [
+              13.5306937,
+              52.5068044
+            ],
+            [
+              13.5306562,
+              52.5068522
+            ],
+            [
+              13.5305991,
+              52.5069167
+            ],
+            [
+              13.5305789,
+              52.5070244
+            ],
+            [
+              13.5305964,
+              52.5071149
+            ],
+            [
+              13.5305479,
+              52.5072264
+            ],
+            [
+              13.530533,
+              52.5073006
+            ],
+            [
+              13.5305616,
+              52.5073896
+            ],
+            [
+              13.5305029,
+              52.507435
+            ],
+            [
+              13.5304237,
+              52.5074385
+            ],
+            [
+              13.5301671,
+              52.5074995
+            ],
+            [
+              13.5300854,
+              52.507439
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "mishmi-takin",
+        "name": "Mishmi Takin",
+        "species": "Budorcas taxicolor taxicolor",
+        "enclosure": "Mishmi Takin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5302444,
+              52.5061471
+            ],
+            [
+              13.5304378,
+              52.5059582
+            ],
+            [
+              13.5307965,
+              52.5060662
+            ],
+            [
+              13.5307578,
+              52.5063609
+            ],
+            [
+              13.5303252,
+              52.5063001
+            ],
+            [
+              13.5302444,
+              52.5061471
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "mishmi-takin",
+        "name": "Mishmi Takin",
+        "species": "Budorcas taxicolor taxicolor",
+        "enclosure": "Mishmi Takin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5271185,
+              52.4989588
+            ],
+            [
+              13.5270602,
+              52.4988857
+            ],
+            [
+              13.5270067,
+              52.4989015
+            ],
+            [
+              13.5270649,
+              52.4989746
+            ],
+            [
+              13.5271185,
+              52.4989588
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "mitchell-s lorikeeta",
+        "name": "Mitchell's Lorikeeta",
+        "species": "Trichoglossus forsteni mitchellii",
+        "enclosure": "Mitchell's Lorikeeta"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.531668,
+              52.5028907
+            ],
+            [
+              13.531647,
+              52.502888
+            ],
+            [
+              13.5316185,
+              52.502886
+            ],
+            [
+              13.5315955,
+              52.5028835
+            ],
+            [
+              13.5315536,
+              52.5028833
+            ],
+            [
+              13.5315321,
+              52.5028925
+            ],
+            [
+              13.531525,
+              52.5029478
+            ],
+            [
+              13.5315642,
+              52.5029864
+            ],
+            [
+              13.531626,
+              52.5030006
+            ],
+            [
+              13.5317071,
+              52.5029504
+            ],
+            [
+              13.5317166,
+              52.5029083
+            ],
+            [
+              13.5317095,
+              52.5028987
+            ],
+            [
+              13.5316973,
+              52.5028951
+            ],
+            [
+              13.5316785,
+              52.5028909
+            ],
+            [
+              13.531668,
+              52.5028907
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "mongozmaki-halsbandmaki",
+        "name": "Mongozmaki, Halsbandmaki",
+        "species": "Eulemur",
+        "enclosure": "Mongozmaki, Halsbandmaki"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5338424,
+          52.5037194
+        ]
+      },
+      "properties": {
+        "id": "nacktmull",
+        "name": "Nacktmull",
+        "species": "Heterocephalus glaber",
+        "enclosure": "Nacktmull"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5360769,
+              52.4998867
+            ],
+            [
+              13.5360929,
+              52.499867
+            ],
+            [
+              13.5361265,
+              52.4998589
+            ],
+            [
+              13.5361309,
+              52.4998276
+            ],
+            [
+              13.5360012,
+              52.4997215
+            ],
+            [
+              13.5358693,
+              52.4996423
+            ],
+            [
+              13.5357958,
+              52.4996193
+            ],
+            [
+              13.5355454,
+              52.4995867
+            ],
+            [
+              13.5354218,
+              52.4995608
+            ],
+            [
+              13.5353965,
+              52.4995814
+            ],
+            [
+              13.5354526,
+              52.4996001
+            ],
+            [
+              13.5354111,
+              52.4996401
+            ],
+            [
+              13.5353479,
+              52.4996208
+            ],
+            [
+              13.5353172,
+              52.4996458
+            ],
+            [
+              13.5353681,
+              52.4996669
+            ],
+            [
+              13.5352434,
+              52.4997135
+            ],
+            [
+              13.5352246,
+              52.4997887
+            ],
+            [
+              13.5352645,
+              52.4998671
+            ],
+            [
+              13.535285,
+              52.4998672
+            ],
+            [
+              13.5353157,
+              52.499903
+            ],
+            [
+              13.5356415,
+              52.4998004
+            ],
+            [
+              13.5359446,
+              52.5000594
+            ],
+            [
+              13.5360084,
+              52.5000167
+            ],
+            [
+              13.5360648,
+              52.5000315
+            ],
+            [
+              13.5361042,
+              52.5000921
+            ],
+            [
+              13.5362469,
+              52.5000533
+            ],
+            [
+              13.5362746,
+              52.5000135
+            ],
+            [
+              13.5362413,
+              52.4999412
+            ],
+            [
+              13.5361175,
+              52.4999194
+            ],
+            [
+              13.5360868,
+              52.4999078
+            ],
+            [
+              13.5360769,
+              52.4998867
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "northeast-african cheetah",
+        "name": "Northeast African cheetah",
+        "species": "Acinonyx jubatus soemmeringii",
+        "enclosure": "Northeast African cheetah"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.531283,
+              52.5011478
+            ],
+            [
+              13.5312066,
+              52.5010689
+            ],
+            [
+              13.5309775,
+              52.5011511
+            ],
+            [
+              13.5310539,
+              52.50123
+            ],
+            [
+              13.531283,
+              52.5011478
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "pallas-s cat",
+        "name": "Pallas's Cat",
+        "species": "Lynx rufus",
+        "enclosure": "Pallas's Cat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5350161,
+              52.5068563
+            ],
+            [
+              13.5350191,
+              52.5068748
+            ],
+            [
+              13.5350299,
+              52.5068894
+            ],
+            [
+              13.5350507,
+              52.506903
+            ],
+            [
+              13.5350661,
+              52.5069087
+            ],
+            [
+              13.535102,
+              52.5069139
+            ],
+            [
+              13.5351376,
+              52.5069098
+            ],
+            [
+              13.5351695,
+              52.506896
+            ],
+            [
+              13.5351881,
+              52.5068757
+            ],
+            [
+              13.5351917,
+              52.5068574
+            ],
+            [
+              13.535181,
+              52.5068347
+            ],
+            [
+              13.535162,
+              52.5068202
+            ],
+            [
+              13.5351494,
+              52.5068146
+            ],
+            [
+              13.535121,
+              52.5068078
+            ],
+            [
+              13.5351032,
+              52.5068068
+            ],
+            [
+              13.5350732,
+              52.5068102
+            ],
+            [
+              13.5350549,
+              52.5068158
+            ],
+            [
+              13.5350299,
+              52.5068313
+            ],
+            [
+              13.5350161,
+              52.5068563
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "pallas-s cat",
+        "name": "Pallas's Cat",
+        "species": "Otocolobus manul",
+        "enclosure": "Pallas's Cat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5304003,
+              52.5026204
+            ],
+            [
+              13.5303639,
+              52.5025505
+            ],
+            [
+              13.5302316,
+              52.5025731
+            ],
+            [
+              13.5302719,
+              52.5026576
+            ],
+            [
+              13.5304003,
+              52.5026204
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "parrots",
+        "name": "Parrots",
+        "species": "Psittacus erithacus",
+        "enclosure": "Parrots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5266825,
+              52.506514
+            ],
+            [
+              13.5266018,
+              52.5064658
+            ],
+            [
+              13.526573,
+              52.5063387
+            ],
+            [
+              13.5265629,
+              52.5062282
+            ],
+            [
+              13.5266076,
+              52.5061186
+            ],
+            [
+              13.5267481,
+              52.5059039
+            ],
+            [
+              13.5268187,
+              52.5058674
+            ],
+            [
+              13.5269518,
+              52.5058246
+            ],
+            [
+              13.5270455,
+              52.5058283
+            ],
+            [
+              13.5271694,
+              52.505888
+            ],
+            [
+              13.5274681,
+              52.5061057
+            ],
+            [
+              13.5276707,
+              52.506251
+            ],
+            [
+              13.527737,
+              52.5063511
+            ],
+            [
+              13.5277508,
+              52.5064015
+            ],
+            [
+              13.5278062,
+              52.5064651
+            ],
+            [
+              13.527874,
+              52.5065948
+            ],
+            [
+              13.5278956,
+              52.50665
+            ],
+            [
+              13.5279071,
+              52.5067083
+            ],
+            [
+              13.5279037,
+              52.5067669
+            ],
+            [
+              13.5278841,
+              52.5068221
+            ],
+            [
+              13.5277313,
+              52.5068506
+            ],
+            [
+              13.5274344,
+              52.5067736
+            ],
+            [
+              13.5273105,
+              52.5067245
+            ],
+            [
+              13.5269936,
+              52.5066175
+            ],
+            [
+              13.5267891,
+              52.5065596
+            ],
+            [
+              13.5266825,
+              52.506514
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "przewalski-s horses",
+        "name": "Przewalski's horses",
+        "species": "Equus ferus przewalskii",
+        "enclosure": "Przewalski's horses"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5354405,
+              52.4989926
+            ],
+            [
+              13.5354432,
+              52.498862
+            ],
+            [
+              13.5353547,
+              52.4987101
+            ],
+            [
+              13.5351751,
+              52.4985824
+            ],
+            [
+              13.5350598,
+              52.4985628
+            ],
+            [
+              13.5349765,
+              52.4985779
+            ],
+            [
+              13.5348364,
+              52.4987082
+            ],
+            [
+              13.5347793,
+              52.4987542
+            ],
+            [
+              13.5347726,
+              52.4987869
+            ],
+            [
+              13.534786,
+              52.4988914
+            ],
+            [
+              13.534829,
+              52.4990645
+            ],
+            [
+              13.5348631,
+              52.4990739
+            ],
+            [
+              13.5349149,
+              52.4990673
+            ],
+            [
+              13.5350276,
+              52.4990359
+            ],
+            [
+              13.5351053,
+              52.4990204
+            ],
+            [
+              13.5351602,
+              52.4990123
+            ],
+            [
+              13.535222,
+              52.4990114
+            ],
+            [
+              13.5353131,
+              52.4990237
+            ],
+            [
+              13.5353601,
+              52.4990257
+            ],
+            [
+              13.5354085,
+              52.4990183
+            ],
+            [
+              13.5354405,
+              52.4989926
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "reindeer",
+        "name": "Reindeer",
+        "species": "Rangifer tarandus",
+        "enclosure": "Reindeer"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5275992,
+              52.5055845
+            ],
+            [
+              13.5276007,
+              52.5055605
+            ],
+            [
+              13.5275815,
+              52.505557
+            ],
+            [
+              13.5275382,
+              52.5055598
+            ],
+            [
+              13.5275041,
+              52.5055587
+            ],
+            [
+              13.5274599,
+              52.505554
+            ],
+            [
+              13.5274398,
+              52.5055587
+            ],
+            [
+              13.5274492,
+              52.5055802
+            ],
+            [
+              13.527513,
+              52.5055907
+            ],
+            [
+              13.5275705,
+              52.505589
+            ],
+            [
+              13.5275992,
+              52.5055845
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "ring-tailed lemur",
+        "name": "Ring Tailed Lemur",
+        "species": "Lemur catta",
+        "enclosure": "Ring Tailed Lemur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5317115,
+              52.5075084
+            ],
+            [
+              13.5316614,
+              52.5074828
+            ],
+            [
+              13.5315886,
+              52.5074872
+            ],
+            [
+              13.5315057,
+              52.5074995
+            ],
+            [
+              13.5313872,
+              52.5075386
+            ],
+            [
+              13.5313598,
+              52.5075976
+            ],
+            [
+              13.5314043,
+              52.5076556
+            ],
+            [
+              13.531719,
+              52.5076561
+            ],
+            [
+              13.5317364,
+              52.5075587
+            ],
+            [
+              13.5317115,
+              52.5075084
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "roloway-meerkatze",
+        "name": "Roloway-Meerkatze",
+        "species": "Cercopithecus roloway",
+        "enclosure": "Roloway-Meerkatze"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.526495,
+          52.5057103
+        ]
+      },
+      "properties": {
+        "id": "rosy-starling",
+        "name": "Rosy Starling",
+        "species": "Sturnus roseus",
+        "enclosure": "Rosy Starling"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5312067,
+              52.5052086
+            ],
+            [
+              13.5309281,
+              52.5051728
+            ],
+            [
+              13.5306912,
+              52.505122
+            ],
+            [
+              13.5306605,
+              52.5050933
+            ],
+            [
+              13.530657,
+              52.5050549
+            ],
+            [
+              13.5307011,
+              52.5050232
+            ],
+            [
+              13.5307154,
+              52.5049772
+            ],
+            [
+              13.5308316,
+              52.5049224
+            ],
+            [
+              13.5308952,
+              52.5048957
+            ],
+            [
+              13.5309949,
+              52.5048806
+            ],
+            [
+              13.5311014,
+              52.5048837
+            ],
+            [
+              13.5312456,
+              52.5050263
+            ],
+            [
+              13.5312281,
+              52.5050537
+            ],
+            [
+              13.5313026,
+              52.5050964
+            ],
+            [
+              13.5312067,
+              52.5052086
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "rotb-ffel",
+        "name": "Rotbüffel",
+        "species": "Syncerus caffer nanus",
+        "enclosure": "Rotbüffel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5345636,
+              52.5078139
+            ],
+            [
+              13.5345701,
+              52.5078747
+            ],
+            [
+              13.5346358,
+              52.5079056
+            ],
+            [
+              13.5348259,
+              52.507966
+            ],
+            [
+              13.5350034,
+              52.5080133
+            ],
+            [
+              13.5351296,
+              52.5080266
+            ],
+            [
+              13.5353365,
+              52.5079956
+            ],
+            [
+              13.5355704,
+              52.5079514
+            ],
+            [
+              13.5357257,
+              52.5079035
+            ],
+            [
+              13.5361652,
+              52.5078645
+            ],
+            [
+              13.5363285,
+              52.5074122
+            ],
+            [
+              13.5356397,
+              52.507474
+            ],
+            [
+              13.5354514,
+              52.5074561
+            ],
+            [
+              13.5352485,
+              52.5074802
+            ],
+            [
+              13.5350055,
+              52.5075201
+            ],
+            [
+              13.5348001,
+              52.5075737
+            ],
+            [
+              13.5347166,
+              52.5076364
+            ],
+            [
+              13.5345781,
+              52.5077521
+            ],
+            [
+              13.5345636,
+              52.5078139
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "roter-panda",
+        "name": "Roter Panda",
+        "species": "Ailurus fulgens",
+        "enclosure": "Roter Panda"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5263778,
+          52.4987985
+        ]
+      },
+      "properties": {
+        "id": "salmon-crested cockatoo",
+        "name": "Salmon-crested cockatoo",
+        "species": "Cacatua moluccensis",
+        "enclosure": "Salmon-crested cockatoo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5266482,
+              52.4994107
+            ],
+            [
+              13.5262074,
+              52.5002307
+            ],
+            [
+              13.5266274,
+              52.5003147
+            ],
+            [
+              13.5270681,
+              52.4994948
+            ],
+            [
+              13.5266482,
+              52.4994107
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "sambars",
+        "name": "Sambars",
+        "species": "Rusa unicolor",
+        "enclosure": "Sambars"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5266723,
+              52.5072894
+            ],
+            [
+              13.5267925,
+              52.5072528
+            ],
+            [
+              13.5268783,
+              52.5072006
+            ],
+            [
+              13.5269342,
+              52.5071001
+            ],
+            [
+              13.5269788,
+              52.5068894
+            ],
+            [
+              13.5270122,
+              52.5068291
+            ],
+            [
+              13.5266249,
+              52.5067337
+            ],
+            [
+              13.5264858,
+              52.5069318
+            ],
+            [
+              13.5263395,
+              52.5070872
+            ],
+            [
+              13.5263534,
+              52.5072204
+            ],
+            [
+              13.5264819,
+              52.5072817
+            ],
+            [
+              13.5266723,
+              52.5072894
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "schneeziegen",
+        "name": "Schneeziegen",
+        "species": "Oreamnos americanus",
+        "enclosure": "Schneeziegen"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5349768,
+              52.5085329
+            ],
+            [
+              13.5346368,
+              52.5086026
+            ],
+            [
+              13.5345437,
+              52.5084713
+            ],
+            [
+              13.5345715,
+              52.5082564
+            ],
+            [
+              13.5343602,
+              52.5080647
+            ],
+            [
+              13.534357,
+              52.5079708
+            ],
+            [
+              13.5344437,
+              52.507942
+            ],
+            [
+              13.5347909,
+              52.5080576
+            ],
+            [
+              13.5349806,
+              52.5081165
+            ],
+            [
+              13.5351181,
+              52.5081289
+            ],
+            [
+              13.5351466,
+              52.5081431
+            ],
+            [
+              13.5351721,
+              52.5081822
+            ],
+            [
+              13.5351661,
+              52.5082108
+            ],
+            [
+              13.5351176,
+              52.5082963
+            ],
+            [
+              13.5350596,
+              52.5083947
+            ],
+            [
+              13.5350359,
+              52.5084808
+            ],
+            [
+              13.5349768,
+              52.5085329
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "sichuan-takine",
+        "name": "Sichuan-Takine",
+        "species": "Budorcas taxicolor tibetana",
+        "enclosure": "Sichuan-Takine"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5321104,
+              52.4976676
+            ],
+            [
+              13.5322098,
+              52.4976692
+            ],
+            [
+              13.5322997,
+              52.4976602
+            ],
+            [
+              13.5324123,
+              52.4976373
+            ],
+            [
+              13.532449,
+              52.4976116
+            ],
+            [
+              13.5325841,
+              52.4975886
+            ],
+            [
+              13.5325488,
+              52.4975117
+            ],
+            [
+              13.5324137,
+              52.4975347
+            ],
+            [
+              13.5323588,
+              52.4975158
+            ],
+            [
+              13.5322782,
+              52.4974994
+            ],
+            [
+              13.5321827,
+              52.4974998
+            ],
+            [
+              13.5320836,
+              52.4975125
+            ],
+            [
+              13.5320413,
+              52.4975395
+            ],
+            [
+              13.5320073,
+              52.4975777
+            ],
+            [
+              13.5320073,
+              52.4976119
+            ],
+            [
+              13.5320409,
+              52.4976455
+            ],
+            [
+              13.5321104,
+              52.4976676
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "southern-pig-tailed macaques",
+        "name": "Southern pig-tailed macaques",
+        "species": "Cercocebus torquatus",
+        "enclosure": "Southern pig-tailed macaques"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5264178,
+              52.4970007
+            ],
+            [
+              13.5264287,
+              52.4970551
+            ],
+            [
+              13.5264304,
+              52.497071
+            ],
+            [
+              13.5264366,
+              52.4970837
+            ],
+            [
+              13.5264987,
+              52.4970839
+            ],
+            [
+              13.5266297,
+              52.497072
+            ],
+            [
+              13.5267187,
+              52.4970399
+            ],
+            [
+              13.5267504,
+              52.4970195
+            ],
+            [
+              13.5267771,
+              52.4969986
+            ],
+            [
+              13.5268063,
+              52.4969567
+            ],
+            [
+              13.5267453,
+              52.4969208
+            ],
+            [
+              13.5266691,
+              52.4969099
+            ],
+            [
+              13.5265736,
+              52.4969019
+            ],
+            [
+              13.5264256,
+              52.4968154
+            ],
+            [
+              13.5263539,
+              52.4967563
+            ],
+            [
+              13.5262643,
+              52.4966995
+            ],
+            [
+              13.5263145,
+              52.4966781
+            ],
+            [
+              13.5262747,
+              52.4966435
+            ],
+            [
+              13.526247,
+              52.4966195
+            ],
+            [
+              13.5262672,
+              52.4966109
+            ],
+            [
+              13.5262467,
+              52.4965931
+            ],
+            [
+              13.5259815,
+              52.4967063
+            ],
+            [
+              13.5260297,
+              52.4967481
+            ],
+            [
+              13.5262543,
+              52.4968469
+            ],
+            [
+              13.5263664,
+              52.4969179
+            ],
+            [
+              13.5264178,
+              52.4970007
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "spectacled-bears",
+        "name": "Spectacled Bears",
+        "species": "Trenarctos ornatus",
+        "enclosure": "Spectacled Bears"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5306903,
+              52.5059598
+            ],
+            [
+              13.5306888,
+              52.5059431
+            ],
+            [
+              13.5307072,
+              52.5059306
+            ],
+            [
+              13.5307347,
+              52.5059297
+            ],
+            [
+              13.5307552,
+              52.5059409
+            ],
+            [
+              13.5307567,
+              52.5059576
+            ],
+            [
+              13.5307383,
+              52.5059701
+            ],
+            [
+              13.5307108,
+              52.505971
+            ],
+            [
+              13.5306903,
+              52.5059598
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "spot-bellied eagle-owl",
+        "name": "Spot-bellied eagle-owl",
+        "species": "Bubo nipalensis",
+        "enclosure": "Spot-bellied eagle-owl"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5320512,
+              52.5055158
+            ],
+            [
+              13.5320774,
+              52.5055361
+            ],
+            [
+              13.5321161,
+              52.5055466
+            ],
+            [
+              13.5321583,
+              52.5055449
+            ],
+            [
+              13.5321944,
+              52.5055315
+            ],
+            [
+              13.5322161,
+              52.5055093
+            ],
+            [
+              13.5322186,
+              52.5054836
+            ],
+            [
+              13.5322011,
+              52.5054601
+            ],
+            [
+              13.5321677,
+              52.5054442
+            ],
+            [
+              13.532126,
+              52.5054397
+            ],
+            [
+              13.5320857,
+              52.5054474
+            ],
+            [
+              13.5320559,
+              52.5054658
+            ],
+            [
+              13.5320434,
+              52.5054904
+            ],
+            [
+              13.5320512,
+              52.5055158
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "steppe-eagle",
+        "name": "Steppe eagle",
+        "species": "Aquila nipalensis",
+        "enclosure": "Steppe eagle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5310122,
+              52.4989359
+            ],
+            [
+              13.5309885,
+              52.4989752
+            ],
+            [
+              13.5308938,
+              52.4989538
+            ],
+            [
+              13.5308813,
+              52.4989758
+            ],
+            [
+              13.5310512,
+              52.499015
+            ],
+            [
+              13.531027,
+              52.4991291
+            ],
+            [
+              13.5311475,
+              52.4992063
+            ],
+            [
+              13.5318686,
+              52.4991773
+            ],
+            [
+              13.5319225,
+              52.4991114
+            ],
+            [
+              13.5318952,
+              52.4988555
+            ],
+            [
+              13.5313455,
+              52.4988898
+            ],
+            [
+              13.5310622,
+              52.4989055
+            ],
+            [
+              13.5310122,
+              52.4989359
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "streichelgehege-zwergziegen, schafe",
+        "name": "Streichelgehege: Zwergziegen, Schafe",
+        "enclosure": "Streichelgehege: Zwergziegen, Schafe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5344996,
+              52.5000807
+            ],
+            [
+              13.5345134,
+              52.5002021
+            ],
+            [
+              13.5345692,
+              52.5002984
+            ],
+            [
+              13.5346628,
+              52.500279
+            ],
+            [
+              13.5347217,
+              52.5003148
+            ],
+            [
+              13.534926,
+              52.5002543
+            ],
+            [
+              13.5349206,
+              52.5002256
+            ],
+            [
+              13.5349976,
+              52.5002139
+            ],
+            [
+              13.5349497,
+              52.5001418
+            ],
+            [
+              13.5350391,
+              52.5001198
+            ],
+            [
+              13.5353019,
+              52.4999191
+            ],
+            [
+              13.5353157,
+              52.499903
+            ],
+            [
+              13.535285,
+              52.4998672
+            ],
+            [
+              13.5352645,
+              52.4998671
+            ],
+            [
+              13.5352303,
+              52.499889
+            ],
+            [
+              13.5350374,
+              52.4998032
+            ],
+            [
+              13.5348242,
+              52.4999525
+            ],
+            [
+              13.5348844,
+              52.499984
+            ],
+            [
+              13.5348712,
+              52.5000259
+            ],
+            [
+              13.5347725,
+              52.5000677
+            ],
+            [
+              13.5346489,
+              52.5001002
+            ],
+            [
+              13.5345983,
+              52.5001506
+            ],
+            [
+              13.5345522,
+              52.5001266
+            ],
+            [
+              13.5344996,
+              52.5000807
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "sumatra-tiger",
+        "name": "Sumatra-Tiger",
+        "species": "Panthera tigris sumatrae",
+        "enclosure": "Sumatra-Tiger"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5336353,
+              52.5040034
+            ],
+            [
+              13.5338227,
+              52.503911
+            ],
+            [
+              13.5338388,
+              52.5038898
+            ],
+            [
+              13.533828,
+              52.5038767
+            ],
+            [
+              13.5337985,
+              52.5038637
+            ],
+            [
+              13.5337422,
+              52.5038604
+            ],
+            [
+              13.5335221,
+              52.5036484
+            ],
+            [
+              13.5334139,
+              52.5038716
+            ],
+            [
+              13.5333881,
+              52.5039535
+            ],
+            [
+              13.5336353,
+              52.5040034
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-dafrikanische bergriedböcke",
+        "name": "Südafrikanische Bergriedböcke",
+        "species": "Redunca fulvorufula fulvorufula",
+        "enclosure": "Südafrikanische Bergriedböcke"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5326512,
+              52.5055846
+            ],
+            [
+              13.5326091,
+              52.5057854
+            ],
+            [
+              13.5326445,
+              52.5057989
+            ],
+            [
+              13.5326807,
+              52.5058023
+            ],
+            [
+              13.5327147,
+              52.5057896
+            ],
+            [
+              13.5330308,
+              52.5058613
+            ],
+            [
+              13.5330689,
+              52.5058657
+            ],
+            [
+              13.5331095,
+              52.505857
+            ],
+            [
+              13.5331336,
+              52.5058243
+            ],
+            [
+              13.5331194,
+              52.5057889
+            ],
+            [
+              13.5330714,
+              52.5057241
+            ],
+            [
+              13.533036,
+              52.5056674
+            ],
+            [
+              13.5330678,
+              52.5055907
+            ],
+            [
+              13.5330865,
+              52.5055493
+            ],
+            [
+              13.5328255,
+              52.5055907
+            ],
+            [
+              13.5326512,
+              52.5055846
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-dliche giraffengazelle",
+        "name": "Südliche Giraffengazelle",
+        "species": "Litocranius walleri",
+        "enclosure": "Südliche Giraffengazelle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5330678,
+              52.5051955
+            ],
+            [
+              13.5329738,
+              52.505248
+            ],
+            [
+              13.5328956,
+              52.5052796
+            ],
+            [
+              13.5328167,
+              52.505298
+            ],
+            [
+              13.5327097,
+              52.5053143
+            ],
+            [
+              13.5326811,
+              52.5053328
+            ],
+            [
+              13.5326771,
+              52.5053751
+            ],
+            [
+              13.5326864,
+              52.5054638
+            ],
+            [
+              13.5327487,
+              52.5054758
+            ],
+            [
+              13.5327794,
+              52.5055159
+            ],
+            [
+              13.532832,
+              52.5055506
+            ],
+            [
+              13.5331139,
+              52.5055005
+            ],
+            [
+              13.533134,
+              52.5054996
+            ],
+            [
+              13.5331896,
+              52.5053597
+            ],
+            [
+              13.5332269,
+              52.505327
+            ],
+            [
+              13.533382,
+              52.5051701
+            ],
+            [
+              13.533196,
+              52.505116
+            ],
+            [
+              13.5330678,
+              52.5051955
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-dliche giraffengazelle, kleiner kudu",
+        "name": "Südliche Giraffengazelle, Kleiner Kudu",
+        "species": "Litocranius walleri",
+        "enclosure": "Südliche Giraffengazelle, Kleiner Kudu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5300957,
+              52.5035049
+            ],
+            [
+              13.5301128,
+              52.5035253
+            ],
+            [
+              13.5301497,
+              52.5035345
+            ],
+            [
+              13.5302176,
+              52.5035658
+            ],
+            [
+              13.5304644,
+              52.503525
+            ],
+            [
+              13.5305529,
+              52.5033943
+            ],
+            [
+              13.530518,
+              52.5032915
+            ],
+            [
+              13.5304248,
+              52.5031829
+            ],
+            [
+              13.5303598,
+              52.5031401
+            ],
+            [
+              13.5301237,
+              52.5031005
+            ],
+            [
+              13.5301189,
+              52.5031619
+            ],
+            [
+              13.5301184,
+              52.5031984
+            ],
+            [
+              13.5300821,
+              52.5033345
+            ],
+            [
+              13.5300516,
+              52.503385
+            ],
+            [
+              13.530067,
+              52.5034432
+            ],
+            [
+              13.5300871,
+              52.503486
+            ],
+            [
+              13.5300957,
+              52.5035049
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "tasmanian-grey kangaroo",
+        "name": "Tasmanian Grey Kangaroo",
+        "species": "Macropus fuliginosus melanops",
+        "enclosure": "Tasmanian Grey Kangaroo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5380366,
+              52.4994138
+            ],
+            [
+              13.5380423,
+              52.4993174
+            ],
+            [
+              13.5386087,
+              52.499097
+            ],
+            [
+              13.5386544,
+              52.4990148
+            ],
+            [
+              13.5378273,
+              52.4981826
+            ],
+            [
+              13.537764,
+              52.4978085
+            ],
+            [
+              13.5376779,
+              52.4977447
+            ],
+            [
+              13.5345268,
+              52.4969182
+            ],
+            [
+              13.5325527,
+              52.49643
+            ],
+            [
+              13.5325368,
+              52.496453
+            ],
+            [
+              13.5300954,
+              52.4959119
+            ],
+            [
+              13.5280058,
+              52.495435
+            ],
+            [
+              13.527972,
+              52.4954822
+            ],
+            [
+              13.5262463,
+              52.4950779
+            ],
+            [
+              13.5255063,
+              52.4948972
+            ],
+            [
+              13.5249443,
+              52.4957836
+            ],
+            [
+              13.5248112,
+              52.4959976
+            ],
+            [
+              13.5246745,
+              52.4962121
+            ],
+            [
+              13.5244988,
+              52.4964319
+            ],
+            [
+              13.5242414,
+              52.4968382
+            ],
+            [
+              13.5242657,
+              52.4968419
+            ],
+            [
+              13.5242257,
+              52.4969075
+            ],
+            [
+              13.5241369,
+              52.4971037
+            ],
+            [
+              13.5242215,
+              52.4971302
+            ],
+            [
+              13.5240799,
+              52.4973165
+            ],
+            [
+              13.5238909,
+              52.4974939
+            ],
+            [
+              13.5238644,
+              52.4975365
+            ],
+            [
+              13.5237897,
+              52.4975696
+            ],
+            [
+              13.5236633,
+              52.4977832
+            ],
+            [
+              13.5237065,
+              52.4977928
+            ],
+            [
+              13.5235945,
+              52.4979592
+            ],
+            [
+              13.523574,
+              52.497975
+            ],
+            [
+              13.5235666,
+              52.4979915
+            ],
+            [
+              13.5235676,
+              52.4980052
+            ],
+            [
+              13.52365,
+              52.4980319
+            ],
+            [
+              13.5231982,
+              52.4987521
+            ],
+            [
+              13.5230526,
+              52.4987198
+            ],
+            [
+              13.5223953,
+              52.4997629
+            ],
+            [
+              13.5229963,
+              52.4998971
+            ],
+            [
+              13.5229758,
+              52.4999402
+            ],
+            [
+              13.5230802,
+              52.4999634
+            ],
+            [
+              13.5231084,
+              52.4998966
+            ],
+            [
+              13.5243003,
+              52.5001482
+            ],
+            [
+              13.5250066,
+              52.5003001
+            ],
+            [
+              13.5236671,
+              52.5027948
+            ],
+            [
+              13.5221329,
+              52.5024953
+            ],
+            [
+              13.5219761,
+              52.5029823
+            ],
+            [
+              13.5211578,
+              52.5028827
+            ],
+            [
+              13.5208808,
+              52.503753
+            ],
+            [
+              13.5207533,
+              52.5041676
+            ],
+            [
+              13.5207316,
+              52.5042346
+            ],
+            [
+              13.5206669,
+              52.5044157
+            ],
+            [
+              13.5205018,
+              52.5047309
+            ],
+            [
+              13.5203478,
+              52.505034
+            ],
+            [
+              13.5207579,
+              52.5051141
+            ],
+            [
+              13.520737,
+              52.5051466
+            ],
+            [
+              13.5209702,
+              52.5051938
+            ],
+            [
+              13.5208579,
+              52.5053996
+            ],
+            [
+              13.5211491,
+              52.5054517
+            ],
+            [
+              13.521231,
+              52.505286
+            ],
+            [
+              13.5212769,
+              52.5052961
+            ],
+            [
+              13.521292,
+              52.5052618
+            ],
+            [
+              13.5218231,
+              52.5053593
+            ],
+            [
+              13.5216529,
+              52.5056524
+            ],
+            [
+              13.5217066,
+              52.5056639
+            ],
+            [
+              13.521678,
+              52.505711
+            ],
+            [
+              13.5217061,
+              52.5057179
+            ],
+            [
+              13.5216987,
+              52.5057297
+            ],
+            [
+              13.5216849,
+              52.5057555
+            ],
+            [
+              13.5217688,
+              52.5057733
+            ],
+            [
+              13.5218006,
+              52.5057589
+            ],
+            [
+              13.5218659,
+              52.5057779
+            ],
+            [
+              13.5216313,
+              52.5061888
+            ],
+            [
+              13.5216453,
+              52.5062289
+            ],
+            [
+              13.521629,
+              52.5062696
+            ],
+            [
+              13.521944,
+              52.5063851
+            ],
+            [
+              13.5230364,
+              52.5065728
+            ],
+            [
+              13.523045,
+              52.5065986
+            ],
+            [
+              13.522956,
+              52.5066862
+            ],
+            [
+              13.5229968,
+              52.5067026
+            ],
+            [
+              13.5230441,
+              52.5067224
+            ],
+            [
+              13.5231333,
+              52.506742
+            ],
+            [
+              13.5232164,
+              52.5066773
+            ],
+            [
+              13.5233003,
+              52.5066294
+            ],
+            [
+              13.5235259,
+              52.506676
+            ],
+            [
+              13.523636,
+              52.5066978
+            ],
+            [
+              13.523654,
+              52.5068846
+            ],
+            [
+              13.5237355,
+              52.5069709
+            ],
+            [
+              13.523722,
+              52.5069832
+            ],
+            [
+              13.5237583,
+              52.5069951
+            ],
+            [
+              13.5237464,
+              52.5070083
+            ],
+            [
+              13.5237421,
+              52.5070138
+            ],
+            [
+              13.5238991,
+              52.5070706
+            ],
+            [
+              13.5239139,
+              52.5070552
+            ],
+            [
+              13.5239688,
+              52.5070673
+            ],
+            [
+              13.5248257,
+              52.5072947
+            ],
+            [
+              13.5249146,
+              52.5073135
+            ],
+            [
+              13.5249192,
+              52.5071812
+            ],
+            [
+              13.5266229,
+              52.5076518
+            ],
+            [
+              13.5266908,
+              52.5076631
+            ],
+            [
+              13.5271336,
+              52.507737
+            ],
+            [
+              13.5277944,
+              52.5078468
+            ],
+            [
+              13.5295893,
+              52.5081402
+            ],
+            [
+              13.5311898,
+              52.5081339
+            ],
+            [
+              13.5328306,
+              52.5081471
+            ],
+            [
+              13.5328304,
+              52.5092181
+            ],
+            [
+              13.5322187,
+              52.5092179
+            ],
+            [
+              13.5327193,
+              52.5095564
+            ],
+            [
+              13.5328004,
+              52.5096946
+            ],
+            [
+              13.5328141,
+              52.50972
+            ],
+            [
+              13.5328271,
+              52.5097487
+            ],
+            [
+              13.5329134,
+              52.509888
+            ],
+            [
+              13.535188,
+              52.5098181
+            ],
+            [
+              13.5361098,
+              52.5093101
+            ],
+            [
+              13.5367509,
+              52.5089561
+            ],
+            [
+              13.5366955,
+              52.5080139
+            ],
+            [
+              13.5367119,
+              52.5076018
+            ],
+            [
+              13.5367946,
+              52.5065599
+            ],
+            [
+              13.5372795,
+              52.5047685
+            ],
+            [
+              13.5384714,
+              52.5006129
+            ],
+            [
+              13.5387611,
+              52.4999971
+            ],
+            [
+              13.5385173,
+              52.4997452
+            ],
+            [
+              13.5380366,
+              52.4994138
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "tierpark-berlin",
+        "name": "Tierpark Berlin",
+        "description": "The Tierpark Berlin is one of two zoos located in Berlin, Germany. It was founded in 1955 and is located in Friedrichsfelde on the former grounds of Friedrichsfelde Palace, which is situated within the zoo. As of 31 December 2013, the zoo houses 7,250 animals from 846 species, in an area of 160 hectares. Tierpark Berlin also features two public exhibits free of charge, one being the Bärenschaufenster for American black bears.",
+        "enclosure": "Tierpark Berlin",
+        "wikipedia": "https://en.wikipedia.org/wiki/Tierpark_Berlin",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Elefanten_im_Tierpark_Friedrichsfelde_%28Berlin%29.jpg?width=320"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5261547,
+              52.5003454
+            ],
+            [
+              13.5265525,
+              52.500428
+            ],
+            [
+              13.5263138,
+              52.5008564
+            ],
+            [
+              13.5259159,
+              52.5007739
+            ],
+            [
+              13.5261547,
+              52.5003454
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "timorhirsch",
+        "name": "Timorhirsch",
+        "species": "Rusa timorensis",
+        "enclosure": "Timorhirsch"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5215225,
+          52.506584
+        ]
+      },
+      "properties": {
+        "id": "treskow-platane",
+        "name": "Treskow-Platane",
+        "species": "Platanus x acerifolia",
+        "enclosure": "Treskow-Platane",
+        "wikipedia": "https://de.wikipedia.org/wiki/Treskow-Platane",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Treskow-Platane_2014-3_Berlin-Frf_1474-1354-120.jpg?width=320"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.525481,
+              52.5007767
+            ],
+            [
+              13.525056,
+              52.5006945
+            ],
+            [
+              13.52479,
+              52.5012064
+            ],
+            [
+              13.525215,
+              52.5012886
+            ],
+            [
+              13.525481,
+              52.5007767
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "tule-elk",
+        "name": "Tule elk",
+        "species": "Cervus canadensis nannodes",
+        "enclosure": "Tule elk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5301987,
+              52.5059273
+            ],
+            [
+              13.5302211,
+              52.5059343
+            ],
+            [
+              13.5302462,
+              52.5059347
+            ],
+            [
+              13.5302691,
+              52.5059284
+            ],
+            [
+              13.5302852,
+              52.5059167
+            ],
+            [
+              13.5302914,
+              52.5059018
+            ],
+            [
+              13.5302864,
+              52.5058869
+            ],
+            [
+              13.5302713,
+              52.5058747
+            ],
+            [
+              13.5302489,
+              52.5058677
+            ],
+            [
+              13.5302238,
+              52.5058673
+            ],
+            [
+              13.5302009,
+              52.5058736
+            ],
+            [
+              13.5301848,
+              52.5058853
+            ],
+            [
+              13.5301786,
+              52.5059001
+            ],
+            [
+              13.5301835,
+              52.5059151
+            ],
+            [
+              13.5301987,
+              52.5059273
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "turkmenen-uhu",
+        "name": "Turkmenen-Uhu",
+        "species": "Bubo bubo omissus",
+        "enclosure": "Turkmenen-Uhu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.531719,
+              52.5076561
+            ],
+            [
+              13.5317184,
+              52.5078204
+            ],
+            [
+              13.5319969,
+              52.5078207
+            ],
+            [
+              13.5319973,
+              52.5077105
+            ],
+            [
+              13.532197,
+              52.5077107
+            ],
+            [
+              13.5323224,
+              52.5076929
+            ],
+            [
+              13.5323691,
+              52.5076744
+            ],
+            [
+              13.5324105,
+              52.5076539
+            ],
+            [
+              13.5324232,
+              52.5075905
+            ],
+            [
+              13.5323734,
+              52.5075593
+            ],
+            [
+              13.532293,
+              52.5075275
+            ],
+            [
+              13.5321453,
+              52.5075177
+            ],
+            [
+              13.5319634,
+              52.507519
+            ],
+            [
+              13.5318381,
+              52.5075354
+            ],
+            [
+              13.5317762,
+              52.507573
+            ],
+            [
+              13.531719,
+              52.5076561
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "venezolanischer-roter brüllaffen",
+        "name": "Venezolanischer Roter Brüllaffen",
+        "species": "Alouatta seniculus",
+        "enclosure": "Venezolanischer Roter Brüllaffen"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5251222,
+              52.5006307
+            ],
+            [
+              13.5255145,
+              52.5007128
+            ],
+            [
+              13.5256802,
+              52.5004177
+            ],
+            [
+              13.5252879,
+              52.5003357
+            ],
+            [
+              13.5251222,
+              52.5006307
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "vietnamese-sika deer",
+        "name": "Vietnamese sika deer",
+        "species": "Cervus nippon pseudaxis",
+        "enclosure": "Vietnamese sika deer"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5332627,
+              52.5050671
+            ],
+            [
+              13.5333199,
+              52.5051063
+            ],
+            [
+              13.5333855,
+              52.5051027
+            ],
+            [
+              13.5333875,
+              52.5050177
+            ],
+            [
+              13.5333579,
+              52.5050041
+            ],
+            [
+              13.5333518,
+              52.5049988
+            ],
+            [
+              13.5332883,
+              52.5050045
+            ],
+            [
+              13.5332627,
+              52.5050671
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "waldrapp",
+        "name": "Waldrapp",
+        "species": "Geronticus eremita",
+        "enclosure": "Waldrapp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5266811,
+              52.5042226
+            ],
+            [
+              13.5268262,
+              52.5044015
+            ],
+            [
+              13.5266514,
+              52.5044535
+            ],
+            [
+              13.5265133,
+              52.5042811
+            ],
+            [
+              13.5266811,
+              52.5042226
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "watted-crane",
+        "name": "Watted Crane",
+        "species": "Grus carunculata;Bugeranus carunculatus",
+        "enclosure": "Watted Crane"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5236837,
+              52.4987132
+            ],
+            [
+              13.523717,
+              52.4987289
+            ],
+            [
+              13.5237607,
+              52.4987323
+            ],
+            [
+              13.5238002,
+              52.4987397
+            ],
+            [
+              13.5238506,
+              52.498763
+            ],
+            [
+              13.5238693,
+              52.4987871
+            ],
+            [
+              13.5238813,
+              52.4988071
+            ],
+            [
+              13.5239054,
+              52.4988616
+            ],
+            [
+              13.5239304,
+              52.498902
+            ],
+            [
+              13.5239732,
+              52.4989256
+            ],
+            [
+              13.524016,
+              52.4989529
+            ],
+            [
+              13.5240445,
+              52.4989781
+            ],
+            [
+              13.5240614,
+              52.499012
+            ],
+            [
+              13.5240512,
+              52.4990468
+            ],
+            [
+              13.5240388,
+              52.4990947
+            ],
+            [
+              13.524045,
+              52.4991311
+            ],
+            [
+              13.5240678,
+              52.4991737
+            ],
+            [
+              13.5241184,
+              52.499217
+            ],
+            [
+              13.5241766,
+              52.4992559
+            ],
+            [
+              13.5242549,
+              52.4993041
+            ],
+            [
+              13.5243028,
+              52.4993414
+            ],
+            [
+              13.5243252,
+              52.4993695
+            ],
+            [
+              13.5243335,
+              52.4994014
+            ],
+            [
+              13.524346,
+              52.4994606
+            ],
+            [
+              13.524335,
+              52.4995257
+            ],
+            [
+              13.5243277,
+              52.4995589
+            ],
+            [
+              13.5243442,
+              52.4995722
+            ],
+            [
+              13.5243816,
+              52.4995979
+            ],
+            [
+              13.524308,
+              52.4995935
+            ],
+            [
+              13.5241658,
+              52.4995958
+            ],
+            [
+              13.5240384,
+              52.4995752
+            ],
+            [
+              13.5239261,
+              52.4995521
+            ],
+            [
+              13.5238488,
+              52.4995286
+            ],
+            [
+              13.5236821,
+              52.4994784
+            ],
+            [
+              13.5235371,
+              52.4994279
+            ],
+            [
+              13.5233358,
+              52.4994298
+            ],
+            [
+              13.5232588,
+              52.4993114
+            ],
+            [
+              13.5231164,
+              52.4993458
+            ],
+            [
+              13.5230398,
+              52.4992273
+            ],
+            [
+              13.5233266,
+              52.49876
+            ],
+            [
+              13.523369,
+              52.4986897
+            ],
+            [
+              13.5233891,
+              52.4986584
+            ],
+            [
+              13.5235243,
+              52.4986912
+            ],
+            [
+              13.5235537,
+              52.4986494
+            ],
+            [
+              13.5236837,
+              52.4987132
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "wisent",
+        "name": "Wisent",
+        "species": "Bison bonasus",
+        "enclosure": "Wisent"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5250444,
+              52.4996019
+            ],
+            [
+              13.5251158,
+              52.4996482
+            ],
+            [
+              13.5252445,
+              52.4996057
+            ],
+            [
+              13.5252507,
+              52.4995849
+            ],
+            [
+              13.5250181,
+              52.4995028
+            ],
+            [
+              13.5250739,
+              52.4994518
+            ],
+            [
+              13.5251871,
+              52.4993338
+            ],
+            [
+              13.5252228,
+              52.4993479
+            ],
+            [
+              13.5253097,
+              52.4992582
+            ],
+            [
+              13.5254027,
+              52.49916
+            ],
+            [
+              13.5253647,
+              52.499135
+            ],
+            [
+              13.5254014,
+              52.499116
+            ],
+            [
+              13.5253051,
+              52.4990861
+            ],
+            [
+              13.5252894,
+              52.4990602
+            ],
+            [
+              13.5252911,
+              52.4990318
+            ],
+            [
+              13.5253143,
+              52.4990075
+            ],
+            [
+              13.5253493,
+              52.4989805
+            ],
+            [
+              13.5254024,
+              52.4989494
+            ],
+            [
+              13.5254915,
+              52.4989126
+            ],
+            [
+              13.5255262,
+              52.4988872
+            ],
+            [
+              13.5255526,
+              52.4988579
+            ],
+            [
+              13.5255674,
+              52.4988111
+            ],
+            [
+              13.5255777,
+              52.4987702
+            ],
+            [
+              13.5255904,
+              52.4987406
+            ],
+            [
+              13.5256029,
+              52.4987077
+            ],
+            [
+              13.5256135,
+              52.4986823
+            ],
+            [
+              13.5256115,
+              52.4986429
+            ],
+            [
+              13.5256016,
+              52.4986127
+            ],
+            [
+              13.5255628,
+              52.4985794
+            ],
+            [
+              13.5255231,
+              52.4985493
+            ],
+            [
+              13.5255138,
+              52.4985244
+            ],
+            [
+              13.5255199,
+              52.4984852
+            ],
+            [
+              13.5255119,
+              52.4984566
+            ],
+            [
+              13.5254736,
+              52.4984361
+            ],
+            [
+              13.5253997,
+              52.4984225
+            ],
+            [
+              13.525357,
+              52.4984192
+            ],
+            [
+              13.5252887,
+              52.498428
+            ],
+            [
+              13.5251679,
+              52.498449
+            ],
+            [
+              13.5250526,
+              52.498463
+            ],
+            [
+              13.5249609,
+              52.4984731
+            ],
+            [
+              13.5248942,
+              52.4984731
+            ],
+            [
+              13.5248375,
+              52.4984605
+            ],
+            [
+              13.5247644,
+              52.4984465
+            ],
+            [
+              13.5246953,
+              52.4984447
+            ],
+            [
+              13.5246219,
+              52.4984424
+            ],
+            [
+              13.524574,
+              52.4984319
+            ],
+            [
+              13.5245437,
+              52.4984108
+            ],
+            [
+              13.5245168,
+              52.4983775
+            ],
+            [
+              13.5244837,
+              52.4983619
+            ],
+            [
+              13.5244351,
+              52.4983546
+            ],
+            [
+              13.5243777,
+              52.4983547
+            ],
+            [
+              13.5243016,
+              52.4983643
+            ],
+            [
+              13.5242384,
+              52.4983822
+            ],
+            [
+              13.5241848,
+              52.4984017
+            ],
+            [
+              13.5241289,
+              52.4984363
+            ],
+            [
+              13.5240769,
+              52.4984664
+            ],
+            [
+              13.5240676,
+              52.4984957
+            ],
+            [
+              13.5240753,
+              52.4985231
+            ],
+            [
+              13.524125,
+              52.4985514
+            ],
+            [
+              13.5241823,
+              52.4985797
+            ],
+            [
+              13.5242214,
+              52.498593
+            ],
+            [
+              13.5242686,
+              52.4986316
+            ],
+            [
+              13.5243111,
+              52.4986911
+            ],
+            [
+              13.5243433,
+              52.4987256
+            ],
+            [
+              13.5243804,
+              52.4987646
+            ],
+            [
+              13.5244349,
+              52.4988276
+            ],
+            [
+              13.5244988,
+              52.4988881
+            ],
+            [
+              13.5245473,
+              52.4989465
+            ],
+            [
+              13.52458,
+              52.4990086
+            ],
+            [
+              13.5245962,
+              52.4990479
+            ],
+            [
+              13.524618,
+              52.499111
+            ],
+            [
+              13.524635,
+              52.49917
+            ],
+            [
+              13.5246564,
+              52.4992392
+            ],
+            [
+              13.5246806,
+              52.4992903
+            ],
+            [
+              13.524708,
+              52.499335
+            ],
+            [
+              13.5247128,
+              52.499388
+            ],
+            [
+              13.5247298,
+              52.4994475
+            ],
+            [
+              13.5247454,
+              52.4994871
+            ],
+            [
+              13.5247888,
+              52.4995362
+            ],
+            [
+              13.5248245,
+              52.499557
+            ],
+            [
+              13.5248524,
+              52.4995674
+            ],
+            [
+              13.5249082,
+              52.4995721
+            ],
+            [
+              13.5249734,
+              52.4995806
+            ],
+            [
+              13.5250444,
+              52.4996019
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "wood-bison",
+        "name": "Wood Bison",
+        "species": "Bison bison athabascae",
+        "enclosure": "Wood Bison"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5270554,
+              52.4988791
+            ],
+            [
+              13.5270184,
+              52.498835
+            ],
+            [
+              13.5269654,
+              52.4988515
+            ],
+            [
+              13.5270024,
+              52.4988956
+            ],
+            [
+              13.5270554,
+              52.4988791
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "yellow-bibbed lori",
+        "name": "Yellow-bibbed Lori",
+        "species": "Lorius chlorocercus",
+        "enclosure": "Yellow-bibbed Lori"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5312744,
+              52.501261
+            ],
+            [
+              13.5313349,
+              52.501238
+            ],
+            [
+              13.5314166,
+              52.5012067
+            ],
+            [
+              13.5314075,
+              52.5011772
+            ],
+            [
+              13.5313092,
+              52.5011772
+            ],
+            [
+              13.5311079,
+              52.5012582
+            ],
+            [
+              13.5309798,
+              52.5013418
+            ],
+            [
+              13.5309507,
+              52.5013925
+            ],
+            [
+              13.5310441,
+              52.5014077
+            ],
+            [
+              13.5311548,
+              52.5012932
+            ],
+            [
+              13.5312123,
+              52.5012619
+            ],
+            [
+              13.5312744,
+              52.501261
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "yellow-throated marten",
+        "name": "Yellow-throated Marten",
+        "species": "Martes flavigula",
+        "enclosure": "Yellow-throated Marten"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5315006,
+              52.5018047
+            ],
+            [
+              13.5313497,
+              52.5018329
+            ],
+            [
+              13.5314181,
+              52.5019685
+            ],
+            [
+              13.531569,
+              52.5019404
+            ],
+            [
+              13.5315006,
+              52.5018047
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "zebramanguste",
+        "name": "Zebramanguste",
+        "species": "Mungos mungo",
+        "enclosure": "Zebramanguste"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5271037,
+              52.5072423
+            ],
+            [
+              13.5271465,
+              52.5070844
+            ],
+            [
+              13.5272151,
+              52.5068533
+            ],
+            [
+              13.5273453,
+              52.5068042
+            ],
+            [
+              13.5276064,
+              52.5068741
+            ],
+            [
+              13.5277888,
+              52.5069247
+            ],
+            [
+              13.5278317,
+              52.5069753
+            ],
+            [
+              13.527837,
+              52.5070781
+            ],
+            [
+              13.5278049,
+              52.507181
+            ],
+            [
+              13.5276895,
+              52.5073606
+            ],
+            [
+              13.5276198,
+              52.5073867
+            ],
+            [
+              13.5275098,
+              52.5073916
+            ],
+            [
+              13.5272684,
+              52.5073524
+            ],
+            [
+              13.5272309,
+              52.5073344
+            ],
+            [
+              13.5271037,
+              52.5072423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "stlicher kiang",
+        "name": "Östlicher Kiang",
+        "species": "Equus kiang holdereri",
+        "enclosure": "Östlicher Kiang"
       }
     }
   ]
