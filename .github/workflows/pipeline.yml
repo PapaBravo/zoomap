@@ -140,6 +140,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore(data): update animals.geojson from OSM pipeline [skip ci]"
+            git commit -m "chore(data): update animals.geojson from OSM pipeline"
             git push
           fi
