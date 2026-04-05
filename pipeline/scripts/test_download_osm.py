@@ -224,13 +224,14 @@ class TestParseElementsRelations(unittest.TestCase):
         self.assertEqual(len(rows), 0)
 
     def test_relation_centroid_computed_from_outer_ring_vertices(self):
-        # A square: [0,0]-[2,0]-[2,2]-[0,2]-[0,0] (closing vertex included).
-        # Average of 5 points: lon=(0+2+2+0+0)/5=0.8, lat=(0+0+2+2+0)/5=0.8
+        # A closed ring: [0,0]-[2,0]-[2,2]-[0,2]-[0,0].
+        # The closing vertex is excluded from the centroid calculation so the
+        # 4 unique vertices are averaged: lon=(0+2+2+0)/4=1.0, lat=(0+0+2+2)/4=1.0
         ring = [[0.0, 0.0], [2.0, 0.0], [2.0, 2.0], [0.0, 2.0], [0.0, 0.0]]
         elem = self._make_relation([self._outer(ring)])
         rows = dl.parse_elements([elem])
-        self.assertAlmostEqual(rows[0]["centroid_lat"], 0.8)
-        self.assertAlmostEqual(rows[0]["centroid_lon"], 0.8)
+        self.assertAlmostEqual(rows[0]["centroid_lat"], 1.0)
+        self.assertAlmostEqual(rows[0]["centroid_lon"], 1.0)
 
 
 if __name__ == "__main__":

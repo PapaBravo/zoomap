@@ -260,8 +260,13 @@ def parse_elements(elements: list) -> list[dict]:
                     inner_rings.append(coords)
 
             if outer_rings:
-                # Compute centroid from all outer ring vertices
-                all_outer = [c for ring in outer_rings for c in ring]
+                # Compute centroid from unique outer ring vertices (excluding the
+                # duplicate closing vertex present in closed GeoJSON rings).
+                all_outer = [
+                    c
+                    for ring in outer_rings
+                    for c in (ring[:-1] if len(ring) > 1 and ring[0] == ring[-1] else ring)
+                ]
                 lat, lon = _centroid_from_coord_pairs(all_outer)
                 if lat is None:
                     continue
@@ -270,7 +275,10 @@ def parse_elements(elements: list) -> list[dict]:
                     geom_type = "Polygon"
                     geom_coords = json.dumps([outer_rings[0]] + inner_rings)
                 else:
-                    # Multiple outer rings → MultiPolygon; inner rings ignored
+                    # Multiple outer rings → MultiPolygon.
+                    # Associating inner rings with specific outer rings requires
+                    # spatial containment tests; zoo enclosures rarely have holes
+                    # in multi-part geometries, so inner rings are omitted here.
                     geom_type = "MultiPolygon"
                     geom_coords = json.dumps([[ring] for ring in outer_rings])
             else:
