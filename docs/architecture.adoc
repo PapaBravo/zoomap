@@ -152,7 +152,7 @@ The `geometry` field is one of two GeoJSON geometry types:
 | `enclosure`
 | string
 | ✓
-| Raw OSM `name` tag of the enclosure; may differ slightly from `name` when the pipeline normalises the display value.
+| Raw OSM `name` tag of the enclosure; may differ slightly from `name` when the pipeline normalizes the display value.
 
 | `species`
 | string
@@ -199,7 +199,7 @@ flowchart TD
         DBT_BS["dbt run"]
         SILVER[("DuckDB\nsilver_pois\n[Silver]")]
         DBT_BS -->|"cast & type"| DBT_BS
-        DBT_BS -->|"filter & normalise"| SILVER
+        DBT_BS -->|"filter & normalize"| SILVER
     end
 
     subgraph Stage3["③ Wiki Enrichment"]
