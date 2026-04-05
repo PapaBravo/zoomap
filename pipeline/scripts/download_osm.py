@@ -192,6 +192,15 @@ def _centroid_from_geometry(geometry: list) -> tuple[float, float]:
     return (sum(lats) / len(lats), sum(lons) / len(lons))
 
 
+def _centroid_from_coord_pairs(coord_pairs: list) -> tuple[float, float]:
+    """Compute centroid (lat, lon) from a list of [lon, lat] coordinate pairs."""
+    if not coord_pairs:
+        return (None, None)
+    lons = [c[0] for c in coord_pairs]
+    lats = [c[1] for c in coord_pairs]
+    return (sum(lats) / len(lats), sum(lons) / len(lons))
+
+
 def _coords_from_geometry(geometry: list) -> list:
     """Convert Overpass geometry list to GeoJSON coordinate pairs [lon, lat]."""
     return [[p["lon"], p["lat"]] for p in geometry if "lat" in p and "lon" in p]
@@ -230,14 +239,49 @@ def parse_elements(elements: list) -> list[dict]:
                 geom_coords = json.dumps(coords)
 
         elif osm_type == "relation":
-            # Relations are complex; skip for now unless they have a center
-            center = elem.get("center", {})
-            lat = center.get("lat")
-            lon = center.get("lon")
-            if lat is None:
-                continue
-            geom_type = "Point"
-            geom_coords = json.dumps([lon, lat])
+            members = elem.get("members", [])
+
+            # Collect outer and inner rings from way members (multipolygon support)
+            outer_rings = []
+            inner_rings = []
+            for member in members:
+                if member.get("type") != "way":
+                    continue
+                geom = member.get("geometry", [])
+                if not geom:
+                    continue
+                coords = _coords_from_geometry(geom)
+                if len(coords) < 2:
+                    continue
+                role = member.get("role", "")
+                if role == "outer":
+                    outer_rings.append(coords)
+                elif role == "inner":
+                    inner_rings.append(coords)
+
+            if outer_rings:
+                # Compute centroid from all outer ring vertices
+                all_outer = [c for ring in outer_rings for c in ring]
+                lat, lon = _centroid_from_coord_pairs(all_outer)
+                if lat is None:
+                    continue
+                if len(outer_rings) == 1:
+                    # Single outer ring, possibly with holes
+                    geom_type = "Polygon"
+                    geom_coords = json.dumps([outer_rings[0]] + inner_rings)
+                else:
+                    # Multiple outer rings → MultiPolygon; inner rings ignored
+                    geom_type = "MultiPolygon"
+                    geom_coords = json.dumps([[ring] for ring in outer_rings])
+            else:
+                # Fall back to center point if no member geometries are available
+                center = elem.get("center", {})
+                lat = center.get("lat")
+                lon = center.get("lon")
+                if lat is None:
+                    continue
+                geom_type = "Point"
+                geom_coords = json.dumps([lon, lat])
 
         else:
             continue

@@ -146,5 +146,92 @@ class TestMakeSession(unittest.TestCase):
         self.assertEqual(adapter.max_retries.total, 3)
 
 
+class TestParseElementsRelations(unittest.TestCase):
+    """parse_elements should build polygon/multipolygon geometry from relation members."""
+
+    def _make_relation(self, members, center=None, tags=None):
+        elem = {
+            "type": "relation",
+            "id": 1,
+            "members": members,
+            "tags": tags or {"attraction": "animal"},
+        }
+        if center:
+            elem["center"] = center
+        return elem
+
+    def _outer(self, coords):
+        return {
+            "type": "way",
+            "ref": 1,
+            "role": "outer",
+            "geometry": [{"lat": lat, "lon": lon} for lon, lat in coords],
+        }
+
+    def _inner(self, coords):
+        return {
+            "type": "way",
+            "ref": 2,
+            "role": "inner",
+            "geometry": [{"lat": lat, "lon": lon} for lon, lat in coords],
+        }
+
+    def test_relation_with_single_outer_ring_produces_polygon(self):
+        ring = [[0.0, 0.0], [1.0, 0.0], [1.0, 1.0], [0.0, 1.0], [0.0, 0.0]]
+        elem = self._make_relation([self._outer(ring)])
+        rows = dl.parse_elements([elem])
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["geom_type"], "Polygon")
+        coords = json.loads(rows[0]["geom_coords"])
+        # Polygon coords: list of rings; first ring is outer
+        self.assertEqual(coords[0], ring)
+
+    def test_relation_with_outer_and_inner_ring_produces_polygon_with_hole(self):
+        outer = [[0.0, 0.0], [2.0, 0.0], [2.0, 2.0], [0.0, 2.0], [0.0, 0.0]]
+        inner = [[0.5, 0.5], [1.5, 0.5], [1.5, 1.5], [0.5, 1.5], [0.5, 0.5]]
+        elem = self._make_relation([self._outer(outer), self._inner(inner)])
+        rows = dl.parse_elements([elem])
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["geom_type"], "Polygon")
+        coords = json.loads(rows[0]["geom_coords"])
+        self.assertEqual(len(coords), 2)  # outer + one hole
+        self.assertEqual(coords[0], outer)
+        self.assertEqual(coords[1], inner)
+
+    def test_relation_with_multiple_outer_rings_produces_multipolygon(self):
+        ring1 = [[0.0, 0.0], [1.0, 0.0], [1.0, 1.0], [0.0, 1.0], [0.0, 0.0]]
+        ring2 = [[2.0, 2.0], [3.0, 2.0], [3.0, 3.0], [2.0, 3.0], [2.0, 2.0]]
+        elem = self._make_relation([self._outer(ring1), self._outer(ring2)])
+        rows = dl.parse_elements([elem])
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["geom_type"], "MultiPolygon")
+        coords = json.loads(rows[0]["geom_coords"])
+        self.assertEqual(len(coords), 2)  # two polygons
+        self.assertEqual(coords[0], [ring1])
+        self.assertEqual(coords[1], [ring2])
+
+    def test_relation_without_members_falls_back_to_center_point(self):
+        elem = self._make_relation([], center={"lat": 52.5, "lon": 13.5})
+        rows = dl.parse_elements([elem])
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["geom_type"], "Point")
+        self.assertAlmostEqual(rows[0]["centroid_lat"], 52.5)
+        self.assertAlmostEqual(rows[0]["centroid_lon"], 13.5)
+
+    def test_relation_without_members_and_no_center_is_skipped(self):
+        elem = self._make_relation([])
+        rows = dl.parse_elements([elem])
+        self.assertEqual(len(rows), 0)
+
+    def test_relation_centroid_computed_from_outer_ring_vertices(self):
+        # A square: [0,0]-[2,0]-[2,2]-[0,2]-[0,0] (closing vertex included).
+        # Average of 5 points: lon=(0+2+2+0+0)/5=0.8, lat=(0+0+2+2+0)/5=0.8
+        ring = [[0.0, 0.0], [2.0, 0.0], [2.0, 2.0], [0.0, 2.0], [0.0, 0.0]]
+        elem = self._make_relation([self._outer(ring)])
+        rows = dl.parse_elements([elem])
+        self.assertAlmostEqual(rows[0]["centroid_lat"], 0.8)
+        self.assertAlmostEqual(rows[0]["centroid_lon"], 0.8)
+
+
 if __name__ == "__main__":
     unittest.main()
