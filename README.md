@@ -11,7 +11,7 @@ Features in descending priority are
 
 # Documentation
 
-For a detailed description of the system design see link:docs/architecture.adoc[Architecture].
+For a detailed description of the system design see [Architecture](docs/architecture.adoc).
 
 # Plan
 * Simplest possible frontend (no react or similar)

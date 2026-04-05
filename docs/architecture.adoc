@@ -53,7 +53,7 @@ The pipeline follows a *medallion architecture* (Bronze → Silver → Gold) imp
 
 | `bronze_osm_pois.sql`
 | `pipeline/dbt/models/bronze/`
-| dbt model that casts raw JSON fields to typed columns, normalising the flat OSM tag map into a structured table.
+| dbt model that casts raw JSON fields to typed columns, normalizing the flat OSM tag map into a structured table.
 
 | `silver_pois.sql`
 | `pipeline/dbt/models/silver/`
@@ -155,7 +155,7 @@ sequenceDiagram
 
 | *Silver*
 | DuckDB `silver_pois`
-| Filtered and normalised POIs; only animal attractions with extracted tag columns.
+| Filtered and normalized POIs; only animal attractions with extracted tag columns.
 
 | *Enrichment*
 | DuckDB `wiki_enrichment`
