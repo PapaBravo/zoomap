@@ -9,6 +9,10 @@ Features in descending priority are
 * Full Text search for animals in list
 * Selecting animals in list to highlight on map
 
+# Documentation
+
+For a detailed description of the system design see [Architecture](docs/architecture.adoc).
+
 # Plan
 * Simplest possible frontend (no react or similar)
 * Using osm poi data
