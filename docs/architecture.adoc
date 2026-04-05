@@ -49,7 +49,7 @@ The pipeline follows a *medallion architecture* (Bronze → Silver → Gold) imp
 
 | `download_osm.py`
 | `pipeline/scripts/`
-| Queries the Overpass API for POI nodes, ways, and relations within the configured bounding box. Caches raw JSON responses, computes centroids for multi-point geometries, and loads results into the `raw_osm_elements` table in DuckDB (Bronze layer).
+| Queries the Overpass API for POI nodes, ways, and relations within the configured bounding box. Caches raw JSON responses, reconstructs Polygon and MultiPolygon geometries from relation member ways, computes centroids for multi-point geometries, and loads results into the `raw_osm_elements` table in DuckDB (Bronze layer).
 
 | `bronze_osm_pois.sql`
 | `pipeline/dbt/models/bronze/`
@@ -61,11 +61,11 @@ The pipeline follows a *medallion architecture* (Bronze → Silver → Gold) imp
 
 | `enrich_wiki.py`
 | `pipeline/scripts/`
-| Reads QIDs and Wikipedia titles from the Silver layer, calls Wikidata and Wikipedia REST APIs, caches individual entity responses, and writes enrichment data to the `wiki_enrichment` table.
+| Reads QIDs and Wikipedia titles from the Silver layer, calls Wikidata and Wikipedia REST APIs, caches individual entity responses, and writes enrichment data to the `wiki_enrichment` table. When the OSM `species:wikidata` tag contains multiple semicolon-separated QIDs, one enrichment record is produced per QID so that each species in a shared enclosure gets its own GeoJSON feature.
 
 | `gold_animals.sql`
 | `pipeline/dbt/models/gold/`
-| dbt model that joins Silver POIs with enrichment data, coalesces display names and images, constructs Wikipedia URLs, and produces the final `gold_animals` table.
+| dbt model that joins Silver POIs with enrichment data, coalesces display names and images, constructs Wikipedia URLs, and produces the final `gold_animals` table. Because `wiki_enrichment` may contain multiple records per OSM element (one per species), the join naturally expands to one output row per species, each sharing the same geometry. The `enclosure` column always carries the raw OSM `name` tag to remain stable across multi-species expansions.
 
 | `export_geojson.py`
 | `pipeline/scripts/`
@@ -88,7 +88,7 @@ The pipeline follows a *medallion architecture* (Bronze → Silver → Gold) imp
 
 | `app.js`
 | project root
-| Fetches `data/animals.geojson` at startup, renders the Leaflet map with OSM tiles, populates the animal list, handles full-text search, and synchronises list selection with map highlights.
+| Fetches `data/animals.geojson` at startup, renders the Leaflet map with OSM tiles, populates the animal list, handles full-text search (including enclosure name), and synchronises list selection with map highlights. Multiple features sharing the same geometry (multi-species enclosures) each receive their own list entry; MultiPolygon geometries are handled natively by Leaflet.
 
 | `style.css`
 | project root
@@ -120,7 +120,7 @@ Each element in the `features` array represents one animal enclosure.
 
 *Geometry*
 
-The `geometry` field is one of two GeoJSON geometry types:
+The `geometry` field is one of three GeoJSON geometry types:
 
 [cols="1,3", options="header"]
 |===
@@ -130,7 +130,10 @@ The `geometry` field is one of two GeoJSON geometry types:
 | Single coordinate `[longitude, latitude]`; used when the OSM source element is a node.
 
 | `Polygon`
-| Closed ring of coordinates; used when the OSM source element is a way or relation. The pipeline computes the centroid for display purposes but preserves the full polygon.
+| Closed ring of coordinates; used when the OSM source element is a way or a relation with a single outer ring. The pipeline computes the centroid for display purposes but preserves the full polygon. Inner rings (holes) are included when present.
+
+| `MultiPolygon`
+| Multiple outer rings; used when an OSM relation contains more than one outer-role member way (e.g. a non-contiguous enclosure spread across two areas).
 |===
 
 *Properties*
@@ -152,7 +155,7 @@ The `geometry` field is one of two GeoJSON geometry types:
 | `enclosure`
 | string
 | ✓
-| Raw OSM `name` tag of the enclosure; may differ slightly from `name` when the pipeline normalizes the display value.
+| Raw OSM `name` tag of the enclosure element. For multi-species enclosures this value is the same across all species features sharing that enclosure, while `name` holds the individual species common name.
 
 | `species`
 | string

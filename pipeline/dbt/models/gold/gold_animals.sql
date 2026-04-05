@@ -33,9 +33,9 @@ joined as (
         coalesce(w.common_name, s.name)                         as name,
         coalesce(w.scientific_name, s.species)                  as species,
         w.description                                           as description,
-        -- Use element name as the enclosure name for enclosure ways;
-        -- for animal nodes the enclosure is usually their own name
-        coalesce(w.common_name, s.name)                         as enclosure,
+        -- Enclosure is always the raw OSM name tag so that all species sharing
+        -- the same enclosure display a consistent enclosure name.
+        s.name                                                  as enclosure,
         -- Build Wikipedia URL from enrichment title or OSM tag
         case
             when w.wikipedia_title is not null

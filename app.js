@@ -38,10 +38,19 @@ function buildPopupHtml(props) {
   const img = props.image
     ? `<img src="${escapeHtml(props.image)}" alt="${escapeHtml(props.name)}" class="popup-image" />`
     : '';
+  const species = props.species
+    ? `<em>${escapeHtml(props.species)}</em>`
+    : '';
+  const enclosureTag = props.enclosure && props.enclosure !== props.name
+    ? `<div class="popup-enclosure">📍 ${escapeHtml(props.enclosure)}</div>`
+    : '';
+  const desc = props.description
+    ? `<p>${escapeHtml(props.description)}</p>`
+    : '';
   const wikiLink = props.wikipedia
     ? `<a href="${escapeHtml(props.wikipedia)}" target="_blank" rel="noopener noreferrer" class="popup-wiki-link">Wikipedia ↗</a>`
     : '';
-  return `${img}<strong>${escapeHtml(props.name)}</strong><em>${escapeHtml(props.species)}</em><p>${escapeHtml(props.description)}</p>${wikiLink}`;
+  return `${img}<strong>${escapeHtml(props.name)}</strong>${species}${enclosureTag}${desc}${wikiLink}`;
 }
 
 function defaultStyle() {
@@ -140,7 +149,7 @@ fetch(DATA_URL)
 
           const listItem = document.createElement('li');
           listItem.dataset.id = id;
-          listItem.dataset.search = `${props.name} ${props.species} ${props.description}`.toLowerCase();
+          listItem.dataset.search = `${props.name} ${props.species || ''} ${props.description || ''} ${props.enclosure || ''}`.toLowerCase();
 
           const thumb = props.image
             ? `<img src="${escapeHtml(props.image)}" alt="${escapeHtml(props.name)}" class="animal-thumb" />`

@@ -208,7 +208,12 @@ def parse_osm_wikipedia_tag(tag: str) -> str | None:
 # ---------------------------------------------------------------------------
 
 def enrich() -> list[dict]:
-    """Read silver_pois, enrich each row, return list of enrichment dicts."""
+    """Read silver_pois, enrich each row, return list of enrichment dicts.
+
+    When the OSM ``species:wikidata`` tag contains multiple QIDs separated by
+    semicolons (e.g. ``Q1;Q2``), one enrichment record is produced per QID so
+    that each species gets its own GeoJSON feature with the same geometry.
+    """
     con = duckdb.connect(DB_PATH)
     try:
         rows = con.execute(
@@ -219,42 +224,53 @@ def enrich() -> list[dict]:
 
     enrichments = []
     for osm_id, species_wikidata_id, wikidata_id, wikipedia_tag in rows:
-        record = {
-            "osm_id": osm_id,
-            "wikidata_id": species_wikidata_id or wikidata_id,
-            "common_name": None,
-            "scientific_name": None,
-            "wikipedia_title": None,
-            "description": None,
-            "image_url": None,
-        }
+        # Split species:wikidata on ';' to handle multiple species per enclosure
+        species_qids = (
+            [q.strip() for q in species_wikidata_id.split(";") if q.strip()]
+            if species_wikidata_id
+            else []
+        )
 
-        # --- Wikidata: prefer species:wikidata, fall back to wikidata ---
-        effective_qid = species_wikidata_id or wikidata_id
-        if effective_qid:
-            entity = fetch_wikidata_entity(effective_qid)
-            if entity:
-                wd_info = extract_wikidata_info(entity, effective_qid)
-                record["common_name"] = wd_info["common_name"]
-                record["scientific_name"] = wd_info["scientific_name"]
-                if wd_info["wikipedia_title"]:
-                    record["wikipedia_title"] = wd_info["wikipedia_title"]
-                if wd_info["image_filename"]:
-                    record["image_url"] = commons_image_url(wd_info["image_filename"])
+        # Produce one record per species QID; fall back to a single record using
+        # the enclosure-level wikidata tag when no species QIDs are present.
+        effective_qids = species_qids if species_qids else [wikidata_id]
 
-        # --- Wikipedia (from Wikidata sitelink or OSM tag) ---
-        wp_title = record["wikipedia_title"] or parse_osm_wikipedia_tag(wikipedia_tag)
-        if wp_title:
-            summary = fetch_wikipedia_summary(wp_title)
-            if summary:
-                wp_info = extract_wikipedia_info(summary)
-                record["wikipedia_title"] = wp_title
-                record["description"] = wp_info["description"]
-                # Prefer Wikidata P18 image; fall back to Wikipedia thumbnail
-                if not record["image_url"]:
-                    record["image_url"] = wp_info["image_url"]
+        for qid in effective_qids:
+            record = {
+                "osm_id": osm_id,
+                "wikidata_id": qid,
+                "common_name": None,
+                "scientific_name": None,
+                "wikipedia_title": None,
+                "description": None,
+                "image_url": None,
+            }
 
-        enrichments.append(record)
+            # --- Wikidata lookup ---
+            if qid:
+                entity = fetch_wikidata_entity(qid)
+                if entity:
+                    wd_info = extract_wikidata_info(entity, qid)
+                    record["common_name"] = wd_info["common_name"]
+                    record["scientific_name"] = wd_info["scientific_name"]
+                    if wd_info["wikipedia_title"]:
+                        record["wikipedia_title"] = wd_info["wikipedia_title"]
+                    if wd_info["image_filename"]:
+                        record["image_url"] = commons_image_url(wd_info["image_filename"])
+
+            # --- Wikipedia (from Wikidata sitelink or OSM tag) ---
+            wp_title = record["wikipedia_title"] or parse_osm_wikipedia_tag(wikipedia_tag)
+            if wp_title:
+                summary = fetch_wikipedia_summary(wp_title)
+                if summary:
+                    wp_info = extract_wikipedia_info(summary)
+                    record["wikipedia_title"] = wp_title
+                    record["description"] = wp_info["description"]
+                    # Prefer Wikidata P18 image; fall back to Wikipedia thumbnail
+                    if not record["image_url"]:
+                        record["image_url"] = wp_info["image_url"]
+
+            enrichments.append(record)
 
     return enrichments
 

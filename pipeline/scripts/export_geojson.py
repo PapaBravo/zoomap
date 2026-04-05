@@ -41,6 +41,8 @@ def _build_geometry(geom_type: str, geom_coords: str) -> dict | None:
         return {"type": "Point", "coordinates": coords}
     if geom_type == "Polygon":
         return {"type": "Polygon", "coordinates": coords}
+    if geom_type == "MultiPolygon":
+        return {"type": "MultiPolygon", "coordinates": coords}
     if geom_type == "LineString":
         return {"type": "LineString", "coordinates": coords}
     return None
