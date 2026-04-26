@@ -730,6 +730,209 @@
     {
       "type": "Feature",
       "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5295718,
+              52.5023317
+            ],
+            [
+              13.5296122,
+              52.5023551
+            ],
+            [
+              13.5296944,
+              52.5023693
+            ],
+            [
+              13.5297638,
+              52.502371
+            ],
+            [
+              13.5298456,
+              52.5023594
+            ],
+            [
+              13.5299178,
+              52.5024146
+            ],
+            [
+              13.5299023,
+              52.5024363
+            ],
+            [
+              13.5298992,
+              52.5024609
+            ],
+            [
+              13.5299007,
+              52.5024816
+            ],
+            [
+              13.5299162,
+              52.5025043
+            ],
+            [
+              13.529938,
+              52.5025232
+            ],
+            [
+              13.5299457,
+              52.5025477
+            ],
+            [
+              13.529938,
+              52.5025779
+            ],
+            [
+              13.5299224,
+              52.5025959
+            ],
+            [
+              13.5298728,
+              52.5026176
+            ],
+            [
+              13.5298294,
+              52.5026374
+            ],
+            [
+              13.5297782,
+              52.5026705
+            ],
+            [
+              13.5297332,
+              52.5026856
+            ],
+            [
+              13.529696,
+              52.5026865
+            ],
+            [
+              13.5296696,
+              52.5026771
+            ],
+            [
+              13.5296386,
+              52.5026535
+            ],
+            [
+              13.5296107,
+              52.5026157
+            ],
+            [
+              13.5295797,
+              52.502593
+            ],
+            [
+              13.52953,
+              52.5025723
+            ],
+            [
+              13.5294354,
+              52.5025506
+            ],
+            [
+              13.5293594,
+              52.5025364
+            ],
+            [
+              13.5292881,
+              52.5025071
+            ],
+            [
+              13.5292509,
+              52.50251
+            ],
+            [
+              13.5292214,
+              52.50251
+            ],
+            [
+              13.5291888,
+              52.5025005
+            ],
+            [
+              13.5291904,
+              52.5024816
+            ],
+            [
+              13.5291988,
+              52.5024479
+            ],
+            [
+              13.5292074,
+              52.5024297
+            ],
+            [
+              13.5292291,
+              52.5024108
+            ],
+            [
+              13.5292493,
+              52.5023882
+            ],
+            [
+              13.5292384,
+              52.5023702
+            ],
+            [
+              13.529195,
+              52.5023287
+            ],
+            [
+              13.5291826,
+              52.5022975
+            ],
+            [
+              13.5291795,
+              52.5022616
+            ],
+            [
+              13.5291946,
+              52.5022267
+            ],
+            [
+              13.5292301,
+              52.5022112
+            ],
+            [
+              13.5292794,
+              52.5022218
+            ],
+            [
+              13.5294118,
+              52.5022447
+            ],
+            [
+              13.529486,
+              52.5022762
+            ],
+            [
+              13.5295182,
+              52.5023105
+            ],
+            [
+              13.5295718,
+              52.5023317
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "american-flamingo",
+        "name": "American Flamingo",
+        "species": "Phoenicopterus ruber",
+        "description": "The American flamingo is a large species of flamingo native to the West Indies, northern South America and the Yucatán Peninsula. It is closely related to the greater flamingo and Chilean flamingo, and was formerly considered conspecific with the greater flamingo, but that treatment is now widely viewed as incorrect due to a lack of evidence. It is also known as the Caribbean flamingo, although it is also present in the Galápagos Islands.",
+        "enclosure": "Kubaflamingo, Chileflamingo",
+        "wikipedia": "https://en.wikipedia.org/wiki/American_flamingo",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Phoenicopterus_ruber_Bonaire_1.jpg?width=320"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
           [
@@ -1298,134 +1501,6 @@
         "enclosure": "Atlashirsch",
         "wikipedia": "https://en.wikipedia.org/wiki/Barbary_stag",
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cervus_elaphus_barbarus%2C_Tierpark_Berlin%2C_523-629.jpg?width=320"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                13.5338561,
-                52.498604
-              ],
-              [
-                13.5339192,
-                52.4986501
-              ],
-              [
-                13.5340375,
-                52.4986731
-              ],
-              [
-                13.5341669,
-                52.4987344
-              ],
-              [
-                13.5345983,
-                52.4987314
-              ],
-              [
-                13.5346318,
-                52.4987088
-              ],
-              [
-                13.5345614,
-                52.4986711
-              ],
-              [
-                13.5345644,
-                52.4986183
-              ],
-              [
-                13.5346463,
-                52.4985416
-              ],
-              [
-                13.5347106,
-                52.4984865
-              ],
-              [
-                13.5347424,
-                52.4984462
-              ],
-              [
-                13.5347086,
-                52.4983783
-              ],
-              [
-                13.5346657,
-                52.4983298
-              ],
-              [
-                13.5346097,
-                52.4982885
-              ],
-              [
-                13.5345449,
-                52.498259
-              ],
-              [
-                13.5345004,
-                52.4982521
-              ],
-              [
-                13.5344471,
-                52.4982541
-              ],
-              [
-                13.5343258,
-                52.4982677
-              ],
-              [
-                13.5341517,
-                52.4982871
-              ],
-              [
-                13.5341243,
-                52.4983701
-              ],
-              [
-                13.5340764,
-                52.4984031
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                13.5338561,
-                52.498604
-              ],
-              [
-                13.5339804,
-                52.4985333
-              ],
-              [
-                13.534015,
-                52.4985105
-              ],
-              [
-                13.5340626,
-                52.4984428
-              ],
-              [
-                13.5340764,
-                52.4984031
-              ]
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "baudet-du poitou",
-        "name": "Baudet du Poitou",
-        "description": "The Baudet du Poitou, also called the Poitevin or Poitou, is a French breed of donkey. It originates in – and is named for – the former province of Poitou in western France. It is among the largest of donkey breeds, and has a distinctive long coat, which traditionally was left to hang in ungroomed locks or cadenettes. It was recognised by the Haras Nationaux, the French national stud, in 1884.",
-        "enclosure": "Poitou-Esel",
-        "wikipedia": "https://en.wikipedia.org/wiki/Baudet_du_Poitou",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Poitou-female-one-year-old.jpg?width=320"
       }
     },
     {
@@ -2042,7 +2117,7 @@
         "name": "Bos frontalis",
         "species": "Bos frontalis",
         "description": "The gayal, also known as mithun or Drung ox, is a large semi-domesticated cattle in the Himalayan foothills of Indian Subcontinent and primarily in Northeast India.",
-        "enclosure": "Gayal",
+        "enclosure": "Java-Banteng",
         "wikipedia": "https://en.wikipedia.org/wiki/Gayal",
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/B4_darjeling_para-5.jpg?width=320"
       }
@@ -2218,6 +2293,45 @@
         "coordinates": [
           [
             [
+              13.5271138,
+              52.5047931
+            ],
+            [
+              13.5271106,
+              52.5047368
+            ],
+            [
+              13.5271482,
+              52.504736
+            ],
+            [
+              13.5271514,
+              52.5047923
+            ],
+            [
+              13.5271138,
+              52.5047931
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "burrowing-parrot",
+        "name": "Burrowing Parrot",
+        "species": "Cyanoliseus patagonus",
+        "description": "The burrowing parrot, also known as the burrowing parakeet or the Patagonian conure, is a species of parrot native to Argentina and Chile. It belongs to the monotypic genus Cyanoliseus, with four subspecies that are currently recognized.",
+        "enclosure": "Felsensittich",
+        "wikipedia": "https://en.wikipedia.org/wiki/Burrowing_parrot",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cyanoliseus_patagonus_-Limari_Province%2C_Chile_-three-8.jpg?width=320"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
               13.5290512,
               52.504377
             ],
@@ -2252,45 +2366,6 @@
             [
               13.5290512,
               52.504377
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "burrowing-parrot",
-        "name": "Burrowing Parrot",
-        "species": "Cyanoliseus patagonus",
-        "description": "The burrowing parrot, also known as the burrowing parakeet or the Patagonian conure, is a species of parrot native to Argentina and Chile. It belongs to the monotypic genus Cyanoliseus, with four subspecies that are currently recognized.",
-        "enclosure": "Felsensittich",
-        "wikipedia": "https://en.wikipedia.org/wiki/Burrowing_parrot",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cyanoliseus_patagonus_-Limari_Province%2C_Chile_-three-8.jpg?width=320"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              13.5271138,
-              52.5047931
-            ],
-            [
-              13.5271106,
-              52.5047368
-            ],
-            [
-              13.5271482,
-              52.504736
-            ],
-            [
-              13.5271514,
-              52.5047923
-            ],
-            [
-              13.5271138,
-              52.5047931
             ]
           ]
         ]
@@ -3496,7 +3571,6 @@
         "name": "Common Pheasant",
         "species": "Phasianus colchicus",
         "description": "The common pheasant, ring-necked pheasant, or blue-headed pheasant, is a bird in the pheasant family (Phasianidae). The genus name comes from Latin phasianus 'pheasant'. The species name colchicus is Latin for 'of Colchis', a country on the Black Sea where pheasants became known to Europeans.",
-        "enclosure": "Fasanerie",
         "wikipedia": "https://en.wikipedia.org/wiki/Common_pheasant",
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/A_monograph_of_the_pheasants_%2810052517376%29.jpg?width=320"
       }
@@ -4081,6 +4155,85 @@
         "coordinates": [
           [
             [
+              13.5271037,
+              52.5072423
+            ],
+            [
+              13.5271465,
+              52.5070844
+            ],
+            [
+              13.5272151,
+              52.5068533
+            ],
+            [
+              13.5273453,
+              52.5068042
+            ],
+            [
+              13.5276064,
+              52.5068741
+            ],
+            [
+              13.5277888,
+              52.5069247
+            ],
+            [
+              13.5278317,
+              52.5069753
+            ],
+            [
+              13.527837,
+              52.5070781
+            ],
+            [
+              13.5278049,
+              52.507181
+            ],
+            [
+              13.5276895,
+              52.5073606
+            ],
+            [
+              13.5276198,
+              52.5073867
+            ],
+            [
+              13.5275098,
+              52.5073916
+            ],
+            [
+              13.5272684,
+              52.5073524
+            ],
+            [
+              13.5272309,
+              52.5073344
+            ],
+            [
+              13.5271037,
+              52.5072423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "equus-ferus przewalskii",
+        "name": "Equus ferus przewalskii",
+        "species": "Equus ferus przewalskii",
+        "description": "Przewalski's horse, also called the takhi, Mongolian wild horse or Dzungarian horse, is a rare and endangered wild horse originally native to the steppes of Central Asia. It is named after the Russian geographer and explorer Nikolay Przhevalsky. Once extinct in the wild, since the 1990s it has been reintroduced to its native habitat in Mongolia in the Hustai National Park, Takhin Tal Nature Reserve, Khomiin Tal, and several other locales in Central Asia and Eastern Europe.",
+        "enclosure": "Przewalski-Pferde",
+        "wikipedia": "https://en.wikipedia.org/wiki/Przewalski's_horse",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Przewalski%27s_Horse_%2802710137%29.jpg?width=320"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
               13.534799,
               52.5061532
             ],
@@ -4297,6 +4450,85 @@
         "coordinates": [
           [
             [
+              13.5301987,
+              52.5059273
+            ],
+            [
+              13.5302211,
+              52.5059343
+            ],
+            [
+              13.5302462,
+              52.5059347
+            ],
+            [
+              13.5302691,
+              52.5059284
+            ],
+            [
+              13.5302852,
+              52.5059167
+            ],
+            [
+              13.5302914,
+              52.5059018
+            ],
+            [
+              13.5302864,
+              52.5058869
+            ],
+            [
+              13.5302713,
+              52.5058747
+            ],
+            [
+              13.5302489,
+              52.5058677
+            ],
+            [
+              13.5302238,
+              52.5058673
+            ],
+            [
+              13.5302009,
+              52.5058736
+            ],
+            [
+              13.5301848,
+              52.5058853
+            ],
+            [
+              13.5301786,
+              52.5059001
+            ],
+            [
+              13.5301835,
+              52.5059151
+            ],
+            [
+              13.5301987,
+              52.5059273
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "eurasian-eagle-owl",
+        "name": "Eurasian Eagle-owl",
+        "species": "Bubo bubo",
+        "description": "The Eurasian eagle-owl is a species of eagle-owl, a type of bird that resides much over Eurasia. It is often just called the eagle-owl in Europe and Asia.",
+        "enclosure": "Turkmenen-Uhu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Eurasian_eagle-owl",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hubro_%28Bubo_bubo%29.JPG?width=320"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
               13.531356,
               52.4982076
             ],
@@ -4404,85 +4636,6 @@
         "name": "Eurasian Eagle-owl",
         "species": "Bubo bubo",
         "description": "The Eurasian eagle-owl is a species of eagle-owl, a type of bird that resides much over Eurasia. It is often just called the eagle-owl in Europe and Asia.",
-        "wikipedia": "https://en.wikipedia.org/wiki/Eurasian_eagle-owl",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hubro_%28Bubo_bubo%29.JPG?width=320"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              13.5301987,
-              52.5059273
-            ],
-            [
-              13.5302211,
-              52.5059343
-            ],
-            [
-              13.5302462,
-              52.5059347
-            ],
-            [
-              13.5302691,
-              52.5059284
-            ],
-            [
-              13.5302852,
-              52.5059167
-            ],
-            [
-              13.5302914,
-              52.5059018
-            ],
-            [
-              13.5302864,
-              52.5058869
-            ],
-            [
-              13.5302713,
-              52.5058747
-            ],
-            [
-              13.5302489,
-              52.5058677
-            ],
-            [
-              13.5302238,
-              52.5058673
-            ],
-            [
-              13.5302009,
-              52.5058736
-            ],
-            [
-              13.5301848,
-              52.5058853
-            ],
-            [
-              13.5301786,
-              52.5059001
-            ],
-            [
-              13.5301835,
-              52.5059151
-            ],
-            [
-              13.5301987,
-              52.5059273
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "eurasian-eagle-owl",
-        "name": "Eurasian Eagle-owl",
-        "species": "Bubo bubo",
-        "description": "The Eurasian eagle-owl is a species of eagle-owl, a type of bird that resides much over Eurasia. It is often just called the eagle-owl in Europe and Asia.",
-        "enclosure": "Turkmenen-Uhu",
         "wikipedia": "https://en.wikipedia.org/wiki/Eurasian_eagle-owl",
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hubro_%28Bubo_bubo%29.JPG?width=320"
       }
@@ -4615,114 +4768,6 @@
         "enclosure": "Königsbussard",
         "wikipedia": "https://en.wikipedia.org/wiki/Ferruginous_hawk",
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/HAWK%2C_FERRUGINOUS_%2812-29-07%29_ca_val_-02_%282147869372%29.jpg?width=320"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                13.532849,
-                52.4982902
-              ],
-              [
-                13.5329469,
-                52.4983018
-              ],
-              [
-                13.5330317,
-                52.4983358
-              ],
-              [
-                13.5330781,
-                52.4983509
-              ],
-              [
-                13.5331006,
-                52.4983799
-              ],
-              [
-                13.5330788,
-                52.4984082
-              ],
-              [
-                13.5331006,
-                52.4984507
-              ],
-              [
-                13.5331239,
-                52.4984781
-              ],
-              [
-                13.5332155,
-                52.4984998
-              ],
-              [
-                13.5332711,
-                52.4985025
-              ],
-              [
-                13.5333776,
-                52.4985002
-              ],
-              [
-                13.5334159,
-                52.4984521
-              ],
-              [
-                13.5334452,
-                52.4983639
-              ],
-              [
-                13.5334448,
-                52.4982734
-              ],
-              [
-                13.5334448,
-                52.4982653
-              ],
-              [
-                13.533378,
-                52.4982509
-              ],
-              [
-                13.5332123,
-                52.4981967
-              ],
-              [
-                13.5330642,
-                52.4981322
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                13.532849,
-                52.4982902
-              ],
-              [
-                13.5330536,
-                52.49814
-              ],
-              [
-                13.5330642,
-                52.4981322
-              ]
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "fj-ll",
-        "name": "Fjäll",
-        "description": "The Fjäll is a traditional Swedish breed of polled mountain cattle. It was threatened with extinction in the 1970s and 1980s, but recovered after a breed association was formed in 1995, partly thanks to stocks of frozen semen. Microsatellite analysis has shown it to be closely related to the endangered Bohuskulla breed.",
-        "enclosure": "Fjällrind",
-        "wikipedia": "https://en.wikipedia.org/wiki/Fjäll",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fj%C3%A4llko_ML0001.jpg?width=320"
       }
     },
     {
@@ -6326,146 +6371,6 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                13.533431,
-                52.4976293
-              ],
-              [
-                13.5333776,
-                52.4977275
-              ],
-              [
-                13.5331928,
-                52.4978611
-              ],
-              [
-                13.5329997,
-                52.4979297
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                13.5329997,
-                52.4979297
-              ],
-              [
-                13.533056,
-                52.4979787
-              ],
-              [
-                13.5331016,
-                52.4980146
-              ],
-              [
-                13.5331499,
-                52.4980293
-              ],
-              [
-                13.5332277,
-                52.4980309
-              ],
-              [
-                13.5333403,
-                52.4980162
-              ],
-              [
-                13.5334664,
-                52.4980015
-              ],
-              [
-                13.533571,
-                52.4980064
-              ],
-              [
-                13.5336563,
-                52.4980158
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                13.5336563,
-                52.4980158
-              ],
-              [
-                13.5336677,
-                52.4979439
-              ],
-              [
-                13.5336783,
-                52.4978889
-              ],
-              [
-                13.5336971,
-                52.497853
-              ],
-              [
-                13.5337455,
-                52.4978116
-              ],
-              [
-                13.5337643,
-                52.4977855
-              ],
-              [
-                13.5337695,
-                52.4977452
-              ],
-              [
-                13.5337909,
-                52.4977174
-              ],
-              [
-                13.5338313,
-                52.4976924
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                13.5338313,
-                52.4976924
-              ],
-              [
-                13.5336949,
-                52.4976671
-              ],
-              [
-                13.5337139,
-                52.4976292
-              ],
-              [
-                13.533453,
-                52.4975797
-              ],
-              [
-                13.533431,
-                52.4976293
-              ]
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "hungarian-gray cattle",
-        "name": "Hungarian Gray cattle",
-        "description": "The Hungarian Grey, also known as the Hungarian Grey Steppe, is a Hungarian breed of beef cattle. It belongs to the group of Podolic cattle and is characterised by long lyre-shaped horns and a pale grey coat. It is well adapted to extensive pasture systems and was formerly raised in very large numbers in the Hungarian puszta. In the twentieth century it came close to extinction, but numbers have since risen.",
-        "enclosure": "Ungarisches Steppenrind, Zackelschaf",
-        "wikipedia": "https://en.wikipedia.org/wiki/Hungarian_Grey",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Magyar_sz%C3%BCrke.jpg?width=320"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -6951,93 +6856,6 @@
         "id": "kaninchen",
         "name": "Kaninchen",
         "enclosure": "Kaninchen"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              13.5340764,
-              52.4984031
-            ],
-            [
-              13.5340723,
-              52.4983493
-            ],
-            [
-              13.5340386,
-              52.498285
-            ],
-            [
-              13.5338832,
-              52.4983004
-            ],
-            [
-              13.5337361,
-              52.4983048
-            ],
-            [
-              13.5336327,
-              52.4983053
-            ],
-            [
-              13.5335622,
-              52.4982988
-            ],
-            [
-              13.5335085,
-              52.4983675
-            ],
-            [
-              13.5334967,
-              52.498432
-            ],
-            [
-              13.5334857,
-              52.4985012
-            ],
-            [
-              13.5335572,
-              52.4985257
-            ],
-            [
-              13.533594,
-              52.4985383
-            ],
-            [
-              13.5337556,
-              52.4986007
-            ],
-            [
-              13.5338561,
-              52.498604
-            ],
-            [
-              13.5339804,
-              52.4985333
-            ],
-            [
-              13.534015,
-              52.4985105
-            ],
-            [
-              13.5340626,
-              52.4984428
-            ],
-            [
-              13.5340764,
-              52.4984031
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "kaukasus-zwergzebu",
-        "name": "Kaukasus-Zwergzebu",
-        "enclosure": "Kaukasus-Zwergzebu"
       }
     },
     {
@@ -7743,7 +7561,7 @@
         "id": "macaca-sylvanus",
         "name": "Macaca sylvanus",
         "species": "Macaca sylvanus",
-        "description": "The Barbary macaque is a macaque species native to the Atlas Mountains of Algeria, Tunisia and Morocco, along with a small introduced population in Gibraltar. It is the type species of the genus Macaca. From the Early Pliocene to the Late Pleistocene, until around 85-40,000 years ago, it was widely distributed in Europe. Today, the Barbary macaques in Gibraltar are the only Old World monkeys in Europe. About 300 individuals live on the Rock of Gibraltar.",
+        "description": "The Barbary macaque is a macaque species native to the Atlas Mountains of Morocco, Algeria and Tunisia, along with a small introduced population in Gibraltar. It is the type species of the genus Macaca. From the Early Pliocene to the Late Pleistocene, until around 85-40,000 years ago, it was widely distributed in Europe. Today, the Barbary macaques in Gibraltar are the only Old World monkeys in Europe. About 300 individuals live on the Rock of Gibraltar.",
         "enclosure": "Berberaffen",
         "wikipedia": "https://en.wikipedia.org/wiki/Barbary_macaque",
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_a_father.jpg?width=320"
@@ -8129,49 +7947,6 @@
         "coordinates": [
           [
             [
-              13.5302444,
-              52.5061471
-            ],
-            [
-              13.5304378,
-              52.5059582
-            ],
-            [
-              13.5307965,
-              52.5060662
-            ],
-            [
-              13.5307578,
-              52.5063609
-            ],
-            [
-              13.5303252,
-              52.5063001
-            ],
-            [
-              13.5302444,
-              52.5061471
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "mishmi-takin",
-        "name": "Mishmi takin",
-        "species": "Budorcas taxicolor taxicolor",
-        "description": "The Mishmi takin is an endangered goat-antelope native to India, Myanmar and the People's Republic of China. It is a subspecies of takin.",
-        "enclosure": "Mishmi-Takin",
-        "wikipedia": "https://en.wikipedia.org/wiki/Mishmi_takin",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Takin_indick%C3%BD_1.jpg?width=320"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
               13.531668,
               52.5028907
             ],
@@ -8322,56 +8097,33 @@
         "coordinates": [
           [
             [
-              13.5336353,
-              52.5040034
+              13.533382,
+              52.5002493
             ],
             [
-              13.5338227,
-              52.503911
+              13.534098,
+              52.5003959
             ],
             [
-              13.5338388,
-              52.5038898
+              13.5339934,
+              52.5005854
             ],
             [
-              13.533828,
-              52.5038767
+              13.5332773,
+              52.5004389
             ],
             [
-              13.5337985,
-              52.5038637
-            ],
-            [
-              13.5337422,
-              52.5038604
-            ],
-            [
-              13.5335221,
-              52.5036484
-            ],
-            [
-              13.5334139,
-              52.5038716
-            ],
-            [
-              13.5333881,
-              52.5039535
-            ],
-            [
-              13.5336353,
-              52.5040034
+              13.533382,
+              52.5002493
             ]
           ]
         ]
       },
       "properties": {
-        "id": "mountain-reedbuck",
-        "name": "Mountain reedbuck",
-        "species": "Redunca fulvorufula",
-        "description": "The mountain reedbuck is an antelope found in mountainous areas of much of sub-Saharan Africa.",
-        "enclosure": "Südafrikanische Bergriedböcke",
-        "wikipedia": "https://en.wikipedia.org/wiki/Mountain_reedbuck",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bergriedbock_2007-08-16_201.jpg?width=320"
+        "id": "m-hnenwolf",
+        "name": "Mähnenwolf",
+        "species": "Chrysocyon brachyurus",
+        "enclosure": "Mähnenwolf"
       }
     },
     {
@@ -9586,81 +9338,6 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              13.5321772,
-              52.4979206
-            ],
-            [
-              13.5322443,
-              52.4979222
-            ],
-            [
-              13.5322926,
-              52.497914
-            ],
-            [
-              13.5323462,
-              52.4978846
-            ],
-            [
-              13.5323811,
-              52.4978438
-            ],
-            [
-              13.5323784,
-              52.4977589
-            ],
-            [
-              13.5323677,
-              52.4977083
-            ],
-            [
-              13.5323409,
-              52.4976871
-            ],
-            [
-              13.5322792,
-              52.4976756
-            ],
-            [
-              13.5322175,
-              52.4976822
-            ],
-            [
-              13.5321906,
-              52.4977029
-            ],
-            [
-              13.5321343,
-              52.4978324
-            ],
-            [
-              13.5321236,
-              52.4978793
-            ],
-            [
-              13.5321397,
-              52.4979059
-            ],
-            [
-              13.5321772,
-              52.4979206
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "pelikane",
-        "name": "Pelikane",
-        "enclosure": "Pelikane"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
         "type": "Point",
         "coordinates": [
           13.5093199,
@@ -10822,116 +10499,37 @@
         "coordinates": [
           [
             [
-              13.533724,
-              52.4980402
+              13.5302444,
+              52.5061471
             ],
             [
-              13.533799,
-              52.4980718
+              13.5304378,
+              52.5059582
             ],
             [
-              13.5338984,
-              52.4981105
+              13.5307965,
+              52.5060662
             ],
             [
-              13.534035,
-              52.4981534
+              13.5307578,
+              52.5063609
             ],
             [
-              13.5340673,
-              52.4981137
+              13.5303252,
+              52.5063001
             ],
             [
-              13.5340969,
-              52.4980419
-            ],
-            [
-              13.5340902,
-              52.4980199
-            ],
-            [
-              13.5340592,
-              52.4979665
-            ],
-            [
-              13.5340458,
-              52.497933
-            ],
-            [
-              13.5340808,
-              52.4978378
-            ],
-            [
-              13.5341383,
-              52.4978023
-            ],
-            [
-              13.5342118,
-              52.4976927
-            ],
-            [
-              13.5342342,
-              52.4976539
-            ],
-            [
-              13.5340506,
-              52.4976128
-            ],
-            [
-              13.5338963,
-              52.4975797
-            ],
-            [
-              13.5338695,
-              52.4976263
-            ],
-            [
-              13.5338313,
-              52.4976924
-            ],
-            [
-              13.5337909,
-              52.4977174
-            ],
-            [
-              13.5337695,
-              52.4977452
-            ],
-            [
-              13.5337643,
-              52.4977855
-            ],
-            [
-              13.5337455,
-              52.4978116
-            ],
-            [
-              13.5336971,
-              52.497853
-            ],
-            [
-              13.5336783,
-              52.4978889
-            ],
-            [
-              13.5336677,
-              52.4979439
-            ],
-            [
-              13.5336563,
-              52.4980158
-            ],
-            [
-              13.533724,
-              52.4980402
+              13.5302444,
+              52.5061471
             ]
           ]
         ]
       },
       "properties": {
-        "id": "schleswiger-kaltblutpferd",
-        "name": "Schleswiger Kaltblutpferd",
-        "enclosure": "Schleswiger Kaltblutpferd"
+        "id": "schneeziege",
+        "name": "Schneeziege",
+        "species": "Oreamnos americanus",
+        "enclosure": "Schneeziege"
       }
     },
     {
@@ -11104,134 +10702,6 @@
         "enclosure": "Sekretären",
         "wikipedia": "https://en.wikipedia.org/wiki/Secretarybird",
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Secretario_%28Sagittarius_serpentarius%29%2C_parque_nacional_de_Amboseli%2C_Kenia%2C_2024-05-23%2C_DD_13.jpg?width=320"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                13.5344909,
-                52.4977082
-              ],
-              [
-                13.5343861,
-                52.4976867
-              ],
-              [
-                13.5342342,
-                52.4976539
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                13.534035,
-                52.4981534
-              ],
-              [
-                13.5340727,
-                52.4981611
-              ],
-              [
-                13.5341665,
-                52.4981616
-              ],
-              [
-                13.5343005,
-                52.498155
-              ],
-              [
-                13.5343408,
-                52.4981403
-              ],
-              [
-                13.5343711,
-                52.4980988
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                13.5342342,
-                52.4976539
-              ],
-              [
-                13.5342118,
-                52.4976927
-              ],
-              [
-                13.5341383,
-                52.4978023
-              ],
-              [
-                13.5340808,
-                52.4978378
-              ],
-              [
-                13.5340458,
-                52.497933
-              ],
-              [
-                13.5340592,
-                52.4979665
-              ],
-              [
-                13.5340902,
-                52.4980199
-              ],
-              [
-                13.5340969,
-                52.4980419
-              ],
-              [
-                13.5340673,
-                52.4981137
-              ],
-              [
-                13.534035,
-                52.4981534
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                13.5344909,
-                52.4977082
-              ],
-              [
-                13.5343569,
-                52.4979575
-              ],
-              [
-                13.534349,
-                52.4979978
-              ],
-              [
-                13.534349,
-                52.4980451
-              ],
-              [
-                13.5343711,
-                52.4980988
-              ]
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "shetland-pony",
-        "name": "Shetland pony",
-        "description": "The Shetland pony or Sheltie is a small, hardy breed of pony from the Shetland Islands of Scotland, known for its strength, dense coat, and ability to thrive in harsh climates. It has been present on the islands since at least the Bronze Age. Historically, Shetland ponies were used for farm work, carrying peat and seaweed, and later as pit ponies in coal mines in Britain and the United States. Today they are used for driving and children's riding ponies.",
-        "enclosure": "Shetlandpony",
-        "wikipedia": "https://en.wikipedia.org/wiki/Shetland_pony",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Shetland_pony_%282%29.jpg?width=320"
       }
     },
     {
@@ -12214,6 +11684,97 @@
         "coordinates": [
           [
             [
+              13.5337992,
+              52.5001155
+            ],
+            [
+              13.5340325,
+              52.5001886
+            ],
+            [
+              13.5342389,
+              52.5002309
+            ],
+            [
+              13.5342934,
+              52.5002384
+            ],
+            [
+              13.5343091,
+              52.5001665
+            ],
+            [
+              13.5342926,
+              52.5001652
+            ],
+            [
+              13.5342543,
+              52.5001426
+            ],
+            [
+              13.5342446,
+              52.5001169
+            ],
+            [
+              13.5341968,
+              52.5000976
+            ],
+            [
+              13.5341464,
+              52.5000883
+            ],
+            [
+              13.5341036,
+              52.5000792
+            ],
+            [
+              13.5340638,
+              52.5000711
+            ],
+            [
+              13.5340144,
+              52.5000485
+            ],
+            [
+              13.5339785,
+              52.5000378
+            ],
+            [
+              13.5339635,
+              52.5000325
+            ],
+            [
+              13.5339286,
+              52.5000244
+            ],
+            [
+              13.5339235,
+              52.5000185
+            ],
+            [
+              13.5337992,
+              52.5001155
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "sumatran-tiger",
+        "name": "Sumatran tiger",
+        "species": "Panthera tigris sumatrae",
+        "description": "The Sumatran tiger is a population of Panthera tigris sondaica on the Indonesian island of Sumatra. It is the only surviving tiger population in the Sunda Islands, as the other Bali and Javan tigers went extinct during the 20th century.",
+        "enclosure": "Sumatra-Tiger",
+        "wikipedia": "https://en.wikipedia.org/wiki/Sumatran_tiger",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Panthera_tigris_sumatrae_in_captivity_02.JPG?width=320"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
               13.5271185,
               52.4989588
             ],
@@ -12474,143 +12035,6 @@
         "enclosure": "Thüringer Waldziegen",
         "wikipedia": "https://en.wikipedia.org/wiki/Thuringian_goat",
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Thueringerwaldziege.jpg?width=320"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                13.5258707,
-                52.5037634
-              ],
-              [
-                13.5260069,
-                52.5038129
-              ],
-              [
-                13.5259724,
-                52.5038525
-              ],
-              [
-                13.5259855,
-                52.5038954
-              ],
-              [
-                13.5258016,
-                52.5040939
-              ],
-              [
-                13.5257385,
-                52.5041322
-              ],
-              [
-                13.5257304,
-                52.5041904
-              ],
-              [
-                13.5252698,
-                52.50432
-              ],
-              [
-                13.525092,
-                52.504376
-              ],
-              [
-                13.5249935,
-                52.5044081
-              ],
-              [
-                13.5248094,
-                52.5044676
-              ],
-              [
-                13.524667,
-                52.5044342
-              ],
-              [
-                13.5245633,
-                52.504376
-              ],
-              [
-                13.5245106,
-                52.5042845
-              ],
-              [
-                13.5246997,
-                52.5039382
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                13.5246997,
-                52.5039382
-              ],
-              [
-                13.524974,
-                52.5039094
-              ],
-              [
-                13.5249842,
-                52.5038909
-              ],
-              [
-                13.5250147,
-                52.5038884
-              ],
-              [
-                13.5250798,
-                52.5038302
-              ],
-              [
-                13.5251334,
-                52.503851
-              ],
-              [
-                13.5251804,
-                52.5038545
-              ],
-              [
-                13.5251942,
-                52.5037773
-              ],
-              [
-                13.5252239,
-                52.50378
-              ],
-              [
-                13.5252304,
-                52.5037415
-              ],
-              [
-                13.5253014,
-                52.5037461
-              ],
-              [
-                13.5254071,
-                52.5036458
-              ],
-              [
-                13.5256186,
-                52.5036904
-              ],
-              [
-                13.5258707,
-                52.5037634
-              ]
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "trappe",
-        "name": "Trappe",
-        "enclosure": "Trappe"
       }
     },
     {
@@ -12892,238 +12316,6 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                13.533431,
-                52.4976293
-              ],
-              [
-                13.5331556,
-                52.497554
-              ],
-              [
-                13.5331011,
-                52.4975867
-              ],
-              [
-                13.5330599,
-                52.4976277
-              ],
-              [
-                13.5330091,
-                52.4976693
-              ],
-              [
-                13.532946,
-                52.4977631
-              ],
-              [
-                13.532938,
-                52.4978285
-              ],
-              [
-                13.5329542,
-                52.4978753
-              ],
-              [
-                13.5329754,
-                52.4979025
-              ],
-              [
-                13.5329997,
-                52.4979297
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                13.533431,
-                52.4976293
-              ],
-              [
-                13.5333776,
-                52.4977275
-              ],
-              [
-                13.5331928,
-                52.4978611
-              ],
-              [
-                13.5329997,
-                52.4979297
-              ]
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "valais-blackneck",
-        "name": "Valais Blackneck",
-        "description": "The Valais Blackneck is a Swiss breed of domestic goat from the canton of Valais. It has a distinctive colouring, black from the nose to behind the shoulder and white from there to the tail.",
-        "enclosure": "Wallieser Ziege",
-        "wikipedia": "https://en.wikipedia.org/wiki/Valais_Blackneck",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Walliser_Schwarzhalsziege_qtl1.jpg?width=320"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                13.5330642,
-                52.4981322
-              ],
-              [
-                13.5328247,
-                52.4979809
-              ],
-              [
-                13.5326832,
-                52.4979787
-              ],
-              [
-                13.5325412,
-                52.4979864
-              ],
-              [
-                13.5323588,
-                52.4980321
-              ],
-              [
-                13.532222,
-                52.4980881
-              ],
-              [
-                13.5323025,
-                52.4981991
-              ],
-              [
-                13.5325104,
-                52.4981604
-              ],
-              [
-                13.5326687,
-                52.4981604
-              ],
-              [
-                13.532849,
-                52.4982902
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                13.532849,
-                52.4982902
-              ],
-              [
-                13.5330536,
-                52.49814
-              ],
-              [
-                13.5330642,
-                52.4981322
-              ]
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "valais-blackneck",
-        "name": "Valais Blackneck",
-        "description": "The Valais Blackneck is a Swiss breed of domestic goat from the canton of Valais. It has a distinctive colouring, black from the nose to behind the shoulder and white from there to the tail.",
-        "enclosure": "Walliser Schwarznasenschaf, Walliser Schwarzhalsziege",
-        "wikipedia": "https://en.wikipedia.org/wiki/Valais_Blackneck",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Walliser_Schwarzhalsziege_qtl1.jpg?width=320"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                13.5330642,
-                52.4981322
-              ],
-              [
-                13.5328247,
-                52.4979809
-              ],
-              [
-                13.5326832,
-                52.4979787
-              ],
-              [
-                13.5325412,
-                52.4979864
-              ],
-              [
-                13.5323588,
-                52.4980321
-              ],
-              [
-                13.532222,
-                52.4980881
-              ],
-              [
-                13.5323025,
-                52.4981991
-              ],
-              [
-                13.5325104,
-                52.4981604
-              ],
-              [
-                13.5326687,
-                52.4981604
-              ],
-              [
-                13.532849,
-                52.4982902
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                13.532849,
-                52.4982902
-              ],
-              [
-                13.5330536,
-                52.49814
-              ],
-              [
-                13.5330642,
-                52.4981322
-              ]
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "valais-blacknose",
-        "name": "Valais Blacknose",
-        "description": "The Valais Blacknose is a breed of domestic sheep originating in the Valais region of Switzerland. It is a dual-purpose breed, raised both for meat and for wool.",
-        "enclosure": "Walliser Schwarznasenschaf, Walliser Schwarzhalsziege",
-        "wikipedia": "https://en.wikipedia.org/wiki/Valais_Blacknose",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Schwarznasenschaf.jpg?width=320"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -13285,32 +12477,36 @@
         "coordinates": [
           [
             [
-              13.5333461,
-              52.5004219
+              13.5266811,
+              52.5042226
             ],
             [
-              13.5333771,
-              52.5003631
+              13.5268262,
+              52.5044015
             ],
             [
-              13.5334976,
-              52.5003867
+              13.5266514,
+              52.5044535
             ],
             [
-              13.5334666,
-              52.5004455
+              13.5265133,
+              52.5042811
             ],
             [
-              13.5333461,
-              52.5004219
+              13.5266811,
+              52.5042226
             ]
           ]
         ]
       },
       "properties": {
-        "id": "waldhund",
-        "name": "Waldhund",
-        "enclosure": "Waldhund"
+        "id": "wattled-crane",
+        "name": "Wattled Crane",
+        "species": "Bugeranus carunculatus",
+        "description": "The wattled crane is a large, threatened species of crane found in wetlands and grasslands of eastern and southern Africa, ranging from Ethiopia to South Africa. Some authorities consider it the sole member of the genus Bugeranus.",
+        "enclosure": "Klunkerkranich",
+        "wikipedia": "https://en.wikipedia.org/wiki/Wattled_crane",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Grus_carunculata%2C_Linyanti%2C_Caprivi%2C_Namibia_1.jpg?width=320"
       }
     },
     {
@@ -13356,45 +12552,6 @@
                 13.5291115,
                 52.5078144
               ]
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "wattled-crane",
-        "name": "Wattled Crane",
-        "species": "Bugeranus carunculatus",
-        "description": "The wattled crane is a large, threatened species of crane found in wetlands and grasslands of eastern and southern Africa, ranging from Ethiopia to South Africa. Some authorities consider it the sole member of the genus Bugeranus.",
-        "enclosure": "Klunkerkranich",
-        "wikipedia": "https://en.wikipedia.org/wiki/Wattled_crane",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Grus_carunculata%2C_Linyanti%2C_Caprivi%2C_Namibia_1.jpg?width=320"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              13.5266811,
-              52.5042226
-            ],
-            [
-              13.5268262,
-              52.5044015
-            ],
-            [
-              13.5266514,
-              52.5044535
-            ],
-            [
-              13.5265133,
-              52.5042811
-            ],
-            [
-              13.5266811,
-              52.5042226
             ]
           ]
         ]
@@ -14900,194 +14057,6 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                13.5344909,
-                52.4977082
-              ],
-              [
-                13.5343569,
-                52.4979575
-              ],
-              [
-                13.534349,
-                52.4979978
-              ],
-              [
-                13.534349,
-                52.4980451
-              ],
-              [
-                13.5343711,
-                52.4980988
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                13.5343711,
-                52.4980988
-              ],
-              [
-                13.5343891,
-                52.4981256
-              ],
-              [
-                13.5344132,
-                52.4981436
-              ],
-              [
-                13.5344361,
-                52.498155
-              ],
-              [
-                13.5345139,
-                52.4981664
-              ],
-              [
-                13.5345634,
-                52.4981632
-              ],
-              [
-                13.5346601,
-                52.4981562
-              ],
-              [
-                13.5347646,
-                52.4981305
-              ],
-              [
-                13.5348345,
-                52.4980909
-              ],
-              [
-                13.535005,
-                52.4978681
-              ],
-              [
-                13.5349182,
-                52.4978376
-              ],
-              [
-                13.5349325,
-                52.497798
-              ],
-              [
-                13.534737,
-                52.4977587
-              ],
-              [
-                13.5345816,
-                52.4977268
-              ],
-              [
-                13.5344909,
-                52.4977082
-              ]
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "donkey",
-        "name": "donkey",
-        "species": "Equus africanus asinus",
-        "description": "The donkey or ass is a domesticated equine. It derives from the African wild ass, Equus africanus, and may be classified either as a subspecies thereof, Equus africanus asinus, or as a separate species, Equus asinus. It was domesticated in Africa some 5000–7000 years ago, and has been used mainly as a working animal since that time.",
-        "enclosure": "Zwergesel",
-        "wikipedia": "https://en.wikipedia.org/wiki/Donkey",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Donkey_in_Clovelly%2C_North_Devon%2C_England.jpg?width=320"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              13.5326512,
-              52.5055846
-            ],
-            [
-              13.5326091,
-              52.5057854
-            ],
-            [
-              13.5326445,
-              52.5057989
-            ],
-            [
-              13.5326807,
-              52.5058023
-            ],
-            [
-              13.5327147,
-              52.5057896
-            ],
-            [
-              13.5330308,
-              52.5058613
-            ],
-            [
-              13.5330689,
-              52.5058657
-            ],
-            [
-              13.5331095,
-              52.505857
-            ],
-            [
-              13.5331336,
-              52.5058243
-            ],
-            [
-              13.5331194,
-              52.5057889
-            ],
-            [
-              13.5330714,
-              52.5057241
-            ],
-            [
-              13.533036,
-              52.5056674
-            ],
-            [
-              13.5330678,
-              52.5055907
-            ],
-            [
-              13.5330865,
-              52.5055493
-            ],
-            [
-              13.5328255,
-              52.5055907
-            ],
-            [
-              13.5326512,
-              52.5055846
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "gerenuk",
-        "name": "gerenuk",
-        "species": "Litocranius walleri",
-        "description": "The gerenuk, also known as the giraffe gazelle, is a long-necked, medium-sized antelope found in parts of East Africa. The sole member of the genus Litocranius, the gerenuk was first described by the naturalist Victor Brooke in 1879. It is characterised by its long, slender neck and limbs. The antelope is 80–105 centimetres tall, and weighs between 18 and 52 kilograms.",
-        "enclosure": "Südliche Giraffengazelle",
-        "wikipedia": "https://en.wikipedia.org/wiki/Gerenuk",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Giraffe_gazelle_africa.jpg?width=320"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -15172,6 +14141,89 @@
         "species": "Litocranius walleri",
         "description": "The gerenuk, also known as the giraffe gazelle, is a long-necked, medium-sized antelope found in parts of East Africa. The sole member of the genus Litocranius, the gerenuk was first described by the naturalist Victor Brooke in 1879. It is characterised by its long, slender neck and limbs. The antelope is 80–105 centimetres tall, and weighs between 18 and 52 kilograms.",
         "enclosure": "Südliche Giraffengazelle, Kleiner Kudu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Gerenuk",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Giraffe_gazelle_africa.jpg?width=320"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5326512,
+              52.5055846
+            ],
+            [
+              13.5326091,
+              52.5057854
+            ],
+            [
+              13.5326445,
+              52.5057989
+            ],
+            [
+              13.5326807,
+              52.5058023
+            ],
+            [
+              13.5327147,
+              52.5057896
+            ],
+            [
+              13.5330308,
+              52.5058613
+            ],
+            [
+              13.5330689,
+              52.5058657
+            ],
+            [
+              13.5331095,
+              52.505857
+            ],
+            [
+              13.5331336,
+              52.5058243
+            ],
+            [
+              13.5331194,
+              52.5057889
+            ],
+            [
+              13.5330714,
+              52.5057241
+            ],
+            [
+              13.533036,
+              52.5056674
+            ],
+            [
+              13.5330678,
+              52.5055907
+            ],
+            [
+              13.5330865,
+              52.5055493
+            ],
+            [
+              13.5328255,
+              52.5055907
+            ],
+            [
+              13.5326512,
+              52.5055846
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "gerenuk",
+        "name": "gerenuk",
+        "species": "Litocranius walleri",
+        "description": "The gerenuk, also known as the giraffe gazelle, is a long-necked, medium-sized antelope found in parts of East Africa. The sole member of the genus Litocranius, the gerenuk was first described by the naturalist Victor Brooke in 1879. It is characterised by its long, slender neck and limbs. The antelope is 80–105 centimetres tall, and weighs between 18 and 52 kilograms.",
+        "enclosure": "Südliche Giraffengazelle",
         "wikipedia": "https://en.wikipedia.org/wiki/Gerenuk",
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Giraffe_gazelle_africa.jpg?width=320"
       }
@@ -16060,146 +15112,6 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                13.533431,
-                52.4976293
-              ],
-              [
-                13.5333776,
-                52.4977275
-              ],
-              [
-                13.5331928,
-                52.4978611
-              ],
-              [
-                13.5329997,
-                52.4979297
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                13.5329997,
-                52.4979297
-              ],
-              [
-                13.533056,
-                52.4979787
-              ],
-              [
-                13.5331016,
-                52.4980146
-              ],
-              [
-                13.5331499,
-                52.4980293
-              ],
-              [
-                13.5332277,
-                52.4980309
-              ],
-              [
-                13.5333403,
-                52.4980162
-              ],
-              [
-                13.5334664,
-                52.4980015
-              ],
-              [
-                13.533571,
-                52.4980064
-              ],
-              [
-                13.5336563,
-                52.4980158
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                13.5336563,
-                52.4980158
-              ],
-              [
-                13.5336677,
-                52.4979439
-              ],
-              [
-                13.5336783,
-                52.4978889
-              ],
-              [
-                13.5336971,
-                52.497853
-              ],
-              [
-                13.5337455,
-                52.4978116
-              ],
-              [
-                13.5337643,
-                52.4977855
-              ],
-              [
-                13.5337695,
-                52.4977452
-              ],
-              [
-                13.5337909,
-                52.4977174
-              ],
-              [
-                13.5338313,
-                52.4976924
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                13.5338313,
-                52.4976924
-              ],
-              [
-                13.5336949,
-                52.4976671
-              ],
-              [
-                13.5337139,
-                52.4976292
-              ],
-              [
-                13.533453,
-                52.4975797
-              ],
-              [
-                13.533431,
-                52.4976293
-              ]
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "sheep",
-        "name": "sheep",
-        "description": "Sheep or domestic sheep are a domesticated, ruminant mammal typically kept as livestock. Although the term sheep can apply to other species in the genus Ovis, in everyday usage it almost always refers to domesticated sheep. Like all ruminants, sheep are members of the order Artiodactyla, the even-toed ungulates. There are around 1.2 billion domestic sheep as of 2019, making them easily the most common species of sheep.",
-        "enclosure": "Ungarisches Steppenrind, Zackelschaf",
-        "wikipedia": "https://en.wikipedia.org/wiki/Sheep",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Flock_of_sheep.jpg?width=320"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -16794,7 +15706,7 @@
         "id": "water-buffalo",
         "name": "water buffalo",
         "species": "Bubalus bubalis",
-        "description": "The water buffalo, also called domestic water buffalo, Asian water buffalo, and Asiatic water buffalo, is a large bovine originating in the Indian subcontinent and Southeast Asia. Today, it is also kept in Italy, the Balkans, Australia, the Americas, and some African countries.",
+        "description": "The water buffalo, also called domestic water buffalo, Asian water buffalo, and Asiatic water buffalo, is a large domesticated bovine originating in the Indian subcontinent and Southeast Asia descended from the wild water buffalo. Today, it is also kept in Italy, the Balkans, Australia, the Americas, and some African countries.",
         "enclosure": "Kerabau, Sulawesi-Hirscheber",
         "wikipedia": "https://en.wikipedia.org/wiki/Water_buffalo",
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Wasserb%C3%BCffel_%2825787818312%29.jpg?width=320"
@@ -17410,82 +16322,6 @@
         "enclosure": "Amur-Buntmarder",
         "wikipedia": "https://en.wikipedia.org/wiki/Yellow-throated_marten",
         "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Martes_flavigula%2C_yellow-throated_marten.jpg?width=320"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              13.5271037,
-              52.5072423
-            ],
-            [
-              13.5271465,
-              52.5070844
-            ],
-            [
-              13.5272151,
-              52.5068533
-            ],
-            [
-              13.5273453,
-              52.5068042
-            ],
-            [
-              13.5276064,
-              52.5068741
-            ],
-            [
-              13.5277888,
-              52.5069247
-            ],
-            [
-              13.5278317,
-              52.5069753
-            ],
-            [
-              13.527837,
-              52.5070781
-            ],
-            [
-              13.5278049,
-              52.507181
-            ],
-            [
-              13.5276895,
-              52.5073606
-            ],
-            [
-              13.5276198,
-              52.5073867
-            ],
-            [
-              13.5275098,
-              52.5073916
-            ],
-            [
-              13.5272684,
-              52.5073524
-            ],
-            [
-              13.5272309,
-              52.5073344
-            ],
-            [
-              13.5271037,
-              52.5072423
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "id": "stlicher kiang",
-        "name": "Östlicher Kiang",
-        "species": "Equus kiang holdereri",
-        "enclosure": "Östlicher Kiang"
       }
     }
   ]
